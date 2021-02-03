@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "initialization.py", line 271, in <module>
+    stoichiometry=atom_numbers)
+  File "/apps/Hebbe7/software/MPI/intel/2019.1.144-GCC-8.2.0-2.31.1/impi/2018.4.274/ASE/3.18.0-Python-3.7.2/lib/python3.7/site-packages/ase/ga/data.py", line 425, in __init__
+    .format(os.path.abspath(db_file_name)))
+OSError: DB file /cephyr/users/eliasel/Hebbe/TIF320/HW2/Na-clusters-GA-search/7a/gadb.db already exists

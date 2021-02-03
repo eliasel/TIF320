@@ -1,0 +1,17 @@
+usefull commands 
+
+gedit & 
+- Runs gedit
+
+sbatch job-script-name 
+- queues job on hebbe
+
+squeue | grep eliasel 
+- prints lines with my work submitted scripts
+
+projinfo
+- prints all everybodys budget in the project
+
+
+
+

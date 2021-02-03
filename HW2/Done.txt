@@ -1,0 +1,2 @@
+runing completed at date +%I:%M:%S
+runing completed at 12:05:27
