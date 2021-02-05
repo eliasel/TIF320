@@ -12,3 +12,34 @@ Starting T8 script at 04:19:34
 finite differences seems to work
 Plane wave mode seems to work
 runing completed at 05:09:30
+Starting T8 script at 05:31:33
+runing completed at 05:36:05
+Starting T8 script at 05:42:54
+Starting T8 script at 05:43:57
+Starting T8 script at 05:43:59
+Starting T8 script at 05:44:03
+Starting T8 script at 05:44:05
+Starting T8 script at 05:44:07
+Starting T8 script at 05:44:10
+Starting T8 script at 05:44:13
+Starting T8 script at 05:44:15
+Starting T8 script at 05:44:18
+Starting T8 script at 05:44:20
+Starting T8 script at 05:44:23
+runing completed at 05:44:24
+Starting T8 script at 05:44:25
+Starting T8 script at 05:44:28
+runing completed at 05:44:29
+Starting T8 script at 05:44:30
+Starting T8 script at 05:44:33
+runing completed at 05:44:35
+runing completed at 05:44:41
+runing completed at 05:44:47
+runing completed at 05:45:46
+runing completed at 05:46:32
+runing completed at 05:46:36
+runing completed at 05:47:04
+runing completed at 05:47:11
+runing completed at 05:47:18
+runing completed at 05:51:25
+runing completed at 05:59:53

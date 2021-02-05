@@ -1,3 +1,5 @@
+#!/bin/bash
+#!/bin/bash
 #!/usr/bin/env bash
 #SBATCH -p hebbe 
 #SBATCH -A C3SE2021-1-15 # Project

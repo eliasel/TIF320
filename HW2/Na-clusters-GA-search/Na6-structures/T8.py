@@ -20,7 +20,7 @@ parser.add_argument( '--hval', type=float, default=defval, help='Value of h in G
 
 args = parser.parse_args()
 
-print(f'relaxing cluster in file {args.dbfile}')
+#print(f'relaxing cluster in file {args.dbfile}')
 
 #connection to database
 db = connect(args.dbfile)
@@ -63,4 +63,4 @@ for atom_cluster in db.select():
   
   #Write minimized cluster to xyz datafile 
   write(f'gs_{args.mode}_n{args.nbands}_h{args.hval}_{args.dbfile}', atoms)
-print('done')
+#print('done')
