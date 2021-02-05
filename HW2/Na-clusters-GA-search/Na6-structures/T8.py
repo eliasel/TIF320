@@ -7,7 +7,10 @@ from ase.io import write
 from gpaw import GPAW, FermiDirac
 import argparse
 
+
 parser = argparse.ArgumentParser()
+parser.add_argument('dbfile', help = 'database file to load') 
+
 parser.add_argument('mode', help = 'set the mode for GPAW allowed modes fd, lcao or pw') 
 
 defval = 10
@@ -21,7 +24,7 @@ args = parser.parse_args()
 
 
 #connection to database
-db = connect("atomisar.db")
+db = connect(args.dbfile)
 number_of_atom_clusters = db.count('natoms>0') 
 
 #print(f'running in {args.mode} mode')
