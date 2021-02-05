@@ -9,3 +9,6 @@ runing completed at 03:07:17
 Starting T8 script at 03:13:42
 finite differences seems to work
 Starting T8 script at 04:19:34
+finite differences seems to work
+Plane wave mode seems to work
+runing completed at 05:09:30

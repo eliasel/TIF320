@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "T8.py", line 63, in <module>
+    
+NameError: name 'nbands' is not defined

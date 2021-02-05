@@ -7,9 +7,8 @@ from ase.io import write
 from gpaw import GPAW, FermiDirac
 import argparse
 
-
 parser = argparse.ArgumentParser()
-parser.add_argument('dbfile', help = 'database file to load') 
+parser.add_argument('dbfile', help = 'database file to load')
 
 parser.add_argument('mode', help = 'set the mode for GPAW allowed modes fd, lcao or pw') 
 
@@ -21,7 +20,7 @@ parser.add_argument( '--hval', type=float, default=defval, help='Value of h in G
 
 args = parser.parse_args()
 
-
+print(f'relaxing cluster in file {args.dbfile}')
 
 #connection to database
 db = connect(args.dbfile)
@@ -63,4 +62,5 @@ for atom_cluster in db.select():
   dynamics.run(fmax=0.02, steps=100)
   
   #Write minimized cluster to xyz datafile 
-  write(f'gs_{args.mode}_n{nbands}_.xyz', atoms)
+  write(f'gs_{args.mode}_n{args.nbands}_h{args.hval}_{args.dbfile}', atoms)
+print('done')
