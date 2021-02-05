@@ -13,7 +13,7 @@ for row in db.select(calculator = 'gpaw'):
 	Energies[1,i]=row.id
 	i=i+1
 E_ind = np.argmin(Energies[0,:])
-E_low_id=Energies[1,E_ind]
+E_low_id=np.int(Energies[1,E_ind])
 cluster = db.get(id=E_low_id).toatoms(attach_calculator=True)
 calc = cluster.calc
 
@@ -24,3 +24,6 @@ for band in range(nbands):
 	fname = f'{base_name}_{band}.cube'
 	write(fname, cluster, data=wf)
 	print(band)
+print('Hej, hej hej--------------------')
+print(E_low_id)
+print('Hej, hej hej--------------------')
