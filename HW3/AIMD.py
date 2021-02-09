@@ -1,7 +1,7 @@
 from ase.db import connect
-from ase.io import write 
+from ase.io import write
 
-lowest_energy = 0
+"""lowest_energy = 0
 lowest_id = 0
 db = connect('gadb.db')
 
@@ -20,3 +20,4 @@ print(atoms)
 print(atoms.get_total_energy())
 write('ground_states.xyz', atoms)
 
+"""
