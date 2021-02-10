@@ -1,49 +1,38 @@
+from ase import atoms
 from ase.db import connect
-from ase.io import write
+from ase.io import write, read, Trajectory
 from ase.units import fs, kB
+from ase.md.npt import NPT
+
+from gpaw import GPAW
 
 
-atoms = read('NaH20.xyz')
+atoms = read('NaH2O.xyz')
 
 calc = GPAW(
             mode = 'lcao',
             xc = 'PBE',
             basis = 'dzp',
-            symmetry = {point_group = False},
+            symmetry = {'point_group': False},
             charge = 1,
             txt = 'GPAW_output.gpaw-out')
 
 atoms.set_calculator(calc)
 
-dyn = NPT(atom
-            temperature = 350*kB,
-            timestep = 0.5*fs,
-            ttime = 20*fs,
-            logfile = 'MDout.log')
-
-traj = Trajectory('cluster24wNa.tradj','w',atoms)
+dyn = NPT(atoms,
+	0.5*fs,
+	temperature = 350*kB,
+	ttime = 20*fs,
+	logfile = 'MDout.log',
+	externalstress = 0,
+	pfactor = None)
+	
+traj = Trajectory('cluster24wNa.traj','w',atoms)
 dyn.attach(traj.write, interval = 1)
 
-dyn.run(10)
+f = open("Calclog.txt", "a")
+for i in range(200):
+  f.write(f"Running calculation, first {(i+1)*20*0.5} fs \n")
+  dyn.run(20)
+  
 
-
-"""lowest_energy = 0
-lowest_id = 0
-db = connect('gadb.db')
-
-for row in db.select():
-  atoms = row.toatoms()
-  print(atoms.calc.)
-  if(atoms.calc != None):
-    current_energy = row.energy
-    if current_energy<lowest_energy:
-      lowest_energy = current_energy
-      lowest_id = row.id
-
-atoms = db.get(id=lowest_id).toatoms()
-print(atoms)
-
-print(atoms.get_total_energy())
-write('ground_states.xyz', atoms)
-
-"""
