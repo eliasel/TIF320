@@ -48,7 +48,7 @@ axs[0].plot(np.histogram_bin_edges(atoms,bins=bins-1,range=(0,10)),RDF/(number_o
 axs[1].plot(np.histogram_bin_edges(atoms,bins=bins-1,range=(0,10)),RDF_O*24/(number_of_frames-skip_frames),label = 'RDF Oxygen')
 axs[2].plot(np.histogram_bin_edges(atoms,bins=bins-1,range=(0,10)),RDF_H*48/(number_of_frames-skip_frames),label = 'RDF Hydrogen')
 axs[0].legend();axs[1].legend();axs[2].legend() 
-axs[1].axvline(3);axs[2].axvline(4)
+axs[1].axvline(3);axs[2].axvline(3.5)
 plt.savefig('RDF.png')
 
 RDF_integral = 0
@@ -60,7 +60,7 @@ for i in range(bins):
     if(RDF_bins[i] < 3):
         #RDF_integral += RDF[i]/(number_of_frames-skip_frames)*(10/bins)
         RDF_integral_O += RDF_O[i]/(number_of_frames-skip_frames)*(10/bins)*24
-    if(RDF_bins[i] < 4):
+    if(RDF_bins[i] < 3.5):
         RDF_integral_H += RDF_H[i]/(number_of_frames-skip_frames)*(10/bins)*48
 
 print("\n total")
