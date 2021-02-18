@@ -11,8 +11,8 @@ atoms = calc.get_atoms()
 atoms.get_potential_energy() # Performs the calculation on the system !
 
 calc.set(
-nbands = 10,           #
-convergence = {"bands", -10},# Do not converge final 10 states
+nbands = 110,           #
+convergence = {"bands": -10},# Do not converge final 10 states
 fixdensity = True,      # Keep density constant in calculations
 txt = "Na_n110.gpaw-out"     # Redirect GPAW ’s text output to f.gpaw - out
 )

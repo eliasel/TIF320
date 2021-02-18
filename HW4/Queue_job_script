@@ -10,7 +10,7 @@
 module purge
 module load Python/3.7.4 Tkinter/3.7.4 intel/2019a ASE GPAW
 
-mpirun gpaw-python T1_createGS.py
+mpirun python T1_110n.py
 
 
 echo "runing completed at" $(date +"%I:%M:%S") >> Done.txt
