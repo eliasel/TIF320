@@ -24,15 +24,32 @@ for i in range(N):
 idx = omega2.argsort()[::-1]
 omega2 = omega2[idx]
 FI = FI[:,idx]
+print(FI)
+fx_I = np.zeros(N)
+for I in range(N):
+	for p in range(N):
+		FI_p = FI[:, I]
+		fx_I[I] = fx_I[I] + np.sqrt(w_p[p]*2.0)*mux_p[p]*FI_p[p]
+                
+fx_I = 2*np.abs(fx_I)**2
+
+fy_I = np.zeros(N)
+for I in range(N):
+	for p in range(N):
+		FI_p = FI[:, I]
+		fy_I[I] = fy_I[I] + np.sqrt(w_p[p]*2.0)*muy_p[p]*FI_p[p]
+                
+fy_I = 2*np.abs(fy_I)**2
 
 fz_I = np.zeros(N)
 for I in range(N):
 	for p in range(N):
 		FI_p = FI[:, I]
-		#fz_I[I] = fz_I[I] + np.sqrt(w_p[p]*(a_p[p]-i_p[p]))*muz_p[p]*FI_p[p]
 		fz_I[I] = fz_I[I] + np.sqrt(w_p[p]*2.0)*muz_p[p]*FI_p[p]
                 
 fz_I = 2*np.abs(fz_I)**2
+
+favr_I = (fx_I+fy_I+fz_I)/3
 
 def fold(x_t, x_i, y_i, width):
     '''
@@ -59,13 +76,22 @@ def fold(x_t, x_i, y_i, width):
 
 x_t = np.linspace(1, 6.5, N, dtype = 'complex')
 eps_i = np.sqrt(omega2)*27.2107
-y_t = fold(x_t, eps_i, fz_I, 0.06)
+y_t = fold(x_t, eps_i, favr_I, 0.06)
 
 
 fig, ax = plt.subplots()
 ax.plot(x_t, np.abs(y_t))
 ax.set_xlabel('Energies [eV]')
 ax.set_ylabel('Folded oscillator strength')
-fig.savefig('./spectrum_T2.pdf')
+fig.savefig('./spectrum_T3.pdf')
 		
- 
+fig, ax = plt.subplots()
+ax.plot(np.linspace(0,N,N), w_p*27.2107) 
+ax.set_xlabel('Difference in KS-eigenvalues [eV]')
+#ax.set_ylabel('Folded oscillator strength')
+fig.savefig('./hist_wp.pdf')
+
+fig, ax = plt.subplots()
+ax.plot(np.linspace(0,N,N), np.abs(favr_I))
+fig.savefig('./test.pdf')
+

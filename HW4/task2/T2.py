@@ -24,7 +24,6 @@ for p in range(N):
 	for q in range(N):
 		n_p = a_p[p]-i_p[p]
 		n_q = a_p[q]-i_p[q]
-        	#Omega[p,q] = Omega[p,q] + 2*np.sqrt(w_p[p]*n_p)*K_pp[p,q]*np.sqrt(w_p[q]*n_q)
 		Omega[p,q] = Omega[p,q] + 4.0*np.sqrt(w_p[p])*K_pp[p,q]*np.sqrt(w_p[q])
 
 [omega2, FI] = eig(Omega)
@@ -32,14 +31,33 @@ idx = omega2.argsort()[::-1]
 omega2 = omega2[idx]
 FI = FI[:,idx]
 
+fx_I = np.zeros(N)
+for I in range(N):
+	for p in range(N):
+		FI_p = FI[:, I]
+		fx_I[I] = fx_I[I] + np.sqrt(w_p[p]*2.0)*mux_p[p]*FI_p[p]
+ 
+
+fx_I = 2*np.abs(fx_I)**2
+
+fy_I = np.zeros(N)
+for I in range(N):
+	for p in range(N):
+		FI_p = FI[:, I]
+		fy_I[I] = fy_I[I] + np.sqrt(w_p[p]*2.0)*muy_p[p]*FI_p[p]
+ 
+fy_I = 2*np.abs(fy_I)**2
+
+
 fz_I = np.zeros(N)
 for I in range(N):
 	for p in range(N):
 		FI_p = FI[:, I]
-		#fz_I[I] = fz_I[I] + np.sqrt(w_p[p]*(a_p[p]-i_p[p]))*muz_p[p]*FI_p[p]
 		fz_I[I] = fz_I[I] + np.sqrt(w_p[p]*2.0)*muz_p[p]*FI_p[p]
                 
 fz_I = 2*np.abs(fz_I)**2
+
+favr_I = (fx_I + fy_I + fz_I)/3
 
 def fold(x_t, x_i, y_i, width):
     '''
@@ -66,7 +84,7 @@ def fold(x_t, x_i, y_i, width):
 
 x_t = np.linspace(1, 6.5, N, dtype = 'complex')
 eps_i = np.sqrt(omega2)*27.2107
-y_t = fold(x_t, eps_i, fz_I, 0.06)
+y_t = fold(x_t, eps_i, favr_I, 0.06)
 
 
 fig, ax = plt.subplots()
