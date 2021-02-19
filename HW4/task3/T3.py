@@ -20,13 +20,6 @@ Omega = np.zeros((N,N))
 for i in range(N):
 	Omega[i,i] = w_p[i]**2
 
-for p in range(N):
-	for q in range(N):
-		n_p = a_p[p]-i_p[p]
-		n_q = a_p[q]-i_p[q]
-        	#Omega[p,q] = Omega[p,q] + 2*np.sqrt(w_p[p]*n_p)*K_pp[p,q]*np.sqrt(w_p[q]*n_q)
-		Omega[p,q] = Omega[p,q] + 4.0*np.sqrt(w_p[p])*K_pp[p,q]*np.sqrt(w_p[q])
-
 [omega2, FI] = eig(Omega)
 idx = omega2.argsort()[::-1]
 omega2 = omega2[idx]
