@@ -1,7 +1,7 @@
-from gpaw import GPAW
-from gpaw.lrtddft import LrTDDFT
 import numpy as np
 from scipy.linalg import eig
+import matplotlib.pyplot as plt
+
 
 dump = np.load('dumpsterboi.dump.npz')
 K_pp = dump['K_pp']
@@ -64,8 +64,12 @@ def fold(x_t, x_i, y_i, width):
     return y_t
 
 x_t = np.linspace(-1, 3, N, dtype = 'complex')
-spec = fold(x_t, np.sqrt(omega2), fz_I, 0.06)
+y_t = fold(x_t, np.sqrt(omega2), fz_I, 0.06)
 
-
+fig, ax = plt.subplots()
+ax.plot(x_t, y_t)
+ax.set_xlabel('Energies [eV]')
+ax.set_ylabel('Intensity []')
+fig.savefig('./spectrum_T2.pdf')
 		
  
