@@ -6,8 +6,8 @@ from gpaw.tddft import *
 # Reload ground state from before to
 calc = TDDFT("gsNa8.gpw")
 
-time_step = 30.0                  # 1 attoseconds = 0.041341 autime
-iterations = 1500                # 1500 x 30 as => 45 fs
+time_step = 15.0                  # 1 attoseconds = 0.041341 autime
+iterations = 3000                # 1500 x 30 as => 45 fs
 kick_strength = [1e-5,0.0,0.0]   # Kick to x-direction
 
 # Kick with a delta pulse to z-direction
