@@ -1,0 +1,921 @@
+rank=00 L00: Traceback (most recent call last):
+rank=00 L01:   File "T4.py", line 7, in <module>
+rank=00 L02:     calc = TDDFT("gsNa8.gpw")
+rank=00 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 123, in __init__
+rank=00 L04:     GPAW.__init__(self, filename, **kwargs)
+rank=00 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 152, in __init__
+rank=00 L06:     atoms, **kwargs)
+rank=00 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 469, in __init__
+rank=00 L08:     self.read(restart)  # read parameters, atoms and results
+rank=00 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 266, in read
+rank=00 L10:     reader = GPAW.read(self, filename)
+rank=00 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 202, in read
+rank=00 L12:     self.reader = reader = Reader(filename)
+rank=00 L13:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/io/__init__.py", line 4, in Reader
+rank=00 L14:     return ulm.Reader(filename)
+rank=00 L15:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/io/ulm.py", line 472, in __init__
+rank=00 L16:     fd = fd.open('rb')
+rank=00 L17:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1193, in open
+rank=00 L18:     opener=self._opener)
+rank=00 L19:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1046, in _opener
+rank=00 L20:     return self._accessor.open(self, flags, mode)
+rank=00 L21: FileNotFoundError: [Errno 2] No such file or directory: 'gsNa8.gpw'
+GPAW CLEANUP (node 0): <class 'FileNotFoundError'> occurred.  Calling MPI_Abort!
+rank=05 L00: Traceback (most recent call last):
+rank=05 L01:   File "T4.py", line 7, in <module>
+rank=05 L02:     calc = TDDFT("gsNa8.gpw")
+rank=05 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 123, in __init__
+rank=05 L04:     GPAW.__init__(self, filename, **kwargs)
+rank=05 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 152, in __init__
+rank=05 L06:     atoms, **kwargs)
+rank=05 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 469, in __init__
+rank=05 L08:     self.read(restart)  # read parameters, atoms and results
+rank=05 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 266, in read
+rank=05 L10:     reader = GPAW.read(self, filename)
+rank=05 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 202, in read
+rank=05 L12:     self.reader = reader = Reader(filename)
+rank=05 L13:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/io/__init__.py", line 4, in Reader
+rank=05 L14:     return ulm.Reader(filename)
+rank=05 L15:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/io/ulm.py", line 472, in __init__
+rank=05 L16:     fd = fd.open('rb')
+rank=05 L17:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1193, in open
+rank=05 L18:     opener=self._opener)
+rank=05 L19:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1046, in _opener
+rank=05 L20:     return self._accessor.open(self, flags, mode)
+rank=05 L21: FileNotFoundError: [Errno 2] No such file or directory: 'gsNa8.gpw'
+GPAW CLEANUP (node 5): <class 'FileNotFoundError'> occurred.  Calling MPI_Abort!
+rank=06 L00: Traceback (most recent call last):
+rank=06 L01:   File "T4.py", line 7, in <module>
+rank=06 L02:     calc = TDDFT("gsNa8.gpw")
+rank=06 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 123, in __init__
+rank=06 L04:     GPAW.__init__(self, filename, **kwargs)
+rank=06 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 152, in __init__
+rank=06 L06:     atoms, **kwargs)
+rank=06 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 469, in __init__
+rank=06 L08:     self.read(restart)  # read parameters, atoms and results
+rank=06 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 266, in read
+rank=06 L10:     reader = GPAW.read(self, filename)
+rank=06 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 202, in read
+rank=06 L12:     self.reader = reader = Reader(filename)
+rank=06 L13:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/io/__init__.py", line 4, in Reader
+rank=06 L14:     return ulm.Reader(filename)
+rank=06 L15:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/io/ulm.py", line 472, in __init__
+rank=06 L16:     fd = fd.open('rb')
+rank=06 L17:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1193, in open
+rank=06 L18:     opener=self._opener)
+rank=06 L19:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1046, in _opener
+rank=06 L20:     return self._accessor.open(self, flags, mode)
+rank=06 L21: FileNotFoundError: [Errno 2] No such file or directory: 'gsNa8.gpw'
+GPAW CLEANUP (node 6): <class 'FileNotFoundError'> occurred.  Calling MPI_Abort!
+rank=07 L00: Traceback (most recent call last):
+rank=07 L01:   File "T4.py", line 7, in <module>
+rank=07 L02:     calc = TDDFT("gsNa8.gpw")
+rank=07 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 123, in __init__
+rank=07 L04:     GPAW.__init__(self, filename, **kwargs)
+rank=07 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 152, in __init__
+rank=07 L06:     atoms, **kwargs)
+rank=07 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 469, in __init__
+rank=07 L08:     self.read(restart)  # read parameters, atoms and results
+rank=07 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 266, in read
+rank=07 L10:     reader = GPAW.read(self, filename)
+rank=07 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 202, in read
+rank=07 L12:     self.reader = reader = Reader(filename)
+rank=07 L13:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/io/__init__.py", line 4, in Reader
+rank=07 L14:     return ulm.Reader(filename)
+rank=07 L15:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/io/ulm.py", line 472, in __init__
+rank=07 L16:     fd = fd.open('rb')
+rank=07 L17:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1193, in open
+rank=07 L18:     opener=self._opener)
+rank=07 L19:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1046, in _opener
+rank=07 L20:     return self._accessor.open(self, flags, mode)
+rank=07 L21: FileNotFoundError: [Errno 2] No such file or directory: 'gsNa8.gpw'
+GPAW CLEANUP (node 7): <class 'FileNotFoundError'> occurred.  Calling MPI_Abort!
+rank=08 L00: Traceback (most recent call last):
+rank=08 L01:   File "T4.py", line 7, in <module>
+rank=08 L02:     calc = TDDFT("gsNa8.gpw")
+rank=08 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 123, in __init__
+rank=08 L04:     GPAW.__init__(self, filename, **kwargs)
+rank=08 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 152, in __init__
+rank=08 L06:     atoms, **kwargs)
+rank=08 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 469, in __init__
+rank=08 L08:     self.read(restart)  # read parameters, atoms and results
+rank=08 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 266, in read
+rank=08 L10:     reader = GPAW.read(self, filename)
+rank=08 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 202, in read
+rank=08 L12:     self.reader = reader = Reader(filename)
+rank=08 L13:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/io/__init__.py", line 4, in Reader
+rank=08 L14:     return ulm.Reader(filename)
+rank=08 L15:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/io/ulm.py", line 472, in __init__
+rank=08 L16:     fd = fd.open('rb')
+rank=08 L17:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1193, in open
+rank=08 L18:     opener=self._opener)
+rank=08 L19:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1046, in _opener
+rank=08 L20:     return self._accessor.open(self, flags, mode)
+rank=08 L21: FileNotFoundError: [Errno 2] No such file or directory: 'gsNa8.gpw'
+GPAW CLEANUP (node 8): <class 'FileNotFoundError'> occurred.  Calling MPI_Abort!
+rank=09 L00: Traceback (most recent call last):
+rank=09 L01:   File "T4.py", line 7, in <module>
+rank=09 L02:     calc = TDDFT("gsNa8.gpw")
+rank=09 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 123, in __init__
+rank=09 L04:     GPAW.__init__(self, filename, **kwargs)
+rank=09 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 152, in __init__
+rank=09 L06:     atoms, **kwargs)
+rank=09 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 469, in __init__
+rank=09 L08:     self.read(restart)  # read parameters, atoms and results
+rank=09 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 266, in read
+rank=09 L10:     reader = GPAW.read(self, filename)
+rank=09 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 202, in read
+rank=09 L12:     self.reader = reader = Reader(filename)
+rank=09 L13:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/io/__init__.py", line 4, in Reader
+rank=09 L14:     return ulm.Reader(filename)
+rank=09 L15:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/io/ulm.py", line 472, in __init__
+rank=09 L16:     fd = fd.open('rb')
+rank=09 L17:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1193, in open
+rank=09 L18:     opener=self._opener)
+rank=09 L19:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1046, in _opener
+rank=09 L20:     return self._accessor.open(self, flags, mode)
+rank=09 L21: FileNotFoundError: [Errno 2] No such file or directory: 'gsNa8.gpw'
+GPAW CLEANUP (node 9): <class 'FileNotFoundError'> occurred.  Calling MPI_Abort!
+rank=11 L00: Traceback (most recent call last):
+rank=11 L01:   File "T4.py", line 7, in <module>
+rank=11 L02:     calc = TDDFT("gsNa8.gpw")
+rank=11 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 123, in __init__
+rank=11 L04:     GPAW.__init__(self, filename, **kwargs)
+rank=11 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 152, in __init__
+rank=11 L06:     atoms, **kwargs)
+rank=11 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 469, in __init__
+rank=11 L08:     self.read(restart)  # read parameters, atoms and results
+rank=11 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 266, in read
+rank=11 L10:     reader = GPAW.read(self, filename)
+rank=11 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 202, in read
+rank=11 L12:     self.reader = reader = Reader(filename)
+rank=11 L13:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/io/__init__.py", line 4, in Reader
+rank=11 L14:     return ulm.Reader(filename)
+rank=11 L15:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/io/ulm.py", line 472, in __init__
+rank=11 L16:     fd = fd.open('rb')
+rank=11 L17:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1193, in open
+rank=11 L18:     opener=self._opener)
+rank=11 L19:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1046, in _opener
+rank=11 L20:     return self._accessor.open(self, flags, mode)
+rank=11 L21: FileNotFoundError: [Errno 2] No such file or directory: 'gsNa8.gpw'
+GPAW CLEANUP (node 11): <class 'FileNotFoundError'> occurred.  Calling MPI_Abort!
+rank=18 L00: Traceback (most recent call last):
+rank=18 L01:   File "T4.py", line 7, in <module>
+rank=18 L02:     calc = TDDFT("gsNa8.gpw")
+rank=18 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 123, in __init__
+rank=18 L04:     GPAW.__init__(self, filename, **kwargs)
+rank=18 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 152, in __init__
+rank=18 L06:     atoms, **kwargs)
+rank=18 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 469, in __init__
+rank=18 L08:     self.read(restart)  # read parameters, atoms and results
+rank=18 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 266, in read
+rank=18 L10:     reader = GPAW.read(self, filename)
+rank=18 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 202, in read
+rank=18 L12:     self.reader = reader = Reader(filename)
+rank=18 L13:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/io/__init__.py", line 4, in Reader
+rank=18 L14:     return ulm.Reader(filename)
+rank=18 L15:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/io/ulm.py", line 472, in __init__
+rank=18 L16:     fd = fd.open('rb')
+rank=18 L17:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1193, in open
+rank=18 L18:     opener=self._opener)
+rank=18 L19:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1046, in _opener
+rank=18 L20:     return self._accessor.open(self, flags, mode)
+rank=18 L21: FileNotFoundError: [Errno 2] No such file or directory: 'gsNa8.gpw'
+GPAW CLEANUP (node 18): <class 'FileNotFoundError'> occurred.  Calling MPI_Abort!
+rank=03 L00: Traceback (most recent call last):
+rank=03 L01:   File "T4.py", line 7, in <module>
+rank=03 L02:     calc = TDDFT("gsNa8.gpw")
+rank=03 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 123, in __init__
+rank=03 L04:     GPAW.__init__(self, filename, **kwargs)
+rank=03 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 152, in __init__
+rank=03 L06:     atoms, **kwargs)
+rank=03 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 469, in __init__
+rank=03 L08:     self.read(restart)  # read parameters, atoms and results
+rank=03 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 266, in read
+rank=03 L10:     reader = GPAW.read(self, filename)
+rank=03 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 202, in read
+rank=03 L12:     self.reader = reader = Reader(filename)
+rank=03 L13:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/io/__init__.py", line 4, in Reader
+rank=03 L14:     return ulm.Reader(filename)
+rank=03 L15:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/io/ulm.py", line 472, in __init__
+rank=03 L16:     fd = fd.open('rb')
+rank=03 L17:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1193, in open
+rank=03 L18:     opener=self._opener)
+rank=03 L19:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1046, in _opener
+rank=03 L20:     return self._accessor.open(self, flags, mode)
+rank=03 L21: FileNotFoundError: [Errno 2] No such file or directory: 'gsNa8.gpw'
+GPAW CLEANUP (node 3): <class 'FileNotFoundError'> occurred.  Calling MPI_Abort!
+rank=02 L00: Traceback (most recent call last):
+rank=02 L01:   File "T4.py", line 7, in <module>
+rank=02 L02:     calc = TDDFT("gsNa8.gpw")
+rank=02 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 123, in __init__
+rank=02 L04:     GPAW.__init__(self, filename, **kwargs)
+rank=02 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 152, in __init__
+rank=02 L06:     atoms, **kwargs)
+rank=02 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 469, in __init__
+rank=02 L08:     self.read(restart)  # read parameters, atoms and results
+rank=02 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 266, in read
+rank=02 L10:     reader = GPAW.read(self, filename)
+rank=02 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 202, in read
+rank=02 L12:     self.reader = reader = Reader(filename)
+rank=02 L13:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/io/__init__.py", line 4, in Reader
+rank=02 L14:     return ulm.Reader(filename)
+rank=02 L15:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/io/ulm.py", line 472, in __init__
+rank=02 L16:     fd = fd.open('rb')
+rank=02 L17:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1193, in open
+rank=02 L18:     opener=self._opener)
+rank=02 L19:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1046, in _opener
+rank=02 L20:     return self._accessor.open(self, flags, mode)
+rank=02 L21: FileNotFoundError: [Errno 2] No such file or directory: 'gsNa8.gpw'
+GPAW CLEANUP (node 2): <class 'FileNotFoundError'> occurred.  Calling MPI_Abort!
+rank=15 L00: Traceback (most recent call last):
+rank=15 L01:   File "T4.py", line 7, in <module>
+rank=15 L02:     calc = TDDFT("gsNa8.gpw")
+rank=15 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 123, in __init__
+rank=15 L04:     GPAW.__init__(self, filename, **kwargs)
+rank=15 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 152, in __init__
+rank=15 L06:     atoms, **kwargs)
+rank=15 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 469, in __init__
+rank=15 L08:     self.read(restart)  # read parameters, atoms and results
+rank=15 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 266, in read
+rank=15 L10:     reader = GPAW.read(self, filename)
+rank=15 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 202, in read
+rank=15 L12:     self.reader = reader = Reader(filename)
+rank=15 L13:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/io/__init__.py", line 4, in Reader
+rank=15 L14:     return ulm.Reader(filename)
+rank=15 L15:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/io/ulm.py", line 472, in __init__
+rank=15 L16:     fd = fd.open('rb')
+rank=15 L17:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1193, in open
+rank=15 L18:     opener=self._opener)
+rank=15 L19:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1046, in _opener
+rank=15 L20:     return self._accessor.open(self, flags, mode)
+rank=15 L21: FileNotFoundError: [Errno 2] No such file or directory: 'gsNa8.gpw'
+GPAW CLEANUP (node 15): <class 'FileNotFoundError'> occurred.  Calling MPI_Abort!
+rank=01 L00: Traceback (most recent call last):
+rank=01 L01:   File "T4.py", line 7, in <module>
+rank=01 L02:     calc = TDDFT("gsNa8.gpw")
+rank=01 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 123, in __init__
+rank=01 L04:     GPAW.__init__(self, filename, **kwargs)
+rank=01 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 152, in __init__
+rank=01 L06:     atoms, **kwargs)
+rank=01 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 469, in __init__
+rank=01 L08:     self.read(restart)  # read parameters, atoms and results
+rank=01 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 266, in read
+rank=01 L10:     reader = GPAW.read(self, filename)
+rank=01 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 202, in read
+rank=01 L12:     self.reader = reader = Reader(filename)
+rank=01 L13:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/io/__init__.py", line 4, in Reader
+rank=01 L14:     return ulm.Reader(filename)
+rank=01 L15:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/io/ulm.py", line 472, in __init__
+rank=01 L16:     fd = fd.open('rb')
+rank=01 L17:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1193, in open
+rank=01 L18:     opener=self._opener)
+rank=01 L19:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1046, in _opener
+rank=01 L20:     return self._accessor.open(self, flags, mode)
+rank=01 L21: FileNotFoundError: [Errno 2] No such file or directory: 'gsNa8.gpw'
+GPAW CLEANUP (node 1): <class 'FileNotFoundError'> occurred.  Calling MPI_Abort!
+rank=14 L00: Traceback (most recent call last):
+rank=14 L01:   File "T4.py", line 7, in <module>
+rank=14 L02:     calc = TDDFT("gsNa8.gpw")
+rank=14 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 123, in __init__
+rank=14 L04:     GPAW.__init__(self, filename, **kwargs)
+rank=14 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 152, in __init__
+rank=14 L06:     atoms, **kwargs)
+rank=14 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 469, in __init__
+rank=14 L08:     self.read(restart)  # read parameters, atoms and results
+rank=14 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 266, in read
+rank=14 L10:     reader = GPAW.read(self, filename)
+rank=14 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 202, in read
+rank=14 L12:     self.reader = reader = Reader(filename)
+rank=14 L13:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/io/__init__.py", line 4, in Reader
+rank=14 L14:     return ulm.Reader(filename)
+rank=14 L15:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/io/ulm.py", line 472, in __init__
+rank=14 L16:     fd = fd.open('rb')
+rank=14 L17:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1193, in open
+rank=14 L18:     opener=self._opener)
+rank=14 L19:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1046, in _opener
+rank=14 L20:     return self._accessor.open(self, flags, mode)
+rank=14 L21: FileNotFoundError: [Errno 2] No such file or directory: 'gsNa8.gpw'
+GPAW CLEANUP (node 14): <class 'FileNotFoundError'> occurred.  Calling MPI_Abort!
+rank=04 L00: Traceback (most recent call last):
+rank=04 L01:   File "T4.py", line 7, in <module>
+rank=04 L02:     calc = TDDFT("gsNa8.gpw")
+rank=04 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 123, in __init__
+rank=04 L04:     GPAW.__init__(self, filename, **kwargs)
+rank=04 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 152, in __init__
+rank=04 L06:     atoms, **kwargs)
+rank=04 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 469, in __init__
+rank=04 L08:     self.read(restart)  # read parameters, atoms and results
+rank=04 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 266, in read
+rank=04 L10:     reader = GPAW.read(self, filename)
+rank=04 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 202, in read
+rank=04 L12:     self.reader = reader = Reader(filename)
+rank=04 L13:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/io/__init__.py", line 4, in Reader
+rank=04 L14:     return ulm.Reader(filename)
+rank=04 L15:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/io/ulm.py", line 472, in __init__
+rank=04 L16:     fd = fd.open('rb')
+rank=04 L17:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1193, in open
+rank=04 L18:     opener=self._opener)
+rank=04 L19:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1046, in _opener
+rank=04 L20:     return self._accessor.open(self, flags, mode)
+rank=04 L21: FileNotFoundError: [Errno 2] No such file or directory: 'gsNa8.gpw'
+GPAW CLEANUP (node 4): <class 'FileNotFoundError'> occurred.  Calling MPI_Abort!
+rank=13 L00: Traceback (most recent call last):
+rank=13 L01:   File "T4.py", line 7, in <module>
+rank=13 L02:     calc = TDDFT("gsNa8.gpw")
+rank=13 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 123, in __init__
+rank=13 L04:     GPAW.__init__(self, filename, **kwargs)
+rank=13 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 152, in __init__
+rank=13 L06:     atoms, **kwargs)
+rank=13 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 469, in __init__
+rank=13 L08:     self.read(restart)  # read parameters, atoms and results
+rank=13 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 266, in read
+rank=13 L10:     reader = GPAW.read(self, filename)
+rank=13 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 202, in read
+rank=13 L12:     self.reader = reader = Reader(filename)
+rank=13 L13:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/io/__init__.py", line 4, in Reader
+rank=13 L14:     return ulm.Reader(filename)
+rank=13 L15:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/io/ulm.py", line 472, in __init__
+rank=13 L16:     fd = fd.open('rb')
+rank=13 L17:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1193, in open
+rank=13 L18:     opener=self._opener)
+rank=13 L19:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1046, in _opener
+rank=13 L20:     return self._accessor.open(self, flags, mode)
+rank=13 L21: FileNotFoundError: [Errno 2] No such file or directory: 'gsNa8.gpw'
+GPAW CLEANUP (node 13): <class 'FileNotFoundError'> occurred.  Calling MPI_Abort!
+rank=16 L00: Traceback (most recent call last):
+rank=16 L01:   File "T4.py", line 7, in <module>
+rank=16 L02:     calc = TDDFT("gsNa8.gpw")
+rank=16 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 123, in __init__
+rank=16 L04:     GPAW.__init__(self, filename, **kwargs)
+rank=16 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 152, in __init__
+rank=16 L06:     atoms, **kwargs)
+rank=16 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 469, in __init__
+rank=16 L08:     self.read(restart)  # read parameters, atoms and results
+rank=16 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 266, in read
+rank=16 L10:     reader = GPAW.read(self, filename)
+rank=16 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 202, in read
+rank=16 L12:     self.reader = reader = Reader(filename)
+rank=16 L13:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/io/__init__.py", line 4, in Reader
+rank=16 L14:     return ulm.Reader(filename)
+rank=16 L15:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/io/ulm.py", line 472, in __init__
+rank=16 L16:     fd = fd.open('rb')
+rank=16 L17:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1193, in open
+rank=16 L18:     opener=self._opener)
+rank=16 L19:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1046, in _opener
+rank=16 L20:     return self._accessor.open(self, flags, mode)
+rank=16 L21: FileNotFoundError: [Errno 2] No such file or directory: 'gsNa8.gpw'
+GPAW CLEANUP (node 16): <class 'FileNotFoundError'> occurred.  Calling MPI_Abort!
+rank=10 L00: Traceback (most recent call last):
+rank=10 L01:   File "T4.py", line 7, in <module>
+rank=10 L02:     calc = TDDFT("gsNa8.gpw")
+rank=10 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 123, in __init__
+rank=10 L04:     GPAW.__init__(self, filename, **kwargs)
+rank=10 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 152, in __init__
+rank=10 L06:     atoms, **kwargs)
+rank=10 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 469, in __init__
+rank=10 L08:     self.read(restart)  # read parameters, atoms and results
+rank=10 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 266, in read
+rank=10 L10:     reader = GPAW.read(self, filename)
+rank=10 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 202, in read
+rank=10 L12:     self.reader = reader = Reader(filename)
+rank=10 L13:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/io/__init__.py", line 4, in Reader
+rank=10 L14:     return ulm.Reader(filename)
+rank=10 L15:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/io/ulm.py", line 472, in __init__
+rank=10 L16:     fd = fd.open('rb')
+rank=10 L17:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1193, in open
+rank=10 L18:     opener=self._opener)
+rank=10 L19:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1046, in _opener
+rank=10 L20:     return self._accessor.open(self, flags, mode)
+rank=10 L21: FileNotFoundError: [Errno 2] No such file or directory: 'gsNa8.gpw'
+GPAW CLEANUP (node 10): <class 'FileNotFoundError'> occurred.  Calling MPI_Abort!
+rank=12 L00: Traceback (most recent call last):
+rank=12 L01:   File "T4.py", line 7, in <module>
+rank=12 L02:     calc = TDDFT("gsNa8.gpw")
+rank=12 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 123, in __init__
+rank=12 L04:     GPAW.__init__(self, filename, **kwargs)
+rank=12 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 152, in __init__
+rank=12 L06:     atoms, **kwargs)
+rank=12 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 469, in __init__
+rank=12 L08:     self.read(restart)  # read parameters, atoms and results
+rank=12 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 266, in read
+rank=12 L10:     reader = GPAW.read(self, filename)
+rank=12 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 202, in read
+rank=12 L12:     self.reader = reader = Reader(filename)
+rank=12 L13:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/io/__init__.py", line 4, in Reader
+rank=12 L14:     return ulm.Reader(filename)
+rank=12 L15:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/io/ulm.py", line 472, in __init__
+rank=12 L16:     fd = fd.open('rb')
+rank=12 L17:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1193, in open
+rank=12 L18:     opener=self._opener)
+rank=12 L19:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1046, in _opener
+rank=12 L20:     return self._accessor.open(self, flags, mode)
+rank=12 L21: FileNotFoundError: [Errno 2] No such file or directory: 'gsNa8.gpw'
+GPAW CLEANUP (node 12): <class 'FileNotFoundError'> occurred.  Calling MPI_Abort!
+rank=17 L00: Traceback (most recent call last):
+rank=17 L01:   File "T4.py", line 7, in <module>
+rank=17 L02:     calc = TDDFT("gsNa8.gpw")
+rank=17 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 123, in __init__
+rank=17 L04:     GPAW.__init__(self, filename, **kwargs)
+rank=17 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 152, in __init__
+rank=17 L06:     atoms, **kwargs)
+rank=17 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 469, in __init__
+rank=17 L08:     self.read(restart)  # read parameters, atoms and results
+rank=17 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 266, in read
+rank=17 L10:     reader = GPAW.read(self, filename)
+rank=17 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 202, in read
+rank=17 L12:     self.reader = reader = Reader(filename)
+rank=17 L13:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/io/__init__.py", line 4, in Reader
+rank=17 L14:     return ulm.Reader(filename)
+rank=17 L15:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/io/ulm.py", line 472, in __init__
+rank=17 L16:     fd = fd.open('rb')
+rank=17 L17:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1193, in open
+rank=17 L18:     opener=self._opener)
+rank=17 L19:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1046, in _opener
+rank=17 L20:     return self._accessor.open(self, flags, mode)
+rank=17 L21: FileNotFoundError: [Errno 2] No such file or directory: 'gsNa8.gpw'
+GPAW CLEANUP (node 17): <class 'FileNotFoundError'> occurred.  Calling MPI_Abort!
+rank=19 L00: Traceback (most recent call last):
+rank=19 L01:   File "T4.py", line 7, in <module>
+rank=19 L02:     calc = TDDFT("gsNa8.gpw")
+rank=19 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 123, in __init__
+rank=19 L04:     GPAW.__init__(self, filename, **kwargs)
+rank=19 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 152, in __init__
+rank=19 L06:     atoms, **kwargs)
+rank=19 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 469, in __init__
+rank=19 L08:     self.read(restart)  # read parameters, atoms and results
+rank=19 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 266, in read
+rank=19 L10:     reader = GPAW.read(self, filename)
+rank=19 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 202, in read
+rank=19 L12:     self.reader = reader = Reader(filename)
+rank=19 L13:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/io/__init__.py", line 4, in Reader
+rank=19 L14:     return ulm.Reader(filename)
+rank=19 L15:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/io/ulm.py", line 472, in __init__
+rank=19 L16:     fd = fd.open('rb')
+rank=19 L17:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1193, in open
+rank=19 L18:     opener=self._opener)
+rank=19 L19:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1046, in _opener
+rank=19 L20:     return self._accessor.open(self, flags, mode)
+rank=19 L21: FileNotFoundError: [Errno 2] No such file or directory: 'gsNa8.gpw'
+GPAW CLEANUP (node 19): <class 'FileNotFoundError'> occurred.  Calling MPI_Abort!
+rank=20 L00: Traceback (most recent call last):
+rank=20 L01:   File "T4.py", line 7, in <module>
+rank=20 L02:     calc = TDDFT("gsNa8.gpw")
+rank=20 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 123, in __init__
+rank=20 L04:     GPAW.__init__(self, filename, **kwargs)
+rank=20 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 152, in __init__
+rank=20 L06:     atoms, **kwargs)
+rank=20 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 469, in __init__
+rank=20 L08:     self.read(restart)  # read parameters, atoms and results
+rank=20 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 266, in read
+rank=20 L10:     reader = GPAW.read(self, filename)
+rank=20 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 202, in read
+rank=20 L12:     self.reader = reader = Reader(filename)
+rank=20 L13:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/io/__init__.py", line 4, in Reader
+rank=20 L14:     return ulm.Reader(filename)
+rank=20 L15:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/io/ulm.py", line 472, in __init__
+rank=20 L16:     fd = fd.open('rb')
+rank=20 L17:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1193, in open
+rank=20 L18:     opener=self._opener)
+rank=20 L19:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1046, in _opener
+rank=20 L20:     return self._accessor.open(self, flags, mode)
+rank=20 L21: FileNotFoundError: [Errno 2] No such file or directory: 'gsNa8.gpw'
+GPAW CLEANUP (node 20): <class 'FileNotFoundError'> occurred.  Calling MPI_Abort!
+rank=23 L00: Traceback (most recent call last):
+rank=23 L01:   File "T4.py", line 7, in <module>
+rank=23 L02:     calc = TDDFT("gsNa8.gpw")
+rank=23 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 123, in __init__
+rank=23 L04:     GPAW.__init__(self, filename, **kwargs)
+rank=23 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 152, in __init__
+rank=23 L06:     atoms, **kwargs)
+rank=23 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 469, in __init__
+rank=23 L08:     self.read(restart)  # read parameters, atoms and results
+rank=23 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 266, in read
+rank=23 L10:     reader = GPAW.read(self, filename)
+rank=23 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 202, in read
+rank=23 L12:     self.reader = reader = Reader(filename)
+rank=23 L13:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/io/__init__.py", line 4, in Reader
+rank=23 L14:     return ulm.Reader(filename)
+rank=23 L15:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/io/ulm.py", line 472, in __init__
+rank=23 L16:     fd = fd.open('rb')
+rank=23 L17:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1193, in open
+rank=23 L18:     opener=self._opener)
+rank=23 L19:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1046, in _opener
+rank=23 L20:     return self._accessor.open(self, flags, mode)
+rank=23 L21: FileNotFoundError: [Errno 2] No such file or directory: 'gsNa8.gpw'
+GPAW CLEANUP (node 23): <class 'FileNotFoundError'> occurred.  Calling MPI_Abort!
+rank=25 L00: Traceback (most recent call last):
+rank=25 L01:   File "T4.py", line 7, in <module>
+rank=25 L02:     calc = TDDFT("gsNa8.gpw")
+rank=25 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 123, in __init__
+rank=25 L04:     GPAW.__init__(self, filename, **kwargs)
+rank=25 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 152, in __init__
+rank=25 L06:     atoms, **kwargs)
+rank=25 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 469, in __init__
+rank=25 L08:     self.read(restart)  # read parameters, atoms and results
+rank=25 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 266, in read
+rank=25 L10:     reader = GPAW.read(self, filename)
+rank=25 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 202, in read
+rank=25 L12:     self.reader = reader = Reader(filename)
+rank=25 L13:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/io/__init__.py", line 4, in Reader
+rank=25 L14:     return ulm.Reader(filename)
+rank=25 L15:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/io/ulm.py", line 472, in __init__
+rank=25 L16:     fd = fd.open('rb')
+rank=25 L17:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1193, in open
+rank=25 L18:     opener=self._opener)
+rank=25 L19:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1046, in _opener
+rank=25 L20:     return self._accessor.open(self, flags, mode)
+rank=25 L21: FileNotFoundError: [Errno 2] No such file or directory: 'gsNa8.gpw'
+GPAW CLEANUP (node 25): <class 'FileNotFoundError'> occurred.  Calling MPI_Abort!
+rank=34 L00: Traceback (most recent call last):
+rank=34 L01:   File "T4.py", line 7, in <module>
+rank=34 L02:     calc = TDDFT("gsNa8.gpw")
+rank=34 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 123, in __init__
+rank=34 L04:     GPAW.__init__(self, filename, **kwargs)
+rank=34 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 152, in __init__
+rank=34 L06:     atoms, **kwargs)
+rank=34 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 469, in __init__
+rank=34 L08:     self.read(restart)  # read parameters, atoms and results
+rank=34 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 266, in read
+rank=34 L10:     reader = GPAW.read(self, filename)
+rank=34 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 202, in read
+rank=34 L12:     self.reader = reader = Reader(filename)
+rank=34 L13:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/io/__init__.py", line 4, in Reader
+rank=34 L14:     return ulm.Reader(filename)
+rank=34 L15:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/io/ulm.py", line 472, in __init__
+rank=34 L16:     fd = fd.open('rb')
+rank=34 L17:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1193, in open
+rank=34 L18:     opener=self._opener)
+rank=34 L19:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1046, in _opener
+rank=34 L20:     return self._accessor.open(self, flags, mode)
+rank=34 L21: FileNotFoundError: [Errno 2] No such file or directory: 'gsNa8.gpw'
+GPAW CLEANUP (node 34): <class 'FileNotFoundError'> occurred.  Calling MPI_Abort!
+rank=35 L00: Traceback (most recent call last):
+rank=35 L01:   File "T4.py", line 7, in <module>
+rank=35 L02:     calc = TDDFT("gsNa8.gpw")
+rank=35 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 123, in __init__
+rank=35 L04:     GPAW.__init__(self, filename, **kwargs)
+rank=35 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 152, in __init__
+rank=35 L06:     atoms, **kwargs)
+rank=35 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 469, in __init__
+rank=35 L08:     self.read(restart)  # read parameters, atoms and results
+rank=35 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 266, in read
+rank=35 L10:     reader = GPAW.read(self, filename)
+rank=35 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 202, in read
+rank=35 L12:     self.reader = reader = Reader(filename)
+rank=35 L13:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/io/__init__.py", line 4, in Reader
+rank=35 L14:     return ulm.Reader(filename)
+rank=35 L15:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/io/ulm.py", line 472, in __init__
+rank=35 L16:     fd = fd.open('rb')
+rank=35 L17:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1193, in open
+rank=35 L18:     opener=self._opener)
+rank=35 L19:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1046, in _opener
+rank=35 L20:     return self._accessor.open(self, flags, mode)
+rank=35 L21: FileNotFoundError: [Errno 2] No such file or directory: 'gsNa8.gpw'
+GPAW CLEANUP (node 35): <class 'FileNotFoundError'> occurred.  Calling MPI_Abort!
+rank=22 L00: Traceback (most recent call last):
+rank=22 L01:   File "T4.py", line 7, in <module>
+rank=22 L02:     calc = TDDFT("gsNa8.gpw")
+rank=22 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 123, in __init__
+rank=22 L04:     GPAW.__init__(self, filename, **kwargs)
+rank=22 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 152, in __init__
+rank=22 L06:     atoms, **kwargs)
+rank=22 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 469, in __init__
+rank=22 L08:     self.read(restart)  # read parameters, atoms and results
+rank=22 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 266, in read
+rank=22 L10:     reader = GPAW.read(self, filename)
+rank=22 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 202, in read
+rank=22 L12:     self.reader = reader = Reader(filename)
+rank=22 L13:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/io/__init__.py", line 4, in Reader
+rank=22 L14:     return ulm.Reader(filename)
+rank=22 L15:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/io/ulm.py", line 472, in __init__
+rank=22 L16:     fd = fd.open('rb')
+rank=22 L17:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1193, in open
+rank=22 L18:     opener=self._opener)
+rank=22 L19:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1046, in _opener
+rank=22 L20:     return self._accessor.open(self, flags, mode)
+rank=22 L21: FileNotFoundError: [Errno 2] No such file or directory: 'gsNa8.gpw'
+GPAW CLEANUP (node 22): <class 'FileNotFoundError'> occurred.  Calling MPI_Abort!
+rank=39 L00: Traceback (most recent call last):
+rank=39 L01:   File "T4.py", line 7, in <module>
+rank=39 L02:     calc = TDDFT("gsNa8.gpw")
+rank=39 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 123, in __init__
+rank=39 L04:     GPAW.__init__(self, filename, **kwargs)
+rank=39 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 152, in __init__
+rank=39 L06:     atoms, **kwargs)
+rank=39 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 469, in __init__
+rank=39 L08:     self.read(restart)  # read parameters, atoms and results
+rank=39 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 266, in read
+rank=39 L10:     reader = GPAW.read(self, filename)
+rank=39 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 202, in read
+rank=39 L12:     self.reader = reader = Reader(filename)
+rank=39 L13:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/io/__init__.py", line 4, in Reader
+rank=39 L14:     return ulm.Reader(filename)
+rank=39 L15:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/io/ulm.py", line 472, in __init__
+rank=39 L16:     fd = fd.open('rb')
+rank=39 L17:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1193, in open
+rank=39 L18:     opener=self._opener)
+rank=39 L19:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1046, in _opener
+rank=39 L20:     return self._accessor.open(self, flags, mode)
+rank=39 L21: FileNotFoundError: [Errno 2] No such file or directory: 'gsNa8.gpw'
+GPAW CLEANUP (node 39): <class 'FileNotFoundError'> occurred.  Calling MPI_Abort!
+rank=28 L00: Traceback (most recent call last):
+rank=28 L01:   File "T4.py", line 7, in <module>
+rank=28 L02:     calc = TDDFT("gsNa8.gpw")
+rank=28 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 123, in __init__
+rank=28 L04:     GPAW.__init__(self, filename, **kwargs)
+rank=28 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 152, in __init__
+rank=28 L06:     atoms, **kwargs)
+rank=28 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 469, in __init__
+rank=28 L08:     self.read(restart)  # read parameters, atoms and results
+rank=28 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 266, in read
+rank=28 L10:     reader = GPAW.read(self, filename)
+rank=28 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 202, in read
+rank=28 L12:     self.reader = reader = Reader(filename)
+rank=28 L13:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/io/__init__.py", line 4, in Reader
+rank=28 L14:     return ulm.Reader(filename)
+rank=28 L15:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/io/ulm.py", line 472, in __init__
+rank=28 L16:     fd = fd.open('rb')
+rank=28 L17:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1193, in open
+rank=28 L18:     opener=self._opener)
+rank=28 L19:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1046, in _opener
+rank=28 L20:     return self._accessor.open(self, flags, mode)
+rank=28 L21: FileNotFoundError: [Errno 2] No such file or directory: 'gsNa8.gpw'
+GPAW CLEANUP (node 28): <class 'FileNotFoundError'> occurred.  Calling MPI_Abort!
+rank=21 L00: Traceback (most recent call last):
+rank=21 L01:   File "T4.py", line 7, in <module>
+rank=21 L02:     calc = TDDFT("gsNa8.gpw")
+rank=21 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 123, in __init__
+rank=21 L04:     GPAW.__init__(self, filename, **kwargs)
+rank=21 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 152, in __init__
+rank=21 L06:     atoms, **kwargs)
+rank=21 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 469, in __init__
+rank=21 L08:     self.read(restart)  # read parameters, atoms and results
+rank=21 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 266, in read
+rank=21 L10:     reader = GPAW.read(self, filename)
+rank=21 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 202, in read
+rank=21 L12:     self.reader = reader = Reader(filename)
+rank=21 L13:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/io/__init__.py", line 4, in Reader
+rank=21 L14:     return ulm.Reader(filename)
+rank=21 L15:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/io/ulm.py", line 472, in __init__
+rank=21 L16:     fd = fd.open('rb')
+rank=21 L17:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1193, in open
+rank=21 L18:     opener=self._opener)
+rank=21 L19:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1046, in _opener
+rank=21 L20:     return self._accessor.open(self, flags, mode)
+rank=21 L21: FileNotFoundError: [Errno 2] No such file or directory: 'gsNa8.gpw'
+GPAW CLEANUP (node 21): <class 'FileNotFoundError'> occurred.  Calling MPI_Abort!
+rank=30 L00: Traceback (most recent call last):
+rank=30 L01:   File "T4.py", line 7, in <module>
+rank=30 L02:     calc = TDDFT("gsNa8.gpw")
+rank=30 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 123, in __init__
+rank=30 L04:     GPAW.__init__(self, filename, **kwargs)
+rank=30 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 152, in __init__
+rank=30 L06:     atoms, **kwargs)
+rank=30 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 469, in __init__
+rank=30 L08:     self.read(restart)  # read parameters, atoms and results
+rank=30 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 266, in read
+rank=30 L10:     reader = GPAW.read(self, filename)
+rank=30 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 202, in read
+rank=30 L12:     self.reader = reader = Reader(filename)
+rank=30 L13:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/io/__init__.py", line 4, in Reader
+rank=30 L14:     return ulm.Reader(filename)
+rank=30 L15:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/io/ulm.py", line 472, in __init__
+rank=30 L16:     fd = fd.open('rb')
+rank=30 L17:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1193, in open
+rank=30 L18:     opener=self._opener)
+rank=30 L19:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1046, in _opener
+rank=30 L20:     return self._accessor.open(self, flags, mode)
+rank=30 L21: FileNotFoundError: [Errno 2] No such file or directory: 'gsNa8.gpw'
+GPAW CLEANUP (node 30): <class 'FileNotFoundError'> occurred.  Calling MPI_Abort!
+rank=31 L00: Traceback (most recent call last):
+rank=31 L01:   File "T4.py", line 7, in <module>
+rank=31 L02:     calc = TDDFT("gsNa8.gpw")
+rank=31 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 123, in __init__
+rank=31 L04:     GPAW.__init__(self, filename, **kwargs)
+rank=31 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 152, in __init__
+rank=31 L06:     atoms, **kwargs)
+rank=31 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 469, in __init__
+rank=31 L08:     self.read(restart)  # read parameters, atoms and results
+rank=31 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 266, in read
+rank=31 L10:     reader = GPAW.read(self, filename)
+rank=31 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 202, in read
+rank=31 L12:     self.reader = reader = Reader(filename)
+rank=31 L13:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/io/__init__.py", line 4, in Reader
+rank=31 L14:     return ulm.Reader(filename)
+rank=31 L15:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/io/ulm.py", line 472, in __init__
+rank=31 L16:     fd = fd.open('rb')
+rank=31 L17:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1193, in open
+rank=31 L18:     opener=self._opener)
+rank=31 L19:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1046, in _opener
+rank=31 L20:     return self._accessor.open(self, flags, mode)
+rank=31 L21: FileNotFoundError: [Errno 2] No such file or directory: 'gsNa8.gpw'
+GPAW CLEANUP (node 31): <class 'FileNotFoundError'> occurred.  Calling MPI_Abort!
+rank=26 L00: Traceback (most recent call last):
+rank=26 L01:   File "T4.py", line 7, in <module>
+rank=26 L02:     calc = TDDFT("gsNa8.gpw")
+rank=26 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 123, in __init__
+rank=26 L04:     GPAW.__init__(self, filename, **kwargs)
+rank=26 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 152, in __init__
+rank=26 L06:     atoms, **kwargs)
+rank=26 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 469, in __init__
+rank=26 L08:     self.read(restart)  # read parameters, atoms and results
+rank=26 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 266, in read
+rank=26 L10:     reader = GPAW.read(self, filename)
+rank=26 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 202, in read
+rank=26 L12:     self.reader = reader = Reader(filename)
+rank=26 L13:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/io/__init__.py", line 4, in Reader
+rank=26 L14:     return ulm.Reader(filename)
+rank=26 L15:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/io/ulm.py", line 472, in __init__
+rank=26 L16:     fd = fd.open('rb')
+rank=26 L17:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1193, in open
+rank=26 L18:     opener=self._opener)
+rank=26 L19:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1046, in _opener
+rank=26 L20:     return self._accessor.open(self, flags, mode)
+rank=26 L21: FileNotFoundError: [Errno 2] No such file or directory: 'gsNa8.gpw'
+GPAW CLEANUP (node 26): <class 'FileNotFoundError'> occurred.  Calling MPI_Abort!
+rank=29 L00: Traceback (most recent call last):
+rank=29 L01:   File "T4.py", line 7, in <module>
+rank=29 L02:     calc = TDDFT("gsNa8.gpw")
+rank=29 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 123, in __init__
+rank=29 L04:     GPAW.__init__(self, filename, **kwargs)
+rank=29 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 152, in __init__
+rank=29 L06:     atoms, **kwargs)
+rank=29 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 469, in __init__
+rank=29 L08:     self.read(restart)  # read parameters, atoms and results
+rank=29 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 266, in read
+rank=29 L10:     reader = GPAW.read(self, filename)
+rank=29 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 202, in read
+rank=29 L12:     self.reader = reader = Reader(filename)
+rank=29 L13:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/io/__init__.py", line 4, in Reader
+rank=29 L14:     return ulm.Reader(filename)
+rank=29 L15:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/io/ulm.py", line 472, in __init__
+rank=29 L16:     fd = fd.open('rb')
+rank=29 L17:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1193, in open
+rank=29 L18:     opener=self._opener)
+rank=29 L19:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1046, in _opener
+rank=29 L20:     return self._accessor.open(self, flags, mode)
+rank=29 L21: FileNotFoundError: [Errno 2] No such file or directory: 'gsNa8.gpw'
+GPAW CLEANUP (node 29): <class 'FileNotFoundError'> occurred.  Calling MPI_Abort!
+rank=38 L00: Traceback (most recent call last):
+rank=38 L01:   File "T4.py", line 7, in <module>
+rank=38 L02:     calc = TDDFT("gsNa8.gpw")
+rank=38 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 123, in __init__
+rank=38 L04:     GPAW.__init__(self, filename, **kwargs)
+rank=38 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 152, in __init__
+rank=38 L06:     atoms, **kwargs)
+rank=38 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 469, in __init__
+rank=38 L08:     self.read(restart)  # read parameters, atoms and results
+rank=38 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 266, in read
+rank=38 L10:     reader = GPAW.read(self, filename)
+rank=38 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 202, in read
+rank=38 L12:     self.reader = reader = Reader(filename)
+rank=38 L13:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/io/__init__.py", line 4, in Reader
+rank=38 L14:     return ulm.Reader(filename)
+rank=38 L15:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/io/ulm.py", line 472, in __init__
+rank=38 L16:     fd = fd.open('rb')
+rank=38 L17:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1193, in open
+rank=38 L18:     opener=self._opener)
+rank=38 L19:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1046, in _opener
+rank=38 L20:     return self._accessor.open(self, flags, mode)
+rank=38 L21: FileNotFoundError: [Errno 2] No such file or directory: 'gsNa8.gpw'
+GPAW CLEANUP (node 38): <class 'FileNotFoundError'> occurred.  Calling MPI_Abort!
+rank=32 L00: Traceback (most recent call last):
+rank=32 L01:   File "T4.py", line 7, in <module>
+rank=32 L02:     calc = TDDFT("gsNa8.gpw")
+rank=32 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 123, in __init__
+rank=32 L04:     GPAW.__init__(self, filename, **kwargs)
+rank=32 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 152, in __init__
+rank=32 L06:     atoms, **kwargs)
+rank=32 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 469, in __init__
+rank=32 L08:     self.read(restart)  # read parameters, atoms and results
+rank=32 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 266, in read
+rank=32 L10:     reader = GPAW.read(self, filename)
+rank=32 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 202, in read
+rank=32 L12:     self.reader = reader = Reader(filename)
+rank=32 L13:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/io/__init__.py", line 4, in Reader
+rank=32 L14:     return ulm.Reader(filename)
+rank=32 L15:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/io/ulm.py", line 472, in __init__
+rank=32 L16:     fd = fd.open('rb')
+rank=32 L17:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1193, in open
+rank=32 L18:     opener=self._opener)
+rank=32 L19:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1046, in _opener
+rank=32 L20:     return self._accessor.open(self, flags, mode)
+rank=32 L21: FileNotFoundError: [Errno 2] No such file or directory: 'gsNa8.gpw'
+GPAW CLEANUP (node 32): <class 'FileNotFoundError'> occurred.  Calling MPI_Abort!
+rank=33 L00: Traceback (most recent call last):
+rank=33 L01:   File "T4.py", line 7, in <module>
+rank=33 L02:     calc = TDDFT("gsNa8.gpw")
+rank=33 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 123, in __init__
+rank=33 L04:     GPAW.__init__(self, filename, **kwargs)
+rank=33 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 152, in __init__
+rank=33 L06:     atoms, **kwargs)
+rank=33 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 469, in __init__
+rank=33 L08:     self.read(restart)  # read parameters, atoms and results
+rank=33 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 266, in read
+rank=33 L10:     reader = GPAW.read(self, filename)
+rank=33 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 202, in read
+rank=33 L12:     self.reader = reader = Reader(filename)
+rank=33 L13:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/io/__init__.py", line 4, in Reader
+rank=33 L14:     return ulm.Reader(filename)
+rank=33 L15:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/io/ulm.py", line 472, in __init__
+rank=33 L16:     fd = fd.open('rb')
+rank=33 L17:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1193, in open
+rank=33 L18:     opener=self._opener)
+rank=33 L19:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1046, in _opener
+rank=33 L20:     return self._accessor.open(self, flags, mode)
+rank=33 L21: FileNotFoundError: [Errno 2] No such file or directory: 'gsNa8.gpw'
+GPAW CLEANUP (node 33): <class 'FileNotFoundError'> occurred.  Calling MPI_Abort!
+rank=24 L00: Traceback (most recent call last):
+rank=24 L01:   File "T4.py", line 7, in <module>
+rank=24 L02:     calc = TDDFT("gsNa8.gpw")
+rank=24 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 123, in __init__
+rank=24 L04:     GPAW.__init__(self, filename, **kwargs)
+rank=24 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 152, in __init__
+rank=24 L06:     atoms, **kwargs)
+rank=24 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 469, in __init__
+rank=24 L08:     self.read(restart)  # read parameters, atoms and results
+rank=24 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 266, in read
+rank=24 L10:     reader = GPAW.read(self, filename)
+rank=24 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 202, in read
+rank=24 L12:     self.reader = reader = Reader(filename)
+rank=24 L13:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/io/__init__.py", line 4, in Reader
+rank=24 L14:     return ulm.Reader(filename)
+rank=24 L15:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/io/ulm.py", line 472, in __init__
+rank=24 L16:     fd = fd.open('rb')
+rank=24 L17:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1193, in open
+rank=24 L18:     opener=self._opener)
+rank=24 L19:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1046, in _opener
+rank=24 L20:     return self._accessor.open(self, flags, mode)
+rank=24 L21: FileNotFoundError: [Errno 2] No such file or directory: 'gsNa8.gpw'
+GPAW CLEANUP (node 24): <class 'FileNotFoundError'> occurred.  Calling MPI_Abort!
+rank=27 L00: Traceback (most recent call last):
+rank=27 L01:   File "T4.py", line 7, in <module>
+rank=27 L02:     calc = TDDFT("gsNa8.gpw")
+rank=27 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 123, in __init__
+rank=27 L04:     GPAW.__init__(self, filename, **kwargs)
+rank=27 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 152, in __init__
+rank=27 L06:     atoms, **kwargs)
+rank=27 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 469, in __init__
+rank=27 L08:     self.read(restart)  # read parameters, atoms and results
+rank=27 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 266, in read
+rank=27 L10:     reader = GPAW.read(self, filename)
+rank=27 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 202, in read
+rank=27 L12:     self.reader = reader = Reader(filename)
+rank=27 L13:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/io/__init__.py", line 4, in Reader
+rank=27 L14:     return ulm.Reader(filename)
+rank=27 L15:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/io/ulm.py", line 472, in __init__
+rank=27 L16:     fd = fd.open('rb')
+rank=27 L17:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1193, in open
+rank=27 L18:     opener=self._opener)
+rank=27 L19:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1046, in _opener
+rank=27 L20:     return self._accessor.open(self, flags, mode)
+rank=27 L21: FileNotFoundError: [Errno 2] No such file or directory: 'gsNa8.gpw'
+GPAW CLEANUP (node 27): <class 'FileNotFoundError'> occurred.  Calling MPI_Abort!
+rank=36 L00: Traceback (most recent call last):
+rank=36 L01:   File "T4.py", line 7, in <module>
+rank=36 L02:     calc = TDDFT("gsNa8.gpw")
+rank=36 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 123, in __init__
+rank=36 L04:     GPAW.__init__(self, filename, **kwargs)
+rank=36 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 152, in __init__
+rank=36 L06:     atoms, **kwargs)
+rank=36 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 469, in __init__
+rank=36 L08:     self.read(restart)  # read parameters, atoms and results
+rank=36 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 266, in read
+rank=36 L10:     reader = GPAW.read(self, filename)
+rank=36 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 202, in read
+rank=36 L12:     self.reader = reader = Reader(filename)
+rank=36 L13:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/io/__init__.py", line 4, in Reader
+rank=36 L14:     return ulm.Reader(filename)
+rank=36 L15:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/io/ulm.py", line 472, in __init__
+rank=36 L16:     fd = fd.open('rb')
+rank=36 L17:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1193, in open
+rank=36 L18:     opener=self._opener)
+rank=36 L19:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1046, in _opener
+rank=36 L20:     return self._accessor.open(self, flags, mode)
+rank=36 L21: FileNotFoundError: [Errno 2] No such file or directory: 'gsNa8.gpw'
+GPAW CLEANUP (node 36): <class 'FileNotFoundError'> occurred.  Calling MPI_Abort!
+rank=37 L00: Traceback (most recent call last):
+rank=37 L01:   File "T4.py", line 7, in <module>
+rank=37 L02:     calc = TDDFT("gsNa8.gpw")
+rank=37 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 123, in __init__
+rank=37 L04:     GPAW.__init__(self, filename, **kwargs)
+rank=37 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 152, in __init__
+rank=37 L06:     atoms, **kwargs)
+rank=37 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 469, in __init__
+rank=37 L08:     self.read(restart)  # read parameters, atoms and results
+rank=37 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/tddft/__init__.py", line 266, in read
+rank=37 L10:     reader = GPAW.read(self, filename)
+rank=37 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 202, in read
+rank=37 L12:     self.reader = reader = Reader(filename)
+rank=37 L13:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/io/__init__.py", line 4, in Reader
+rank=37 L14:     return ulm.Reader(filename)
+rank=37 L15:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/io/ulm.py", line 472, in __init__
+rank=37 L16:     fd = fd.open('rb')
+rank=37 L17:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1193, in open
+rank=37 L18:     opener=self._opener)
+rank=37 L19:   File "/apps/Hebbe7/software/Compiler/GCCcore/8.3.0/Python/3.7.4/lib/python3.7/pathlib.py", line 1046, in _opener
+rank=37 L20:     return self._accessor.open(self, flags, mode)
+rank=37 L21: FileNotFoundError: [Errno 2] No such file or directory: 'gsNa8.gpw'
+GPAW CLEANUP (node 37): <class 'FileNotFoundError'> occurred.  Calling MPI_Abort!
+application called MPI_Abort(MPI_COMM_WORLD, 42) - process 0
