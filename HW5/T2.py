@@ -19,6 +19,6 @@ i=0
 for a in a:
     atoms.set_cell(start_cell*a)
     energies[i] = atoms.get_potential_energy()
-    print(f'{start_cell/2.025*a} energy :  {energies[i]}')
+    #print(f'{start_cell/2.025*a} energy :  {energies[i]}')
     f.write(f"{start_cell/2.025*a}, {energies[i]}\n")
     i += 1
