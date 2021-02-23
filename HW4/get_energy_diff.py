@@ -6,10 +6,12 @@ from gpaw.lrtddft import LrTDDFT, photoabsorption_spectrum
 # Reload ground state from before to
 calc = GPAW("Na_110n.gpw")
 #calc = GPAW("gsNa8.gpw")
-print(calc.get_eigenvalues())
+#print(calc.get_eigenvalues())
 
 dE = 6  # maximal Kohn-Sham transition energy to consider in eV
-lr = LrTDDFT(calc, xc='LDA', restrict={'energy_range': dE})
+lr = LrTDDFT(calc,
+            xc='LDA',
+            restrict={'energy_range': dE})
 lr.write('Na_110.dat.gz')
 
 lr = LrTDDFT.read('Na_110.gz')
@@ -20,4 +22,4 @@ photoabsorption_spectrum(lr,
                          'spectrum_w.05eV.dat',  # data file name
                          width=0.06)             # width in eV
 
-lr.write(’LrTDDFTresults.dat’) # Save for task 2
+lr.write('LrTDDFTresults.dat') # Save for task 2

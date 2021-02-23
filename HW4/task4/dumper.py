@@ -2,7 +2,6 @@ import numpy as np
 from ase.units import Hartree
 from gpaw.lrtddft import LrTDDFT
 
-
 def dump_data(lr, fpath):
 	'''
 		NOTE: This dumps everything in atomic units
@@ -50,4 +49,4 @@ def dump_data(lr, fpath):
 						K_pp=K_pp)
 
 
-dump_data(LrTDDFT.read('Na_110.gz'),'dumpsterboi.dump')
+dump_data(LrTDDFT.read('be'),'dumpsterboi.dump')
