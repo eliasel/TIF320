@@ -27,6 +27,3 @@ for cluster in db.select():
         dos = DOS(calc)
         d = d + (dos.get_dos(),)
         e = e + (dos.get_energies(),)
-
-
-
