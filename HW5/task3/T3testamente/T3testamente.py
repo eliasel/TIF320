@@ -8,7 +8,7 @@ from ase.vibrations import Vibrations
 #connect to database and retrieve atoms object
 db = connect("Al-clusters-initial.db")
 calc = EAM(potential = 'al_potential.alloy')
-i=6
+i=2
 #for cluster in db.select():
    # atoms = cluster.toatoms()
 atoms = db[i].toatoms()
@@ -16,9 +16,12 @@ No_atoms = len(atoms)
 atoms.calc = calc
 BFGS(atoms).run(fmax=0.01)
 vib = Vibrations(atoms)
+vib.clean()
 vib.run()
 vib.summary()
-vib.write_dos(out='vib-dos'+str(i)+'.dat')
+#vib.combine()
+vib.clean()
+#vib.write_dos(out='vib-dos'+str(i)+'.dat')
 freq = vib.get_frequencies()
 print(vib.get_mode(1))
 print(freq)
@@ -27,4 +30,4 @@ print(len(freq))
 
 
 
-db.write(atoms, data = {'frequency' : freq, 'density-of-states' : dos})
+db.write(atoms, data = {'frequency' : freq})
