@@ -11,9 +11,9 @@ calc = EAM(potential = 'al_potential.alloy')
 i=0
 for cluster in db.select():
     atoms = cluster.toatoms()
-    BFGS(atoms).run(fmax=0.01)
     N_atoms = len(atoms)
     atoms.calc = calc
+    BFGS(atoms).run(fmax=0.01)
     pot_E = atoms.get_potential_energy()
     print(f'cohesive energy for index {i}: {pot_E/No_atoms} eV?')
     i += 1
