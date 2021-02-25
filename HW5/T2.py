@@ -26,10 +26,10 @@ for a in a:
     energies[i] = atoms.get_potential_energy()
 
     f.write(f"{a}, {energies[i]}\n")
-    i += 1
     if (energies[i]>min_energy):
         min_energy = energies[i]
         best_a = a
-
+    i += 1
+    
 atoms.set_cell(start_cell*best_a)
 write('bulk_Al.db', atoms)
