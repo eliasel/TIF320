@@ -9,11 +9,12 @@
 #SBATCH -e stderr # stderr goes to this file
 module purge
 #module load Python/3.7.4 Tkinter/3.7.4 intel/2019a ASE GPAW
-module load iccifort/2019.5.281 impi/2018.5.288
-module load GPAW/20.1.0-Python-3.7.4
-module load ASE/3.19.0-Python-3.7.4
+#module load iccifort/2019.5.281 impi/2018.5.288
+#module load GPAW/20.10.0-Python-3.7.4
+#module load ASE/3.19.0-Python-3.7.4
+module load  GCC/8.3.0 OpenMPI/3.1.4 GPAW/20.10.0-ASE-3.20.1-Python-3.7.4
 
-mpirun python T3.py
+mpirun python bandstructure.py
 
 
 echo "runing completed at" $(date +"%I:%M:%S") >> Done.txt
