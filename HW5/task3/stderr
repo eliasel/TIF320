@@ -1,0 +1,228 @@
+Traceback (most recent call last):
+  File "T3.py", line 26, in <module>
+    vib.summary()
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 400, in summary
+    hnu = self.get_energies(method, direction)
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 364, in get_energies
+    self.read(method, direction, **kw)
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 318, in read
+    fplus = load(name + '+.pckl', combined_data)
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 293, in load
+    f = pickleload(fl)
+EOFError: Ran out of input
+Traceback (most recent call last):
+  File "T3.py", line 26, in <module>
+    vib.summary()
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 400, in summary
+    hnu = self.get_energies(method, direction)
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 364, in get_energies
+    self.read(method, direction, **kw)
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 318, in read
+    fplus = load(name + '+.pckl', combined_data)
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 293, in load
+    f = pickleload(fl)
+EOFError: Ran out of input
+Traceback (most recent call last):
+  File "T3.py", line 26, in <module>
+    vib.summary()
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 400, in summary
+    hnu = self.get_energies(method, direction)
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 364, in get_energies
+    self.read(method, direction, **kw)
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 318, in read
+    fplus = load(name + '+.pckl', combined_data)
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 293, in load
+    f = pickleload(fl)
+EOFError: Ran out of input
+Traceback (most recent call last):
+  File "T3.py", line 26, in <module>
+    vib.summary()
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 400, in summary
+    hnu = self.get_energies(method, direction)
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 364, in get_energies
+    self.read(method, direction, **kw)
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 318, in read
+    fplus = load(name + '+.pckl', combined_data)
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 293, in load
+    f = pickleload(fl)
+EOFError: Ran out of input
+Traceback (most recent call last):
+  File "T3.py", line 26, in <module>
+    vib.summary()
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 400, in summary
+    hnu = self.get_energies(method, direction)
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 364, in get_energies
+    self.read(method, direction, **kw)
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 318, in read
+    fplus = load(name + '+.pckl', combined_data)
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 293, in load
+    f = pickleload(fl)
+EOFError: Ran out of input
+Traceback (most recent call last):
+  File "T3.py", line 26, in <module>
+    vib.summary()
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 400, in summary
+    hnu = self.get_energies(method, direction)
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 364, in get_energies
+    self.read(method, direction, **kw)
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 318, in read
+    fplus = load(name + '+.pckl', combined_data)
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 293, in load
+    f = pickleload(fl)
+EOFError: Ran out of input
+Traceback (most recent call last):
+  File "T3.py", line 26, in <module>
+    vib.summary()
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 400, in summary
+    hnu = self.get_energies(method, direction)
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 364, in get_energies
+    self.read(method, direction, **kw)
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 318, in read
+    fplus = load(name + '+.pckl', combined_data)
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 293, in load
+    f = pickleload(fl)
+EOFError: Ran out of input
+Traceback (most recent call last):
+  File "T3.py", line 26, in <module>
+    vib.summary()
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 400, in summary
+    hnu = self.get_energies(method, direction)
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 364, in get_energies
+    self.read(method, direction, **kw)
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 318, in read
+    fplus = load(name + '+.pckl', combined_data)
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 293, in load
+    f = pickleload(fl)
+EOFError: Ran out of input
+Traceback (most recent call last):
+  File "T3.py", line 26, in <module>
+    vib.summary()
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 400, in summary
+    hnu = self.get_energies(method, direction)
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 364, in get_energies
+    self.read(method, direction, **kw)
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 318, in read
+    fplus = load(name + '+.pckl', combined_data)
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 293, in load
+    f = pickleload(fl)
+EOFError: Ran out of input
+Traceback (most recent call last):
+  File "T3.py", line 26, in <module>
+    vib.summary()
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 400, in summary
+    hnu = self.get_energies(method, direction)
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 364, in get_energies
+    self.read(method, direction, **kw)
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 318, in read
+    fplus = load(name + '+.pckl', combined_data)
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 293, in load
+    f = pickleload(fl)
+EOFError: Ran out of input
+Traceback (most recent call last):
+  File "T3.py", line 26, in <module>
+    vib.summary()
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 400, in summary
+    hnu = self.get_energies(method, direction)
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 364, in get_energies
+    self.read(method, direction, **kw)
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 317, in read
+    fminus = load(name + '-.pckl', combined_data)
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 293, in load
+    f = pickleload(fl)
+EOFError: Ran out of input
+Traceback (most recent call last):
+  File "T3.py", line 26, in <module>
+    vib.summary()
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 400, in summary
+    hnu = self.get_energies(method, direction)
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 364, in get_energies
+    self.read(method, direction, **kw)
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 317, in read
+    fminus = load(name + '-.pckl', combined_data)
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 293, in load
+    f = pickleload(fl)
+EOFError: Ran out of input
+Traceback (most recent call last):
+  File "T3.py", line 26, in <module>
+    vib.summary()
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 400, in summary
+    hnu = self.get_energies(method, direction)
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 364, in get_energies
+    self.read(method, direction, **kw)
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 317, in read
+    fminus = load(name + '-.pckl', combined_data)
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 293, in load
+    f = pickleload(fl)
+EOFError: Ran out of input
+Traceback (most recent call last):
+  File "T3.py", line 26, in <module>
+    vib.summary()
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 400, in summary
+    hnu = self.get_energies(method, direction)
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 364, in get_energies
+    self.read(method, direction, **kw)
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 317, in read
+    fminus = load(name + '-.pckl', combined_data)
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 293, in load
+    f = pickleload(fl)
+EOFError: Ran out of input
+Traceback (most recent call last):
+  File "T3.py", line 26, in <module>
+    vib.summary()
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 400, in summary
+    hnu = self.get_energies(method, direction)
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 364, in get_energies
+    self.read(method, direction, **kw)
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 317, in read
+    fminus = load(name + '-.pckl', combined_data)
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 293, in load
+    f = pickleload(fl)
+EOFError: Ran out of input
+Traceback (most recent call last):
+  File "T3.py", line 26, in <module>
+    vib.summary()
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 400, in summary
+    hnu = self.get_energies(method, direction)
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 364, in get_energies
+    self.read(method, direction, **kw)
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 317, in read
+    fminus = load(name + '-.pckl', combined_data)
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 293, in load
+    f = pickleload(fl)
+EOFError: Ran out of input
+Traceback (most recent call last):
+  File "T3.py", line 26, in <module>
+    vib.summary()
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 400, in summary
+    hnu = self.get_energies(method, direction)
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 364, in get_energies
+    self.read(method, direction, **kw)
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 317, in read
+    fminus = load(name + '-.pckl', combined_data)
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 293, in load
+    f = pickleload(fl)
+EOFError: Ran out of input
+Traceback (most recent call last):
+  File "T3.py", line 26, in <module>
+    vib.summary()
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 400, in summary
+    hnu = self.get_energies(method, direction)
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 364, in get_energies
+    self.read(method, direction, **kw)
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 317, in read
+    fminus = load(name + '-.pckl', combined_data)
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 293, in load
+    f = pickleload(fl)
+EOFError: Ran out of input
+Traceback (most recent call last):
+  File "T3.py", line 26, in <module>
+    vib.summary()
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 400, in summary
+    hnu = self.get_energies(method, direction)
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 364, in get_energies
+    self.read(method, direction, **kw)
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 317, in read
+    fminus = load(name + '-.pckl', combined_data)
+  File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/vibrations/vibrations.py", line 293, in load
+    f = pickleload(fl)
+EOFError: Ran out of input
