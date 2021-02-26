@@ -8,6 +8,8 @@ from ase.units import fs, kB
 from ase.md.npt import NPT
 
 from gpaw import GPAW
+pi = np.pi
+
 filename = 'cluster24wNa.traj'
 
 atomic_numbers = read(filename).get_atomic_numbers()
@@ -37,7 +39,7 @@ for atoms in iread('cluster24wNa.traj'):
         RDF_H += np.histogram(atoms.get_distances(72,boolean_indices_H),bins = bins, range = (0, 10))[0]
 
 r_max = 10
-r_vec = np.linspace(0,r_max,bins)
+r_vec = np.linspace(0.1,r_max,bins)
 V = read(filename).get_volume()
 rho = 24/V
 RDF = RDF/(r_vec**2*4*pi*rho)
