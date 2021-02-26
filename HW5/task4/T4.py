@@ -6,17 +6,19 @@ from ase.optimize import BFGS
 from ase.vibrations import Vibrations
 from ase.phonons import Phonons
 from ase.build import bulk
+from ase.calculators.emt import EMT
 
 import matplotlib.pyplot as plt
 
 #connect to database and retrieve atoms object
-atoms = bulk('Al')
-#calc = EAM(potential = 'al_potential.alloy')
-calc = EAM()
-atoms.calc = calc
+atoms = bulk('Al', 'fcc', a=4.05)
+calc = EAM(potential = 'al_potential.alloy')
+#calc = EMT()
+#atoms.calc = calc
 ph = Phonons(atoms, calc, supercell = (7,7,7))
 ph.run()
 ph.read(acoustic = True)
+ph.clean()
 
 path = atoms.cell.bandpath('GXULGK', npoints = 100)
 bs = ph.get_band_structure(path)

@@ -32,9 +32,18 @@ for atoms in iread('cluster24wNa.traj'):
     #print("\n")
     #Compute RDF for all atoms, only Oxygen and only Hydrogen
     if(number_of_frames > skip_frames):
-        RDF += np.histogram(atoms.get_distances(72,range(72)),bins = bins, range = (0, 10), density = True)[0]
-        RDF_O += np.histogram(atoms.get_distances(72,boolean_indices_O),bins = bins, range = (0, 10), density = True)[0]
-        RDF_H += np.histogram(atoms.get_distances(72,boolean_indices_H),bins = bins, range = (0, 10), density = True)[0]
+        RDF += np.histogram(atoms.get_distances(72,range(72)),bins = bins, range = (0, 10))[0]
+        RDF_O += np.histogram(atoms.get_distances(72,boolean_indices_O),bins = bins, range = (0, 10))[0]
+        RDF_H += np.histogram(atoms.get_distances(72,boolean_indices_H),bins = bins, range = (0, 10))[0]
+
+r_max = 10
+r_vec = np.linspace(0,r_max,bins)
+V = read(filename).get_volume()
+rho = 24/V
+RDF = RDF/(r_vec**2*4*pi*rho)
+RDF_O = RDF_O/(r_vec**2*4*pi*rho)
+RDF_H = RDF_H/(r_vec**2*4*pi*2*rho)
+
 
 #print(RDF/number_of_frames)
 #plt.plot(np.histogram_bin_edges(atoms,bins=bins-1,range=(0,10)),RDF/(number_of_frames-skip_frames))
@@ -59,9 +68,9 @@ RDF_bins = np.histogram_bin_edges(atoms, bins = bins, range = (0,10))
 for i in range(bins):
     if(RDF_bins[i] < 3):
         #RDF_integral += RDF[i]/(number_of_frames-skip_frames)*(10/bins)
-        RDF_integral_O += RDF_O[i]/(number_of_frames-skip_frames)*(10/bins)*24
+        RDF_integral_O += RDF_O[i]/(number_of_frames-skip_frames)*(10/bins)
     if(RDF_bins[i] < 4):
-        RDF_integral_H += RDF_H[i]/(number_of_frames-skip_frames)*(10/bins)*48
+        RDF_integral_H += RDF_H[i]/(number_of_frames-skip_frames)*(10/bins)
 
 print("\n total")
 print(RDF_integral)
