@@ -32,5 +32,3 @@ for ids in sub_100_ids:
     atoms.calc = calc
     BFGS(atoms).run(fmax=0.01)
     write('sub_100_Al-relaxed.db', atoms, append = True)
-
-
