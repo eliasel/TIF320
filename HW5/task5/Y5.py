@@ -9,7 +9,7 @@ from gpaw import GPAW, FermiDirac, PW
 import argparse
 
 parser = argparse.ArgumentParser()
-defval = 2
+defval = 1
 parser.add_argument('-n', '--ID', type=int, default=defval,
                     help='ID of cluster 1 to 6 (default: {:.2f})'.format(defval))
 defval = 4
@@ -24,7 +24,7 @@ args = parser.parse_args()
 
 if (args.redo_file):
 #connect to database and retrieve atoms object
-    db = connect("sub_100_Al-relaxed.db")
+    db = connect("bulk_Al.db")
 #sub_100_ids=[2, 3, 6, 7, 8, 10]
 
     sub_100_ids = [args.ID]
@@ -35,7 +35,7 @@ if (args.redo_file):
             random=True,  # random guess (needed if many empty bands required)
             occupations=FermiDirac(0.01))
 else: 
-    calc = GPAW('GPAW_ID_'+str(args.ID)+'_k:'+str(args.kpt)+'.gpw')
+    calc = GPAW('YGPAW_ID_'+str(args.ID)+'_k:'+str(args.kpt)+'.gpw')
 
 
 for cluster in db.select():
@@ -47,7 +47,7 @@ for cluster in db.select():
         atoms.get_potential_energy()
         print('fermi level')
         Ef = calc.get_fermi_level()
-        calc.write('GPAW_ID_'+str(args.ID)+'_k:'+str(k)+'.gpw')
+        calc.write('YGPAW_ID_'+str(args.ID)+'_k:'+str(k)+'.gpw')
     calc = calc.fixed_density(
         nbands=16,
         symmetry='off',
@@ -55,4 +55,4 @@ for cluster in db.select():
         convergence={'bands': 8})
     print('band structure:')
     Bs = calc.band_structure()
-    bs.plot(filename='band_ID:'+str(args.ID)+'_k:'+str(k)+'.png', show=True, emax=10.0)
+    bs.plot(filename='Yband_ID:'+str(args.ID)+'_k:'+str(k)+'.png', show=True, emax=10.0)

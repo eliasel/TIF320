@@ -1,0 +1,301 @@
+rank=04 L00: Traceback (most recent call last):
+rank=04 L01:   File "Y5.py", line 47, in <module>
+rank=04 L02:     atoms.get_potential_energy()
+rank=04 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/atoms.py", line 700, in get_potential_energy
+rank=04 L04:     energy = self._calc.get_potential_energy(self)
+rank=04 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 642, in get_potential_energy
+rank=04 L06:     energy = self.get_property('energy', atoms)
+rank=04 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 695, in get_property
+rank=04 L08:     self.calculate(atoms, [name], system_changes)
+rank=04 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 288, in calculate
+rank=04 L10:     self.initialize(atoms)
+rank=04 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 516, in initialize
+rank=04 L12:     .format(number_of_lattice_vectors))
+rank=04 L13: ValueError: GPAW requires 3 lattice vectors.  Your system has 0.
+GPAW CLEANUP (node 4): <class 'ValueError'> occurred.  Calling MPI_Abort!
+rank=05 L00: Traceback (most recent call last):
+rank=05 L01:   File "Y5.py", line 47, in <module>
+rank=05 L02:     atoms.get_potential_energy()
+rank=05 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/atoms.py", line 700, in get_potential_energy
+rank=05 L04:     energy = self._calc.get_potential_energy(self)
+rank=05 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 642, in get_potential_energy
+rank=05 L06:     energy = self.get_property('energy', atoms)
+rank=05 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 695, in get_property
+rank=05 L08:     self.calculate(atoms, [name], system_changes)
+rank=05 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 288, in calculate
+rank=05 L10:     self.initialize(atoms)
+rank=05 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 516, in initialize
+rank=05 L12:     .format(number_of_lattice_vectors))
+rank=05 L13: ValueError: GPAW requires 3 lattice vectors.  Your system has 0.
+GPAW CLEANUP (node 5): <class 'ValueError'> occurred.  Calling MPI_Abort!
+rank=03 L00: Traceback (most recent call last):
+rank=03 L01:   File "Y5.py", line 47, in <module>
+rank=03 L02:     atoms.get_potential_energy()
+rank=03 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/atoms.py", line 700, in get_potential_energy
+rank=03 L04:     energy = self._calc.get_potential_energy(self)
+rank=03 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 642, in get_potential_energy
+rank=03 L06:     energy = self.get_property('energy', atoms)
+rank=03 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 695, in get_property
+rank=03 L08:     self.calculate(atoms, [name], system_changes)
+rank=03 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 288, in calculate
+rank=03 L10:     self.initialize(atoms)
+rank=03 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 516, in initialize
+rank=03 L12:     .format(number_of_lattice_vectors))
+rank=03 L13: ValueError: GPAW requires 3 lattice vectors.  Your system has 0.
+GPAW CLEANUP (node 3): <class 'ValueError'> occurred.  Calling MPI_Abort!
+rank=16 L00: Traceback (most recent call last):
+rank=16 L01:   File "Y5.py", line 47, in <module>
+rank=16 L02:     atoms.get_potential_energy()
+rank=16 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/atoms.py", line 700, in get_potential_energy
+rank=16 L04:     energy = self._calc.get_potential_energy(self)
+rank=16 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 642, in get_potential_energy
+rank=16 L06:     energy = self.get_property('energy', atoms)
+rank=16 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 695, in get_property
+rank=16 L08:     self.calculate(atoms, [name], system_changes)
+rank=16 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 288, in calculate
+rank=16 L10:     self.initialize(atoms)
+rank=16 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 516, in initialize
+rank=16 L12:     .format(number_of_lattice_vectors))
+rank=16 L13: ValueError: GPAW requires 3 lattice vectors.  Your system has 0.
+GPAW CLEANUP (node 16): <class 'ValueError'> occurred.  Calling MPI_Abort!
+rank=19 L00: Traceback (most recent call last):
+rank=19 L01:   File "Y5.py", line 47, in <module>
+rank=19 L02:     atoms.get_potential_energy()
+rank=19 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/atoms.py", line 700, in get_potential_energy
+rank=19 L04:     energy = self._calc.get_potential_energy(self)
+rank=19 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 642, in get_potential_energy
+rank=19 L06:     energy = self.get_property('energy', atoms)
+rank=19 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 695, in get_property
+rank=19 L08:     self.calculate(atoms, [name], system_changes)
+rank=19 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 288, in calculate
+rank=19 L10:     self.initialize(atoms)
+rank=19 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 516, in initialize
+rank=19 L12:     .format(number_of_lattice_vectors))
+rank=19 L13: ValueError: GPAW requires 3 lattice vectors.  Your system has 0.
+GPAW CLEANUP (node 19): <class 'ValueError'> occurred.  Calling MPI_Abort!
+rank=01 L00: Traceback (most recent call last):
+rank=01 L01:   File "Y5.py", line 47, in <module>
+rank=01 L02:     atoms.get_potential_energy()
+rank=01 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/atoms.py", line 700, in get_potential_energy
+rank=01 L04:     energy = self._calc.get_potential_energy(self)
+rank=01 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 642, in get_potential_energy
+rank=01 L06:     energy = self.get_property('energy', atoms)
+rank=01 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 695, in get_property
+rank=01 L08:     self.calculate(atoms, [name], system_changes)
+rank=01 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 288, in calculate
+rank=01 L10:     self.initialize(atoms)
+rank=01 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 516, in initialize
+rank=01 L12:     .format(number_of_lattice_vectors))
+rank=01 L13: ValueError: GPAW requires 3 lattice vectors.  Your system has 0.
+GPAW CLEANUP (node 1): <class 'ValueError'> occurred.  Calling MPI_Abort!
+rank=08 L00: Traceback (most recent call last):
+rank=08 L01:   File "Y5.py", line 47, in <module>
+rank=08 L02:     atoms.get_potential_energy()
+rank=08 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/atoms.py", line 700, in get_potential_energy
+rank=08 L04:     energy = self._calc.get_potential_energy(self)
+rank=08 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 642, in get_potential_energy
+rank=08 L06:     energy = self.get_property('energy', atoms)
+rank=08 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 695, in get_property
+rank=08 L08:     self.calculate(atoms, [name], system_changes)
+rank=08 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 288, in calculate
+rank=08 L10:     self.initialize(atoms)
+rank=08 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 516, in initialize
+rank=08 L12:     .format(number_of_lattice_vectors))
+rank=08 L13: ValueError: GPAW requires 3 lattice vectors.  Your system has 0.
+GPAW CLEANUP (node 8): <class 'ValueError'> occurred.  Calling MPI_Abort!
+rank=11 L00: Traceback (most recent call last):
+rank=11 L01:   File "Y5.py", line 47, in <module>
+rank=11 L02:     atoms.get_potential_energy()
+rank=11 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/atoms.py", line 700, in get_potential_energy
+rank=11 L04:     energy = self._calc.get_potential_energy(self)
+rank=11 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 642, in get_potential_energy
+rank=11 L06:     energy = self.get_property('energy', atoms)
+rank=11 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 695, in get_property
+rank=11 L08:     self.calculate(atoms, [name], system_changes)
+rank=11 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 288, in calculate
+rank=11 L10:     self.initialize(atoms)
+rank=11 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 516, in initialize
+rank=11 L12:     .format(number_of_lattice_vectors))
+rank=11 L13: ValueError: GPAW requires 3 lattice vectors.  Your system has 0.
+GPAW CLEANUP (node 11): <class 'ValueError'> occurred.  Calling MPI_Abort!
+rank=14 L00: Traceback (most recent call last):
+rank=14 L01:   File "Y5.py", line 47, in <module>
+rank=14 L02:     atoms.get_potential_energy()
+rank=14 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/atoms.py", line 700, in get_potential_energy
+rank=14 L04:     energy = self._calc.get_potential_energy(self)
+rank=14 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 642, in get_potential_energy
+rank=14 L06:     energy = self.get_property('energy', atoms)
+rank=14 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 695, in get_property
+rank=14 L08:     self.calculate(atoms, [name], system_changes)
+rank=14 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 288, in calculate
+rank=14 L10:     self.initialize(atoms)
+rank=14 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 516, in initialize
+rank=14 L12:     .format(number_of_lattice_vectors))
+rank=14 L13: ValueError: GPAW requires 3 lattice vectors.  Your system has 0.
+GPAW CLEANUP (node 14): <class 'ValueError'> occurred.  Calling MPI_Abort!
+rank=00 L00: Traceback (most recent call last):
+rank=00 L01:   File "Y5.py", line 47, in <module>
+rank=00 L02:     atoms.get_potential_energy()
+rank=00 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/atoms.py", line 700, in get_potential_energy
+rank=00 L04:     energy = self._calc.get_potential_energy(self)
+rank=00 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 642, in get_potential_energy
+rank=00 L06:     energy = self.get_property('energy', atoms)
+rank=00 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 695, in get_property
+rank=00 L08:     self.calculate(atoms, [name], system_changes)
+rank=00 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 288, in calculate
+rank=00 L10:     self.initialize(atoms)
+rank=00 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 516, in initialize
+rank=00 L12:     .format(number_of_lattice_vectors))
+rank=00 L13: ValueError: GPAW requires 3 lattice vectors.  Your system has 0.
+GPAW CLEANUP (node 0): <class 'ValueError'> occurred.  Calling MPI_Abort!
+rank=06 L00: Traceback (most recent call last):
+rank=06 L01:   File "Y5.py", line 47, in <module>
+rank=06 L02:     atoms.get_potential_energy()
+rank=06 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/atoms.py", line 700, in get_potential_energy
+rank=06 L04:     energy = self._calc.get_potential_energy(self)
+rank=06 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 642, in get_potential_energy
+rank=06 L06:     energy = self.get_property('energy', atoms)
+rank=06 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 695, in get_property
+rank=06 L08:     self.calculate(atoms, [name], system_changes)
+rank=06 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 288, in calculate
+rank=06 L10:     self.initialize(atoms)
+rank=06 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 516, in initialize
+rank=06 L12:     .format(number_of_lattice_vectors))
+rank=06 L13: ValueError: GPAW requires 3 lattice vectors.  Your system has 0.
+GPAW CLEANUP (node 6): <class 'ValueError'> occurred.  Calling MPI_Abort!
+rank=07 L00: Traceback (most recent call last):
+rank=07 L01:   File "Y5.py", line 47, in <module>
+rank=07 L02:     atoms.get_potential_energy()
+rank=07 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/atoms.py", line 700, in get_potential_energy
+rank=07 L04:     energy = self._calc.get_potential_energy(self)
+rank=07 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 642, in get_potential_energy
+rank=07 L06:     energy = self.get_property('energy', atoms)
+rank=07 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 695, in get_property
+rank=07 L08:     self.calculate(atoms, [name], system_changes)
+rank=07 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 288, in calculate
+rank=07 L10:     self.initialize(atoms)
+rank=07 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 516, in initialize
+rank=07 L12:     .format(number_of_lattice_vectors))
+rank=07 L13: ValueError: GPAW requires 3 lattice vectors.  Your system has 0.
+GPAW CLEANUP (node 7): <class 'ValueError'> occurred.  Calling MPI_Abort!
+rank=09 L00: Traceback (most recent call last):
+rank=09 L01:   File "Y5.py", line 47, in <module>
+rank=09 L02:     atoms.get_potential_energy()
+rank=09 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/atoms.py", line 700, in get_potential_energy
+rank=09 L04:     energy = self._calc.get_potential_energy(self)
+rank=09 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 642, in get_potential_energy
+rank=09 L06:     energy = self.get_property('energy', atoms)
+rank=09 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 695, in get_property
+rank=09 L08:     self.calculate(atoms, [name], system_changes)
+rank=09 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 288, in calculate
+rank=09 L10:     self.initialize(atoms)
+rank=09 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 516, in initialize
+rank=09 L12:     .format(number_of_lattice_vectors))
+rank=09 L13: ValueError: GPAW requires 3 lattice vectors.  Your system has 0.
+GPAW CLEANUP (node 9): <class 'ValueError'> occurred.  Calling MPI_Abort!
+rank=12 L00: Traceback (most recent call last):
+rank=12 L01:   File "Y5.py", line 47, in <module>
+rank=12 L02:     atoms.get_potential_energy()
+rank=12 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/atoms.py", line 700, in get_potential_energy
+rank=12 L04:     energy = self._calc.get_potential_energy(self)
+rank=12 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 642, in get_potential_energy
+rank=12 L06:     energy = self.get_property('energy', atoms)
+rank=12 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 695, in get_property
+rank=12 L08:     self.calculate(atoms, [name], system_changes)
+rank=12 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 288, in calculate
+rank=12 L10:     self.initialize(atoms)
+rank=12 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 516, in initialize
+rank=12 L12:     .format(number_of_lattice_vectors))
+rank=12 L13: ValueError: GPAW requires 3 lattice vectors.  Your system has 0.
+GPAW CLEANUP (node 12): <class 'ValueError'> occurred.  Calling MPI_Abort!
+rank=17 L00: Traceback (most recent call last):
+rank=17 L01:   File "Y5.py", line 47, in <module>
+rank=17 L02:     atoms.get_potential_energy()
+rank=17 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/atoms.py", line 700, in get_potential_energy
+rank=17 L04:     energy = self._calc.get_potential_energy(self)
+rank=17 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 642, in get_potential_energy
+rank=17 L06:     energy = self.get_property('energy', atoms)
+rank=17 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 695, in get_property
+rank=17 L08:     self.calculate(atoms, [name], system_changes)
+rank=17 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 288, in calculate
+rank=17 L10:     self.initialize(atoms)
+rank=17 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 516, in initialize
+rank=17 L12:     .format(number_of_lattice_vectors))
+rank=17 L13: ValueError: GPAW requires 3 lattice vectors.  Your system has 0.
+GPAW CLEANUP (node 17): <class 'ValueError'> occurred.  Calling MPI_Abort!
+rank=18 L00: Traceback (most recent call last):
+rank=18 L01:   File "Y5.py", line 47, in <module>
+rank=18 L02:     atoms.get_potential_energy()
+rank=18 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/atoms.py", line 700, in get_potential_energy
+rank=18 L04:     energy = self._calc.get_potential_energy(self)
+rank=18 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 642, in get_potential_energy
+rank=18 L06:     energy = self.get_property('energy', atoms)
+rank=18 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 695, in get_property
+rank=18 L08:     self.calculate(atoms, [name], system_changes)
+rank=18 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 288, in calculate
+rank=18 L10:     self.initialize(atoms)
+rank=18 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 516, in initialize
+rank=18 L12:     .format(number_of_lattice_vectors))
+rank=18 L13: ValueError: GPAW requires 3 lattice vectors.  Your system has 0.
+GPAW CLEANUP (node 18): <class 'ValueError'> occurred.  Calling MPI_Abort!
+rank=02 L00: Traceback (most recent call last):
+rank=02 L01:   File "Y5.py", line 47, in <module>
+rank=02 L02:     atoms.get_potential_energy()
+rank=02 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/atoms.py", line 700, in get_potential_energy
+rank=02 L04:     energy = self._calc.get_potential_energy(self)
+rank=02 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 642, in get_potential_energy
+rank=02 L06:     energy = self.get_property('energy', atoms)
+rank=02 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 695, in get_property
+rank=02 L08:     self.calculate(atoms, [name], system_changes)
+rank=02 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 288, in calculate
+rank=02 L10:     self.initialize(atoms)
+rank=02 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 516, in initialize
+rank=02 L12:     .format(number_of_lattice_vectors))
+rank=02 L13: ValueError: GPAW requires 3 lattice vectors.  Your system has 0.
+GPAW CLEANUP (node 2): <class 'ValueError'> occurred.  Calling MPI_Abort!
+rank=10 L00: Traceback (most recent call last):
+rank=10 L01:   File "Y5.py", line 47, in <module>
+rank=10 L02:     atoms.get_potential_energy()
+rank=10 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/atoms.py", line 700, in get_potential_energy
+rank=10 L04:     energy = self._calc.get_potential_energy(self)
+rank=10 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 642, in get_potential_energy
+rank=10 L06:     energy = self.get_property('energy', atoms)
+rank=10 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 695, in get_property
+rank=10 L08:     self.calculate(atoms, [name], system_changes)
+rank=10 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 288, in calculate
+rank=10 L10:     self.initialize(atoms)
+rank=10 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 516, in initialize
+rank=10 L12:     .format(number_of_lattice_vectors))
+rank=10 L13: ValueError: GPAW requires 3 lattice vectors.  Your system has 0.
+GPAW CLEANUP (node 10): <class 'ValueError'> occurred.  Calling MPI_Abort!
+rank=13 L00: Traceback (most recent call last):
+rank=13 L01:   File "Y5.py", line 47, in <module>
+rank=13 L02:     atoms.get_potential_energy()
+rank=13 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/atoms.py", line 700, in get_potential_energy
+rank=13 L04:     energy = self._calc.get_potential_energy(self)
+rank=13 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 642, in get_potential_energy
+rank=13 L06:     energy = self.get_property('energy', atoms)
+rank=13 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 695, in get_property
+rank=13 L08:     self.calculate(atoms, [name], system_changes)
+rank=13 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 288, in calculate
+rank=13 L10:     self.initialize(atoms)
+rank=13 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 516, in initialize
+rank=13 L12:     .format(number_of_lattice_vectors))
+rank=13 L13: ValueError: GPAW requires 3 lattice vectors.  Your system has 0.
+GPAW CLEANUP (node 13): <class 'ValueError'> occurred.  Calling MPI_Abort!
+rank=15 L00: Traceback (most recent call last):
+rank=15 L01:   File "Y5.py", line 47, in <module>
+rank=15 L02:     atoms.get_potential_energy()
+rank=15 L03:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/atoms.py", line 700, in get_potential_energy
+rank=15 L04:     energy = self._calc.get_potential_energy(self)
+rank=15 L05:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 642, in get_potential_energy
+rank=15 L06:     energy = self.get_property('energy', atoms)
+rank=15 L07:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase/calculators/calculator.py", line 695, in get_property
+rank=15 L08:     self.calculate(atoms, [name], system_changes)
+rank=15 L09:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 288, in calculate
+rank=15 L10:     self.initialize(atoms)
+rank=15 L11:   File "/apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw/calculator.py", line 516, in initialize
+rank=15 L12:     .format(number_of_lattice_vectors))
+rank=15 L13: ValueError: GPAW requires 3 lattice vectors.  Your system has 0.
+GPAW CLEANUP (node 15): <class 'ValueError'> occurred.  Calling MPI_Abort!
+application called MPI_Abort(MPI_COMM_WORLD, 42) - process 3

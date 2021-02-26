@@ -1,0 +1,57 @@
+potential:
+potential:
+potential:
+potential:
+potential:
+potential:
+potential:
+potential:
+
+  ___ ___ ___ _ _ _  
+ |   |   |_  | | | | 
+ | | | | | . | | | | 
+ |__ |  _|___|_____|  20.1.0
+ |___|_|             
+
+User:   eliasel@hebbe15-2
+Date:   Fri Feb 26 19:46:18 2021
+Arch:   x86_64
+Pid:    9048
+Python: 3.7.4
+gpaw:   /apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/gpaw
+_gpaw:  /apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/GPAW/20.1.0-Python-3.7.4/lib/python3.7/site-packages/
+        _gpaw.cpython-37m-x86_64-linux-gnu.so
+ase:    /apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/ASE/3.19.0-Python-3.7.4/lib/python3.7/site-packages/ase (version 3.19.0)
+numpy:  /apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/SciPy-bundle/2019.10-Python-3.7.4/lib/python3.7/site-packages/numpy (version 1.17.3)
+scipy:  /apps/Hebbe7/software/MPI/intel/2019.5.281/impi/2018.5.288/SciPy-bundle/2019.10-Python-3.7.4/lib/python3.7/site-packages/scipy (version 1.3.1)
+libxc:  4.3.4
+units:  Angstrom and eV
+cores: 20
+OMP_NUM_THREADS: 1
+
+Input parameters:
+  kpts: [4 4 4]
+  mode: {ecut: 300.0,
+         gammacentered: False,
+         name: pw}
+  occupations: {name: fermi-dirac,
+                width: 0.01}
+  random: True
+  xc: PBE
+
+potential:
+System changes: positions, numbers, cell, pbc, initial_charges, initial_magmoms 
+
+Initialize ...
+
+potential:
+potential:
+potential:
+potential:
+potential:
+potential:
+potential:
+potential:
+potential:
+potential:
+potential:
