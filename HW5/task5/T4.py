@@ -7,15 +7,24 @@ from ase.vibrations import Vibrations
 
 #connect to database and retrieve atoms object
 db = connect("Al-clusters-initial.db")
-calc = EAM(potential = 'al_potential.alloy')
-i=1
+#sub_100_ids=[2, 3, 6, 7, 8, 10]
 
-for cluster in db.select():
+sub_100_ids = [2]
+k = 4
+
+calc = GPAW(mode=PW(300),
+            xc='PBE',
+            kpts=(8, 8, 8),
+            random=True,  # random guess (needed if many empty bands required)
+            occupations=FermiDirac(0.01))
+
+for id in sub_100_ids:
 #while (i == 1):
 #    cluster = db[2]
+    cluster = db.select(id = id)
     atoms = cluster.toatoms()
-#atoms = db[i].toatoms()
     N_atoms = len(atoms)
+
     atoms.calc = calc
     BFGS(atoms).run(fmax=0.01)
     vib = Vibrations(atoms)

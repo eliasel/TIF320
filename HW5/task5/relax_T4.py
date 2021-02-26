@@ -7,30 +7,28 @@ from ase.vibrations import Vibrations
 
 #connect to database and retrieve atoms object
 db = connect("Al-clusters-initial.db")
-calc = EAM(potential = 'al_potential.alloy')
-i=1
+#sub_100_ids=[2, 3, 6, 7, 8, 10]
 
-for cluster in db.select():
+All_ids = [1,2,3,4,5,6,7,8,9,10]
+k = 4
+
+for id in sub_100_ids:
 #while (i == 1):
 #    cluster = db[2]
+    calc = GPAW(mode=PW(300),
+                xc='PBE',
+                kpts=(k, k, k),
+                random=True,  # random guess (needed if many empty bands required)
+                occupations=FermiDirac(0.01),
+                txt='id_'+str(id)+'_gs.txt')
+
+    cluster = db.select(id = id)
     atoms = cluster.toatoms()
-#atoms = db[i].toatoms()
     N_atoms = len(atoms)
+
     atoms.calc = calc
     BFGS(atoms).run(fmax=0.01)
-    vib = Vibrations(atoms)
-    vib.clean()
-    vib.run()
-    vib.summary()
-    vib.write_dos(out='vib-dos'+str(i)+'.dat')
-    freq = vib.get_frequencies()
-#print(vib.get_mode(1))
-#print(freq)
-#print(len(freq))
-    i=i+1
-    energies = vib.get_energies()
-    #print(energies)
-    vib.clean()
+    write('Al-relaxed.db', atoms, append = True)
 
 
 #db.write(atoms, data = {'frequency' : freq, 'density-of-states' : dos})
