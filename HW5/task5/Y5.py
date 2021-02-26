@@ -5,6 +5,8 @@ from ase.calculators.eam import EAM
 from ase.optimize import BFGS
 from ase.vibrations import Vibrations
 from gpaw import GPAW, FermiDirac, PW
+from ase.build import bulk 
+from ase.dft import *
 
 import argparse
 
@@ -36,6 +38,6 @@ calc = calc.fixed_density(
         kpts={'path': 'GXULGK', 'npoints': 60},
         convergence={'bands': 8})
 print('band structure:')
-Bs = calc.band_structure()
+bs = calc.band_structure()
 
-bs.plot(filename='bulk.png', show=True, emax=10.0)
+bs.plot(filename='k:'+str(k)+'bulk.png', show=False, emax=10.0)
