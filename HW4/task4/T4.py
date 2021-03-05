@@ -17,5 +17,11 @@ calc.absorption_kick(kick_strength=kick_strength)
 # and use 'be_td.gpw' as restart file
 calc.propagate(time_step, iterations, 'be_dm_x.dat', 'be_td_x.gpw')
 
+check_convergence(calc,
+                  'linear_response',
+                  'Linear response converge',
+                   dE=.2,
+                   emax=6.)
+
 # Calculate photoabsorption spectrum and write it to 'be_spectrum_x.dat'
 photoabsorption_spectrum('be_dm_x.dat', 'be_spectrum_x.dat', width = 0.06)
