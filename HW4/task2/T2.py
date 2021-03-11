@@ -81,7 +81,7 @@ def fold(x_t, x_i, y_i, width):
     for x, y in zip(x_i, y_i):
         y_t += y * Gauss(x)
     return y_t
-
+print(np.amax(w_p))
 x_t = np.linspace(1, 6.5, N, dtype = 'complex')
 eps_i = np.sqrt(omega2)*27.2107
 y_t = fold(x_t, eps_i, favr_I, 0.06)

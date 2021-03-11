@@ -10,7 +10,6 @@ import matplotlib.pyplot as plt
 db = connect("Al-clusters-initial.db")
 calc = EAM(potential = 'al_potential.alloy')
 i=1
-<<<<<<< HEAD
 for cluster in db.select():
     atoms = cluster.toatoms()
     #atoms = db[i].toatoms()
@@ -23,7 +22,8 @@ for cluster in db.select():
     freq = vib.get_frequencies()
     vib.clean()
     db.write(atoms, data = {'frequency' : freq})
-    #print(freq)
+    print(freq)
+    print('hej')
     #print(len(freq))
 
 
@@ -47,8 +47,6 @@ for cluster in db.select():
 #print(freq)
 #print(len(freq))
 #i=i+1
-=======
->>>>>>> bd03f3778fdc415e15eebcde3f8e554305d1e7d8
 
 for cluster in db.select():
 #while (i == 1):
@@ -73,7 +71,4 @@ for cluster in db.select():
     vib.clean()
 
 
-<<<<<<< HEAD
-=======
 #db.write(atoms, data = {'frequency' : freq, 'density-of-states' : dos})
->>>>>>> bd03f3778fdc415e15eebcde3f8e554305d1e7d8

@@ -1,6 +1,7 @@
 from ase.build import bulk
 from ase.calculators.emt import EMT
 from ase.phonons import Phonons
+import numpy as np
 
 # Setup crystal and EMT calculator
 atoms = bulk('Al')
@@ -16,14 +17,17 @@ ph.clean()
 
 path = atoms.cell.bandpath('GXULGK', npoints=100)
 #print(path.kpts)
+print(atoms.cell.reciprocal()[0][0])
 bs = ph.get_band_structure(path)
-print(bs.energies[0,5][2])
-#print(path.kpts[5,0])
+#print(bs.energies)
+#print(bs.energies[0,5][2])
+#print(path.kpts[5,1])
 
 #241.79893 eV to THz
-
-print('Speed velocity [m/s]: ' + str(241.79893*10**2*bs.energies[0,5][0]/path.kpts[5,0]))
-print('Speed velocity [m/s]: ' + str(241.79893*10**2*bs.energies[0,5][2]/path.kpts[5,0]))
+k_vec = np.sqrt(path.kpts[:,0]**2+path.kpts[:,1]**2+path.kpts[:,2]**2)
+k_vec = np.sqrt(3)*np.abs(atoms.cell.reciprocal()[0][0])*k_vec #All entries are the same in reciprocal
+print('Speed velocity [m/s]: ' + str(241.79893*10**2*bs.energies[0,5][0]/k_vec[5]))
+print('Speed velocity [m/s]: ' + str(241.79893*10**2*bs.energies[0,5][2]/k_vec[5]))
 
 
 dos = ph.get_dos(kpts=(20, 20, 20)).sample_grid(npts=100, width=1e-3)

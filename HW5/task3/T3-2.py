@@ -23,7 +23,7 @@ for cluster in db.select():
     vib.clean()
     db.write(atoms, data = {'frequency' : freq})
     #print(freq)
-    #print(len(freq))
+    print(len(freq))
 
 
     fig, ax = plt.subplots()
@@ -31,13 +31,13 @@ for cluster in db.select():
     ax.plot(N_mode, freq)
     ax.set_xlabel('Mode nr')
     ax.set_ylabel('Frequency [cm^-1]')
-    fig.savefig('./plots/freq_mode'+str(i)+'.pdf')
+    fig.savefig('./plots/freq_mode'+str(No_atoms)+'.pdf')
 
     fig, ax = plt.subplots()
     ax.hist(freq, bins = 20)
     ax.set_xlabel('Frequency [cm^-1]')
     ax.set_ylabel('DOS')
-    fig.savefig('./plots/dos' + str(i)+'.pdf')
+    fig.savefig('./plots/dos' + str(No_atoms)+'.pdf')
     
     i=i+1
 
