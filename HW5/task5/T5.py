@@ -5,6 +5,9 @@ from ase.calculators.eam import EAM
 from ase.optimize import BFGS
 from ase.vibrations import Vibrations
 from gpaw import GPAW, FermiDirac, PW
+from ase.build import bulk
+from ase.dft import *
+import matplotlib.pyplot as plt
 
 import argparse
 """
