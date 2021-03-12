@@ -5,10 +5,10 @@
  |__ |  _|___|_____|  20.10.0
  |___|_|             
 
-User:   eliasel@hebbe05-2
-Date:   Fri Mar 12 15:55:42 2021
+User:   eliasel@hebbe16-10
+Date:   Fri Mar 12 16:49:50 2021
 Arch:   x86_64
-Pid:    11883
+Pid:    22708
 Python: 3.7.4
 gpaw:   /apps/Hebbe7/software/MPI/GCC/8.3.0/OpenMPI/3.1.4/GPAW/20.10.0-ASE-3.20.1-Python-3.7.4/lib/python3.7/site-packages/gpaw
 _gpaw:  /apps/Hebbe7/software/MPI/GCC/8.3.0/OpenMPI/3.1.4/GPAW/20.10.0-ASE-3.20.1-Python-3.7.4/lib/python3.7/site-packages/
@@ -52,7 +52,7 @@ Al-setup:
 
   Using partial waves for Al as LCAO basis
 
-Reference energy: -151878.735092
+Reference energy: -468843.051807
 
 Spin-paired calculation
 
@@ -62,274 +62,17 @@ Convergence criteria:
   Maximum integral of absolute eigenstate change: 4e-08 eV^2
   Maximum number of iterations: 333
 
-Symmetries present (total): 1
+Symmetries present (total): 4
 
-  ( 1  0  0)
-  ( 0  1  0)
-  ( 0  0  1)
+  ( 1  0  0)  ( 1  0  0)  (-1  0  0)  (-1  0  0)
+  ( 0  1  0)  ( 0 -1  0)  ( 0  1  0)  ( 0 -1  0)
+  ( 0  0  1)  ( 0  0  1)  ( 0  0  1)  ( 0  0  1)
 
 1 k-point (Gamma)
 1 k-point in the irreducible part of the Brillouin zone
        k-points in crystal coordinates                weights
    0:     0.00000000    0.00000000    0.00000000          1/1
 
-Wave functions: Uniform real-space grid
-  Kinetic energy operator: 6*3+1=19 point O(h^6) finite-difference Laplacian
-  ScaLapack parameters: grid=1x1, blocksize=None
-  Wavefunction extrapolation:
-    Improved wavefunction reuse through dual PAW basis 
-
-  Fermi-Dirac: width=0.0100 eV
-
-Eigensolver
-   Davidson(niter=2, smin=None, normalize=True) 
-
-Densities:
-  Coarse grid: 96*96*88 grid
-  Fine grid: 192*192*176 grid
-  Total Charge: 0.000000 
-
-Density mixing:
-  Method: separate
-  Backend: pulay
-  Linear mixing parameter: 0.05
-  Mixing with 5 old densities
-  Damping of long wave oscillations: 50 
-
-Hamiltonian:
-  XC and Coulomb potentials evaluated on a 192*192*176 grid
-  Using the PBE Exchange-Correlation functional
-  Interpolation: tri-quintic (5. degree polynomial)
-  Poisson solver: FastPoissonSolver using
-    6*3+1=19 point O(h^6) finite-difference Laplacian stencil;
-    FFT axes: [0, 1, 2];
-    FST axes: [].
- 
-
-XC parameters: PBE with 2 nearest neighbor stencil
-
-Memory estimate:
-  Process memory now: 144.86 MiB
-  Calculator: 26.24 MiB
-    Density: 7.43 MiB
-      Arrays: 4.09 MiB
-      Localized functions: 1.73 MiB
-      Mixer: 1.61 MiB
-    Hamiltonian: 2.80 MiB
-      Arrays: 2.67 MiB
-      XC: 0.00 MiB
-      Poisson: 0.00 MiB
-      vbar: 0.13 MiB
-    Wavefunctions: 16.00 MiB
-      Arrays psit_nG: 7.41 MiB
-      Eigensolver: 8.38 MiB
-      Projections: 0.00 MiB
-      Projectors: 0.21 MiB
-
-Total number of cores used: 40
-Domain decomposition: 5 x 4 x 2
-
-Number of atoms: 23
-Number of atomic orbitals: 92
-Number of bands in calculation: 46
-Number of valence electrons: 69
-Bands to converge: occupied
-
-... initialized
-
-Initializing position-dependent things.
-
-Density initialized from atomic densities
-Creating initial wave functions:
-  46 bands from LCAO basis set
-
-             .----------------------------------------------.  
-            /|                                              |  
-           / |                                              |  
-          /  |                                              |  
-         /   |                                              |  
-        /    |                                              |  
-       /     |                                              |  
-      /      |                                              |  
-     /       |                                              |  
-    /        |                                              |  
-   /         |                                              |  
-  /          |                                              |  
- *           |                                              |  
- |           |              Al  Al                          |  
- |           |           Al     Al Al                       |  
- |           |        Al                                    |  
- |           |            Al Al      Al                     |  
- |           |               AAl   Al  Al                   |  
- |           |         Al       Al                          |  
- |           |        Al      Al                            |  
- |           |             All    All Al                    |  
- |           |                                              |  
- |           .------------------Al--------------------------.  
- |          /                                              /   
- |         /                                              /    
- |        /                                              /     
- |       /                                              /      
- |      /                                              /       
- |     /                                              /        
- |    /                                              /         
- |   /                                              /          
- |  /                                              /           
- | /                                              /            
- |/                                              /             
- *----------------------------------------------*              
-
-Positions:
-   0 Al    10.706794    7.248828    6.051515    ( 0.0000,  0.0000,  0.0000)
-   1 Al     8.527001    8.811926    6.516927    ( 0.0000,  0.0000,  0.0000)
-   2 Al    12.990932    8.147068    7.261432    ( 0.0000,  0.0000,  0.0000)
-   3 Al     6.329807   10.774377    7.412661    ( 0.0000,  0.0000,  0.0000)
-   4 Al    11.080775    9.983014    6.296127    ( 0.0000,  0.0000,  0.0000)
-   5 Al     8.715860   11.396609    5.982887    ( 0.0000,  0.0000,  0.0000)
-   6 Al     6.546198    8.031790    8.027607    ( 0.0000,  0.0000,  0.0000)
-   7 Al     8.899909    6.440052    8.007663    ( 0.0000,  0.0000,  0.0000)
-   8 Al    10.465055    8.612729    8.568917    ( 0.0000,  0.0000,  0.0000)
-   9 Al    10.308600    6.347754   10.434216    ( 0.0000,  0.0000,  0.0000)
-  10 Al     8.239482    8.099042   10.153526    ( 0.0000,  0.0000,  0.0000)
-  11 Al    11.714663    6.039248    8.252597    ( 0.0000,  0.0000,  0.0000)
-  12 Al    12.518853    8.132944   10.104147    ( 0.0000,  0.0000,  0.0000)
-  13 Al    10.329692    8.620095   11.812075    ( 0.0000,  0.0000,  0.0000)
-  14 Al     6.582905   12.238018    9.913104    ( 0.0000,  0.0000,  0.0000)
-  15 Al     6.027623    9.687140   10.040906    ( 0.0000,  0.0000,  0.0000)
-  16 Al     8.547361   10.481811    8.755075    ( 0.0000,  0.0000,  0.0000)
-  17 Al    10.562448   12.119286    7.930172    ( 0.0000,  0.0000,  0.0000)
-  18 Al    10.867617   10.719580   10.357034    ( 0.0000,  0.0000,  0.0000)
-  19 Al     9.197220   12.865063   10.222647    ( 0.0000,  0.0000,  0.0000)
-  20 Al    12.721628   10.470476    8.485659    ( 0.0000,  0.0000,  0.0000)
-  21 Al     7.934567   13.134669    7.809963    ( 0.0000,  0.0000,  0.0000)
-  22 Al     8.277799   10.556897   11.476640    ( 0.0000,  0.0000,  0.0000)
-
-Unit cell:
-           periodic     x           y           z      points  spacing
-  1. axis:    yes   19.005700    0.000000    0.000000    96     0.1980
-  2. axis:    yes    0.000000   19.152210    0.000000    96     0.1995
-  3. axis:    yes    0.000000    0.000000   17.708910    88     0.2012
-
-  Lengths:  19.005700  19.152210  17.708910
-  Angles:   90.000000  90.000000  90.000000
-
-Effective grid spacing dv^(1/3) = 0.1996
-
-                     log10-error:    total        iterations:
-           time      wfs    density  energy       poisson
-iter:   1  15:56:14                 -70.007440    1      
-iter:   2  15:56:36  +0.23  -0.80   -69.932945    1      
-iter:   3  15:56:57  +0.30  -0.81   -68.010778    1      
-iter:   4  15:57:20  +0.61  -0.96   -68.243811    1      
-iter:   5  15:57:42  -0.19  -1.14   -68.393638    1      
-iter:   6  15:58:04  +0.13  -1.12   -70.306577    1      
-iter:   7  15:58:26  -0.69  -0.96   -70.492941    1      
-iter:   8  15:58:48  -0.60  -0.94   -69.073307    1      
-iter:   9  15:59:10  -1.17  -1.04   -69.010334    1      
-iter:  10  15:59:33  -0.09  -1.05   -68.051092    1      
-iter:  11  15:59:55  -0.36  -1.36   -67.759495    1      
-iter:  12  16:00:17  -0.03  -1.67   -68.014971    1      
-iter:  13  16:00:39  -1.23  -1.50   -67.878488    1      
-iter:  14  16:01:01  -1.56  -1.58   -67.814380    1      
-iter:  15  16:01:24  -1.17  -1.68   -67.766065    1      
-iter:  16  16:01:46  -1.71  -1.83   -67.772458    1      
-iter:  17  16:02:08  -1.63  -1.92   -67.760134    1      
-iter:  18  16:02:31  -1.57  -2.06   -67.761255    1      
-iter:  19  16:02:53  -2.44  -2.13   -67.757783    1      
-iter:  20  16:03:15  -3.11  -2.44   -67.757804    1      
-iter:  21  16:03:37  -2.90  -2.56   -67.757354    1      
-iter:  22  16:03:59  -3.44  -2.73   -67.757222    1      
-iter:  23  16:04:21  -3.72  -2.81   -67.757223    1      
-iter:  24  16:04:45  -4.03  -2.92   -67.757194    1      
-iter:  25  16:05:07  -4.33  -2.98   -67.757063    1      
-iter:  26  16:05:29  -4.92  -3.07   -67.757073    1      
-iter:  27  16:05:52  -4.99  -3.13   -67.757099    1      
-iter:  28  16:06:14  -4.69  -3.23   -67.757095    1      
-iter:  29  16:06:36  -4.45  -3.38   -67.757093    1      
-iter:  30  16:06:58  -5.34  -3.53   -67.757094    1      
-iter:  31  16:07:20  -4.81  -3.59   -67.757106    1      
-iter:  32  16:07:43  -5.34  -3.79   -67.757100    1      
-iter:  33  16:08:05  -5.31  -4.01   -67.757093    1      
-iter:  34  16:08:28  -6.20  -4.05   -67.757092    1      
-iter:  35  16:08:50  -6.22  -4.15   -67.757093    1      
-iter:  36  16:09:12  -6.86  -4.25   -67.757093    1      
-iter:  37  16:09:35  -6.90  -4.30   -67.757092    1      
-iter:  38  16:09:58  -6.75  -4.35   -67.757092    1      
-iter:  39  16:10:19  -7.07  -4.36   -67.757091    1      
-iter:  40  16:10:42  -6.60  -4.46   -67.757092    1      
-iter:  41  16:11:04  -7.33  -4.54   -67.757093    1      
-iter:  42  16:11:26  -7.23  -4.67   -67.757092    1      
-iter:  43  16:11:48  -8.06  -4.80   -67.757092    1      
-
-Converged after 43 iterations.
-
-Dipole moment: (-0.034761, -0.030779, 0.035787) |e|*Ang
-
-Energy contributions relative to reference atoms: (reference = -151878.735092)
-
-Kinetic:        +92.794464
-Potential:      -63.883174
-External:        +0.000000
-XC:             -96.554587
-Entropy (-ST):   -0.015854
-Local:           -0.105869
---------------------------
-Free energy:    -67.765019
-Extrapolated:   -67.757092
-
- Band  Eigenvalues  Occupancy
-    0    -13.38060    2.00000
-    1    -12.27154    2.00000
-    2    -11.52758    2.00000
-    3    -11.40819    2.00000
-    4    -10.47826    2.00000
-    5    -10.20988    2.00000
-    6     -9.97261    2.00000
-    7     -9.27409    2.00000
-    8     -8.91884    2.00000
-    9     -8.38125    2.00000
-   10     -8.37857    2.00000
-   11     -8.14827    2.00000
-   12     -7.91447    2.00000
-   13     -7.55953    2.00000
-   14     -7.45301    2.00000
-   15     -6.70928    2.00000
-   16     -6.46499    2.00000
-   17     -6.28545    2.00000
-   18     -6.07685    2.00000
-   19     -5.99204    2.00000
-   20     -5.69293    2.00000
-   21     -5.63166    2.00000
-   22     -5.62874    2.00000
-   23     -5.38226    2.00000
-   24     -5.33154    2.00000
-   25     -4.93184    2.00000
-   26     -4.70121    2.00000
-   27     -4.67795    2.00000
-   28     -4.37307    2.00000
-   29     -4.06120    2.00000
-   30     -3.71306    2.00000
-   31     -3.70932    2.00000
-   32     -3.61479    2.00000
-   33     -3.55353    2.00000
-   34     -3.38441    0.95879
-   35     -3.34662    0.04121
-   36     -3.21747    0.00000
-   37     -3.07670    0.00000
-   38     -2.77562    0.00000
-   39     -2.69977    0.00000
-   40     -2.69052    0.00000
-   41     -2.44838    0.00000
-   42     -2.12047    0.00000
-   43     -2.09331    0.00000
-   44     -2.02603    0.00000
-   45     -1.86221    0.00000
-
-Fermi level: -3.38524
-
-Gap: 0.169 eV
-Transition (v -> c):
-  (s=0, k=0, n=33, [0.00, 0.00, 0.00]) -> (s=0, k=0, n=34, [0.00, 0.00, 0.00])
 
   ___ ___ ___ _ _ _  
  |   |   |_  | | | | 
@@ -337,10 +80,10 @@ Transition (v -> c):
  |__ |  _|___|_____|  20.10.0
  |___|_|             
 
-User:   eliasel@hebbe05-2
-Date:   Fri Mar 12 16:11:49 2021
+User:   eliasel@hebbe15-2
+Date:   Fri Mar 12 16:49:51 2021
 Arch:   x86_64
-Pid:    11883
+Pid:    27674
 Python: 3.7.4
 gpaw:   /apps/Hebbe7/software/MPI/GCC/8.3.0/OpenMPI/3.1.4/GPAW/20.10.0-ASE-3.20.1-Python-3.7.4/lib/python3.7/site-packages/gpaw
 _gpaw:  /apps/Hebbe7/software/MPI/GCC/8.3.0/OpenMPI/3.1.4/GPAW/20.10.0-ASE-3.20.1-Python-3.7.4/lib/python3.7/site-packages/
@@ -360,83 +103,166 @@ Input parameters:
   random: True
   xc: PBE
 
-Timing:                              incl.     excl.
------------------------------------------------------------
-Hamiltonian:                         1.354     0.000   0.0% |
- Atomic:                             0.000     0.000   0.0% |
-  XC Correction:                     0.000     0.000   0.0% |
- Calculate atomic Hamiltonians:      0.000     0.000   0.0% |
- Communicate:                        0.106     0.106   0.0% |
- Hartree integrate/restrict:         0.021     0.021   0.0% |
- Initialize Hamiltonian:             0.000     0.000   0.0% |
- Poisson:                            0.782     0.006   0.0% |
-  Communicate from 1D:               0.030     0.030   0.0% |
-  Communicate from 2D:               0.031     0.031   0.0% |
-  Communicate to 1D:                 0.661     0.661   0.1% |
-  Communicate to 2D:                 0.036     0.036   0.0% |
-  FFT 1D:                            0.005     0.005   0.0% |
-  FFT 2D:                            0.013     0.013   0.0% |
- XC 3D grid:                         0.443     0.443   0.0% |
- vbar:                               0.001     0.001   0.0% |
-LCAO initialization:                 5.939     0.025   0.0% |
- LCAO eigensolver:                   5.780     0.000   0.0% |
-  Calculate projections:             0.000     0.000   0.0% |
-  DenseAtomicCorrection:             0.000     0.000   0.0% |
-  Distribute overlap matrix:         0.033     0.033   0.0% |
-  Orbital Layouts:                   5.747     5.747   0.6% |
-  Potential matrix:                  0.000     0.000   0.0% |
- LCAO to grid:                       0.004     0.004   0.0% |
- Set positions (LCAO WFS):           0.130     0.029   0.0% |
-  Basic WFS set positions:           0.001     0.001   0.0% |
-  Basis functions set positions:     0.000     0.000   0.0% |
-  P tci:                             0.001     0.001   0.0% |
-  ST tci:                            0.004     0.004   0.0% |
-  mktci:                             0.095     0.095   0.0% |
-SCF-cycle:                         956.392     0.226   0.0% |
- Davidson:                         903.880   281.878  29.2% |-----------|
-  Apply hamiltonian:                 7.551     7.551   0.8% |
-  Subspace diag:                    69.627     0.006   0.0% |
-   calc_h_matrix:                    3.672     1.350   0.1% |
-    Apply hamiltonian:               2.322     2.322   0.2% |
-   diagonalize:                     58.729    58.729   6.1% |-|
-   rotate_psi:                       7.219     7.219   0.7% |
-  calc. matrices:                   19.984    13.953   1.4% ||
-   Apply hamiltonian:                6.031     6.031   0.6% |
-  diagonalize:                     512.716   512.716  53.1% |--------------------|
-  rotate_psi:                       12.124    12.124   1.3% ||
- Density:                           24.007     0.001   0.0% |
-  Atomic density matrices:           0.178     0.178   0.0% |
-  Mix:                              23.670    23.670   2.4% ||
-  Multipole moments:                 0.055     0.055   0.0% |
-  Pseudo density:                    0.103     0.101   0.0% |
-   Symmetrize density:               0.001     0.001   0.0% |
- Hamiltonian:                       27.805     0.006   0.0% |
-  Atomic:                            0.013     0.012   0.0% |
-   XC Correction:                    0.000     0.000   0.0% |
-  Calculate atomic Hamiltonians:     0.013     0.013   0.0% |
-  Communicate:                       4.240     4.240   0.4% |
-  Hartree integrate/restrict:        0.278     0.278   0.0% |
-  Poisson:                           5.786     0.249   0.0% |
-   Communicate from 1D:              1.112     1.112   0.1% |
-   Communicate from 2D:              1.306     1.306   0.1% |
-   Communicate to 1D:                1.114     1.114   0.1% |
-   Communicate to 2D:                1.221     1.221   0.1% |
-   FFT 1D:                           0.196     0.196   0.0% |
-   FFT 2D:                           0.588     0.588   0.1% |
-  XC 3D grid:                       17.410    17.410   1.8% ||
-  vbar:                              0.060     0.060   0.0% |
- Orthonormalize:                     0.474     0.000   0.0% |
-  calc_s_matrix:                     0.006     0.006   0.0% |
-  inverse-cholesky:                  0.336     0.336   0.0% |
-  projections:                       0.000     0.000   0.0% |
-  rotate_psi_s:                      0.132     0.132   0.0% |
-Set symmetry:                        0.001     0.001   0.0% |
-Other:                               2.645     2.645   0.3% |
------------------------------------------------------------
-Total:                                       966.332 100.0%
+System changes: positions, numbers, cell, pbc, initial_charges, initial_magmoms 
 
-Memory usage: 192.30 MiB
-Date: Fri Mar 12 16:11:49 2021
+Initialize ...
+
+Wave functions: Uniform real-space grid
+  Kinetic energy operator: 6*3+1=19 point O(h^6) finite-difference Laplacian
+  ScaLapack parameters: grid=1x1, blocksize=None
+  Wavefunction extrapolation:
+    Improved wavefunction reuse through dual PAW basis 
+
+  Fermi-Dirac: width=0.0100 eV
+
+Eigensolver
+   Davidson(niter=2, smin=None, normalize=True) 
+
+Densities:
+  Coarse grid: 120*104*120 grid
+  Fine grid: 240*208*240 grid
+  Total Charge: 0.000000 
+
+Density mixing:
+  Method: separate
+  Backend: pulay
+  Linear mixing parameter: 0.05
+  Mixing with 5 old densities
+  Damping of long wave oscillations: 50 
+
+Al-setup:
+  name: Aluminium
+  id: 0292cae29f5d6237e50f6abdd43a7bdd
+  Z: 13.0
+  valence: 3
+  core: 10
+  charge: 0.0
+  file: /apps/Hebbe7/software/Core/GPAW-setups/0.9.20000/Al.PBE.gz
+  compensation charges: gauss, rc=0.34, lmax=2
+  cutoffs: 1.91(filt), 2.36(core),
+  valence states:
+                energy  radius
+    3s(2.00)    -7.753   1.085
+    3p(1.00)    -2.712   1.085
+    *s          19.459   1.085
+    *p          24.499   1.085
+    *d           0.000   1.085
+
+  Using partial waves for Al as LCAO basis
+
+Reference energy: -250930.084066
+
+Spin-paired calculation
+
+Hamiltonian:
+  XC and Coulomb potentials evaluated on a 240*208*240 grid
+  Using the PBE Exchange-Correlation functional
+  Interpolation: tri-quintic (5. degree polynomial)
+  Poisson solver: FastPoissonSolver using
+    6*3+1=19 point O(h^6) finite-difference Laplacian stencil;
+    FFT axes: [0, 1, 2];
+    FST axes: [].
+ 
+
+XC parameters: PBE with 2 nearest neighbor stencil
+
+Memory estimate:
+  Process memory now: 158.63 MiB
+Convergence criteria:
+  Maximum total energy change: 0.0005 eV / electron
+  Maximum integral of absolute density change: 0.0001 electrons
+  Maximum integral of absolute eigenstate change: 4e-08 eV^2
+  Maximum number of iterations: 333
+
+ MiB
+    Wavefunctions: 78.85 MiB
+      Arrays psit_nG: 37.71 MiB
+      Eigensolver: 40.47 MiB
+      Projections: 0.02 MiB
+      Projectors: 0.65 MiB
+
+Total number of cores used: 40
+Domain decomposition: 4 x 2 x 5
+
+Number of atoms: 71
+Number of atomic orbitals: 284
+Number of bands in calculation: 132
+Number of valence electrons: 213
+Bands to converge: occupied
+
+... initialized
+
+Initializing position-dependent things.
+
+Symmetries present (total): 8
+
+  ( 1  0  0)  ( 1  0  0)  ( 0  0  1)  ( 0  0  1)  ( 0  0 -1)  ( 0  0 -1)
+  ( 0  1  0)  ( 0  1  0)  ( 0  1  0)  ( 0  1  0)  ( 0  1  0)  ( 0  1  0)
+  ( 0  0  1)  ( 0  0 -1)  ( 1  0  0)  (-1  0  0)  ( 1  0  0)  (-1  0  0)
+
+  (-1  0  0)  (-1  0  0)
+  ( 0  1  0)  ( 0  1  0)
+  ( 0  0  1)  ( 0  0 -1)
+
+1 k-point (Gamma)
+1 k-point in the irreducible part of the Brillouin zone
+       k-points in crystal coordinates                weights
+   0:     0.00000000    0.00000000    0.00000000          1/1
+
+Wave functions: Uniform real-space grid
+  Kinetic energy operator: 6*3+1=19 point O(h^6) finite-difference Laplacian
+  ScaLapack parameters: grid=1x1, blocksize=None
+  Wavefunction extrapolation:
+    Improved wavefunction reuse through dual PAW basis 
+
+  Fermi-Dirac: width=0.0100 eV
+
+Eigensolver
+   Davidson(niter=2, smin=None, normalize=True) 
+
+Densities:
+  Coarse grid: 100*100*100 grid
+  Fine grid: 200*200*200 grid
+  Total Charge: 0.000000 
+
+Density mixing:
+  Method: separate
+  Backend: pulay
+  Linear mixing parameter: 0.05
+  Mixing with 5 old densities
+  Damping of long wave oscillations: 50 
+
+Density initialized from atomic densities
+
+  ___ ___ ___ _ _ _  
+ |   |   |_  | | | | 
+ | | | | | . | | | | 
+ |__ |  _|___|_____|  20.10.0
+ |___|_|             
+
+User:   eliasel@hebbe15-5
+Date:   Fri Mar 12 16:49:53 2021
+Arch:   x86_64
+Pid:    2337
+Python: 3.7.4
+gpaw:   /apps/Hebbe7/software/MPI/GCC/8.3.0/OpenMPI/3.1.4/GPAW/20.10.0-ASE-3.20.1-Python-3.7.4/lib/python3.7/site-packages/gpaw
+_gpaw:  /apps/Hebbe7/software/MPI/GCC/8.3.0/OpenMPI/3.1.4/GPAW/20.10.0-ASE-3.20.1-Python-3.7.4/lib/python3.7/site-packages/
+        _gpaw.cpython-37m-x86_64-linux-gnu.so
+ase:    /apps/Hebbe7/software/MPI/GCC/8.3.0/OpenMPI/3.1.4/ASE/3.20.1-Python-3.7.4/lib/python3.7/site-packages/ase (version 3.20.1)
+numpy:  /apps/Hebbe7/software/MPI/GCC/8.3.0/OpenMPI/3.1.4/SciPy-bundle/2019.10-Python-3.7.4/lib/python3.7/site-packages/numpy (version 1.17.3)
+scipy:  /apps/Hebbe7/software/MPI/GCC/8.3.0/OpenMPI/3.1.4/SciPy-bundle/2019.10-Python-3.7.4/lib/python3.7/site-packages/scipy (version 1.3.1)
+libxc:  4.3.4
+units:  Angstrom and eV
+cores: 40
+OMP_NUM_THREADS: 1
+
+Input parameters:
+  occupations: {fixmagmom: False,
+                name: fermi-dirac,
+                width: 0.01}
+  random: True
+  xc: PBE
+
 System changes: positions, numbers, cell, pbc, initial_charges, initial_magmoms 
 
 Initialize ...
@@ -461,21 +287,65 @@ Al-setup:
 
   Using partial waves for Al as LCAO basis
 
-Reference energy: -594308.093840
+Reference energy: -343378.009774
 
 Spin-paired calculation
 
+Hamiltonian:
+  XC and Coulomb potentials evaluated on a 200*200*200 grid
+  Using the PBE Exchange-Correlation functional
+  Interpolation: tri-quintic (5. degree polynomial)
+  Poisson solver: FastPoissonSolver using
+    6*3+1=19 point O(h^6) finite-difference Laplacian stencil;
+    FFT axes: [0, 1, 2];
+    FST axes: [].
+ 
+
+XC parameters: PBE with 2 nearest neighbor stencil
+
+Memory estimate:
+  Process memory now: 146.35 MiB
+  Calculator: 42.76 MiB
+    Density: 9.74 MiB
+      Arrays: 4.96 MiB
+      Localized functions: 2.87 MiB
+      Mixer: 1.91 MiB
+    Hamiltonian: 3.45 MiB
+      Arrays: 3.24 MiB
+      XC: 0.00 MiB
+      Poisson: 0.00 MiB
+      vbar: 0.21 MiB
+    Wavefunctions: 29.56 MiB
+      Arrays psit_nG: 13.92 MiB
+      Eigensolver: 15.29 MiB
+      Projections: 0.01 MiB
+      Projectors: 0.34 MiB
+
+Total number of cores used: 40
+Domain decomposition: 5 x 4 x 2
+
+Number of atoms: 38
+Number of atomic orbitals: 152
+Number of bands in calculation: 73
+Number of valence electrons: 114
+Bands to converge: occupied
+
+... initialized
+
+Initializing position-dependent things.
+
+Density initialized from atomic densities
 Convergence criteria:
   Maximum total energy change: 0.0005 eV / electron
   Maximum integral of absolute density change: 0.0001 electrons
   Maximum integral of absolute eigenstate change: 4e-08 eV^2
   Maximum number of iterations: 333
 
-Symmetries present (total): 1
+Symmetries present (total): 4
 
-  ( 1  0  0)
-  ( 0  1  0)
-  ( 0  0  1)
+  ( 1  0  0)  ( 1  0  0)  (-1  0  0)  (-1  0  0)
+  ( 0  1  0)  ( 0 -1  0)  ( 0  1  0)  ( 0 -1  0)
+  ( 0  0  1)  ( 0  0  1)  ( 0  0 -1)  ( 0  0 -1)
 
 1 k-point (Gamma)
 1 k-point in the irreducible part of the Brillouin zone
@@ -494,8 +364,8 @@ Eigensolver
    Davidson(niter=2, smin=None, normalize=True) 
 
 Densities:
-  Coarse grid: 112*120*120 grid
-  Fine grid: 224*240*240 grid
+  Coarse grid: 108*100*108 grid
+  Fine grid: 216*200*216 grid
   Total Charge: 0.000000 
 
 Density mixing:
@@ -506,7 +376,7 @@ Density mixing:
   Damping of long wave oscillations: 50 
 
 Hamiltonian:
-  XC and Coulomb potentials evaluated on a 224*240*240 grid
+  XC and Coulomb potentials evaluated on a 216*200*216 grid
   Using the PBE Exchange-Correlation functional
   Interpolation: tri-quintic (5. degree polynomial)
   Poisson solver: FastPoissonSolver using
@@ -518,30 +388,30 @@ Hamiltonian:
 XC parameters: PBE with 2 nearest neighbor stencil
 
 Memory estimate:
-  Process memory now: 192.52 MiB
-  Calculator: 130.02 MiB
-    Density: 17.70 MiB
-      Arrays: 8.00 MiB
-      Localized functions: 6.62 MiB
-      Mixer: 3.08 MiB
-    Hamiltonian: 5.72 MiB
-      Arrays: 5.23 MiB
+  Process memory now: 171.59 MiB
+  Calculator: 62.76 MiB
+    Density: 11.89 MiB
+      Arrays: 5.89 MiB
+      Localized functions: 3.74 MiB
+      Mixer: 2.27 MiB
+    Hamiltonian: 4.13 MiB
+      Arrays: 3.85 MiB
       XC: 0.00 MiB
       Poisson: 0.00 MiB
-      vbar: 0.49 MiB
-    Wavefunctions: 106.61 MiB
-      Arrays psit_nG: 51.06 MiB
-      Eigensolver: 54.71 MiB
-      Projections: 0.04 MiB
-      Projectors: 0.80 MiB
+      vbar: 0.28 MiB
+    Wavefunctions: 46.74 MiB
+      Arrays psit_nG: 22.21 MiB
+      Eigensolver: 24.07 MiB
+      Projections: 0.01 MiB
+      Projectors: 0.45 MiB
 
 Total number of cores used: 40
-Domain decomposition: 2 x 4 x 5
+Domain decomposition: 4 x 2 x 5
 
-Number of atoms: 90
-Number of atomic orbitals: 360
-Number of bands in calculation: 166
-Number of valence electrons: 270
+Number of atoms: 52
+Number of atomic orbitals: 208
+Number of bands in calculation: 98
+Number of valence electrons: 156
 Bands to converge: occupied
 
 ... initialized
@@ -549,175 +419,1001 @@ Bands to converge: occupied
 Initializing position-dependent things.
 
 Density initialized from atomic densities
+iter:  10  16:49:56  -0.71  -1.82   -36.300192    1      
 Creating initial wave functions:
-  166 bands from LCAO basis set
+  73 bands from LCAO basis set
 
-                .------------------------------------------------------.  
-               /|                                                      |  
-              / |                                                      |  
-             /  |                                                      |  
-            /   |                                                      |  
-           /    |                                                      |  
-          /     |                                                      |  
-         /      |                                                      |  
-        /       |                                                      |  
-       /        |                                                      |  
-      /         |                                                      |  
-     /          |                                                      |  
-    /           |                                                      |  
-   /            |                   Al                                 |  
-  /             |             Al     Al Al                             |  
- *              |       Al     Al Al     AlAl                          |  
- |              |           Al     AlAl      Al                        |  
- |              |        Al     Al        Al                           |  
- |              |         Al AlAl   AlAl      AlAl                     |  
- |              |      Al     AlAl   Al AlAl   AlAl                    |  
- |              |       AlAl   Al AlAl   AlAl      Al                  |  
- |              |        AlAl Al   AlAl   Al AlAl                      |  
- |              |                                                      |  
- |              |    Al      AlAl   AlAl Al   AlAl                     |  
- |              |      AlAl   AlAl Al   AlAl     Al                    |  
- |              |       AlAl     Al Al   AlAl Al                       |  
- |              |          Al Al   AlAl Al   AlAl                      |  
- |              |                                                      |  
- |              |            AlAl     Al Al     Al                     |  
- |              |               Al Al   AlAl                           |  
- |              .-----------------AlAl-----Al--------------------------.  
- |             /                     Al                               /   
- |            /                                                      /    
- |           /                                                      /     
- |          /                                                      /      
- |         /                                                      /       
- |        /                                                      /        
- |       /                                                      /         
- |      /                                                      /          
- |     /                                                      /           
- |    /                                                      /            
- |   /                                                      /             
- |  /                                                      /              
- | /                                                      /               
- |/                                                      /                
- *------------------------------------------------------*                 
+             .------------------------------------------------.  
+            /|                                                |  
+           / |                                                |  
+          /  |                                                |  
+         /   |                                                |  
+        /    |                                                |  
+       /     |                                                |  
+      /      |                                                |  
+     /       |                                                |  
+    /        |                                                |  
+   /         |                                                |  
+  /          |                                                |  
+ *           |                   Al                           |  
+ |           |             Al     AlAl                        |  
+ |           |              AlAl      Al                      |  
+ |           |                                                |  
+ |           |        Al     Al Al     AlAl                   |  
+ |           |         AlAl      AlAl     Al                  |  
+ |           |             AlAl   AlAl                        |  
+ |           |       Al     AlAl      AlAl                    |  
+ |           |        AlAl      AlAl     Al                   |  
+ |           |                                                |  
+ |           |           Al      AlAl                         |  
+ |           |             AlAl     Al                        |  
+ |           .----------------Al------------------------------.  
+ |          /                                                /   
+ |         /                                                /    
+ |        /                                                /     
+ |       /                                                /      
+ |      /                                                /       
+ |     /                                                /        
+ |    /                                                /         
+ |   /                                                /          
+ |  /                                                /           
+ | /                                                /            
+ |/                                                /             
+ *------------------------------------------------*              
 
 Positions:
-   0 Al    12.234401   10.131866    6.098572    ( 0.0000,  0.0000,  0.0000)
-   1 Al    10.284627   12.076320    6.089979    ( 0.0000,  0.0000,  0.0000)
-   2 Al    14.179347   12.076320    6.100125    ( 0.0000,  0.0000,  0.0000)
-   3 Al    12.234402   14.020774    6.098572    ( 0.0000,  0.0000,  0.0000)
-   4 Al    12.220533    6.158230   10.035559    ( 0.0000,  0.0000,  0.0000)
-   5 Al    12.225411    8.078326    7.992922    ( 0.0000,  0.0000,  0.0000)
-   6 Al    10.187772    8.037273    9.940430    ( 0.0000,  0.0000,  0.0000)
-   7 Al    14.254198    8.068868    9.945435    ( 0.0000,  0.0000,  0.0000)
-   8 Al     8.219963   12.076321    7.986529    ( 0.0000,  0.0000,  0.0000)
-   9 Al     8.173608   10.056063    9.941832    ( 0.0000,  0.0000,  0.0000)
-  10 Al     6.276460   12.076321   10.018843    ( 0.0000,  0.0000,  0.0000)
-  11 Al    10.181843   10.039012    7.965970    ( 0.0000,  0.0000,  0.0000)
-  12 Al    12.224387   12.076320    8.044551    ( 0.0000,  0.0000,  0.0000)
-  13 Al    12.211932   10.034887    9.917127    ( 0.0000,  0.0000,  0.0000)
-  14 Al    10.176114   12.076320    9.914560    ( 0.0000,  0.0000,  0.0000)
-  15 Al    14.265835   10.048399    7.990280    ( 0.0000,  0.0000,  0.0000)
-  16 Al    14.216329   12.076319    9.962115    ( 0.0000,  0.0000,  0.0000)
-  17 Al    16.177018   12.076319    8.046011    ( 0.0000,  0.0000,  0.0000)
-  18 Al    16.230571   10.119664   10.019858    ( 0.0000,  0.0000,  0.0000)
-  19 Al     8.173609   14.096577    9.941834    ( 0.0000,  0.0000,  0.0000)
-  20 Al    10.181844   14.113628    7.965971    ( 0.0000,  0.0000,  0.0000)
-  21 Al    12.225412   16.074313    7.992924    ( 0.0000,  0.0000,  0.0000)
-  22 Al    12.211933   14.117752    9.917128    ( 0.0000,  0.0000,  0.0000)
-  23 Al    10.187774   16.115366    9.940433    ( 0.0000,  0.0000,  0.0000)
-  24 Al    14.265836   14.104239    7.990281    ( 0.0000,  0.0000,  0.0000)
-  25 Al    14.254199   16.083769    9.945437    ( 0.0000,  0.0000,  0.0000)
-  26 Al    12.220535   17.994407   10.035563    ( 0.0000,  0.0000,  0.0000)
-  27 Al    16.230571   14.032973   10.019859    ( 0.0000,  0.0000,  0.0000)
-  28 Al     8.277690    6.202399   13.971549    ( 0.0000,  0.0000,  0.0000)
-  29 Al     8.198297    8.078946   11.936474    ( 0.0000,  0.0000,  0.0000)
-  30 Al     6.293624    8.161374   13.960348    ( 0.0000,  0.0000,  0.0000)
-  31 Al     8.207885    8.134408   15.981510    ( 0.0000,  0.0000,  0.0000)
-  32 Al    10.251840    6.128140   12.010787    ( 0.0000,  0.0000,  0.0000)
-  33 Al    12.185536    6.145538   13.937336    ( 0.0000,  0.0000,  0.0000)
-  34 Al    14.163869    6.171943   11.980192    ( 0.0000,  0.0000,  0.0000)
-  35 Al    12.223108    8.121699   11.949238    ( 0.0000,  0.0000,  0.0000)
-  36 Al    10.222840    8.143081   13.953533    ( 0.0000,  0.0000,  0.0000)
-  37 Al    14.234789    8.089413   13.973676    ( 0.0000,  0.0000,  0.0000)
-  38 Al    10.222510    6.212699   15.912756    ( 0.0000,  0.0000,  0.0000)
-  39 Al    12.246122    8.098223   15.978011    ( 0.0000,  0.0000,  0.0000)
-  40 Al    16.149749    8.138812   11.965712    ( 0.0000,  0.0000,  0.0000)
-  41 Al     6.231068   10.128040   11.999450    ( 0.0000,  0.0000,  0.0000)
-  42 Al     8.237100   12.076319   11.941688    ( 0.0000,  0.0000,  0.0000)
-  43 Al     8.246123   10.092762   13.934358    ( 0.0000,  0.0000,  0.0000)
-  44 Al     6.194893   12.076319   13.949092    ( 0.0000,  0.0000,  0.0000)
-  45 Al     6.258091   10.141637   15.906671    ( 0.0000,  0.0000,  0.0000)
-  46 Al     8.282117   12.076317   15.898980    ( 0.0000,  0.0000,  0.0000)
-  47 Al    10.201338   10.056948   11.897342    ( 0.0000,  0.0000,  0.0000)
-  48 Al    12.194817   12.076319   11.903062    ( 0.0000,  0.0000,  0.0000)
-  49 Al    12.245347   10.067420   13.956174    ( 0.0000,  0.0000,  0.0000)
-  50 Al    10.260405   12.076318   13.907215    ( 0.0000,  0.0000,  0.0000)
-  51 Al    14.201739   10.083884   11.933863    ( 0.0000,  0.0000,  0.0000)
-  52 Al    14.193336   12.076317   13.928836    ( 0.0000,  0.0000,  0.0000)
-  53 Al    10.243189   10.097366   15.939679    ( 0.0000,  0.0000,  0.0000)
-  54 Al    12.232841   12.076316   15.937092    ( 0.0000,  0.0000,  0.0000)
-  55 Al    14.235107   10.075454   15.960900    ( 0.0000,  0.0000,  0.0000)
-  56 Al    16.254180   12.076318   11.957019    ( 0.0000,  0.0000,  0.0000)
-  57 Al    16.192165   10.127249   13.901984    ( 0.0000,  0.0000,  0.0000)
-  58 Al    16.143892   12.076315   15.877307    ( 0.0000,  0.0000,  0.0000)
-  59 Al     6.231069   14.024600   11.999452    ( 0.0000,  0.0000,  0.0000)
-  60 Al     8.198299   16.073693   11.936478    ( 0.0000,  0.0000,  0.0000)
-  61 Al     8.246124   14.059875   13.934360    ( 0.0000,  0.0000,  0.0000)
-  62 Al     6.293627   15.991265   13.960352    ( 0.0000,  0.0000,  0.0000)
-  63 Al     8.277694   17.950237   13.971556    ( 0.0000,  0.0000,  0.0000)
-  64 Al     6.258091   14.010998   15.906674    ( 0.0000,  0.0000,  0.0000)
-  65 Al     8.207887   16.018227   15.981515    ( 0.0000,  0.0000,  0.0000)
-  66 Al    10.201339   14.095690   11.897344    ( 0.0000,  0.0000,  0.0000)
-  67 Al    12.223110   16.030937   11.949241    ( 0.0000,  0.0000,  0.0000)
-  68 Al    12.245348   14.085215   13.956176    ( 0.0000,  0.0000,  0.0000)
-  69 Al    10.222842   16.009554   13.953538    ( 0.0000,  0.0000,  0.0000)
-  70 Al    14.201740   14.068752   11.933864    ( 0.0000,  0.0000,  0.0000)
-  71 Al    14.234791   16.063220   13.973681    ( 0.0000,  0.0000,  0.0000)
-  72 Al    10.251843   18.024497   12.010793    ( 0.0000,  0.0000,  0.0000)
-  73 Al    12.185539   18.007096   13.937342    ( 0.0000,  0.0000,  0.0000)
-  74 Al    14.163870   17.980691   11.980197    ( 0.0000,  0.0000,  0.0000)
-  75 Al    10.243190   14.055267   15.939682    ( 0.0000,  0.0000,  0.0000)
-  76 Al    12.246124   16.054410   15.978016    ( 0.0000,  0.0000,  0.0000)
-  77 Al    14.235108   14.077177   15.960902    ( 0.0000,  0.0000,  0.0000)
-  78 Al    10.222513   17.939934   15.912763    ( 0.0000,  0.0000,  0.0000)
-  79 Al    16.149750   16.013822   11.965715    ( 0.0000,  0.0000,  0.0000)
-  80 Al    16.192166   14.025384   13.901987    ( 0.0000,  0.0000,  0.0000)
-  81 Al    10.229925    8.176694   17.896906    ( 0.0000,  0.0000,  0.0000)
-  82 Al     8.270895   10.148620   17.927892    ( 0.0000,  0.0000,  0.0000)
-  83 Al     6.331053   12.076317   17.838073    ( 0.0000,  0.0000,  0.0000)
-  84 Al    12.199058   10.138981   17.944810    ( 0.0000,  0.0000,  0.0000)
-  85 Al    10.235836   12.076316   17.991839    ( 0.0000,  0.0000,  0.0000)
-  86 Al    14.186628   12.076315   17.878611    ( 0.0000,  0.0000,  0.0000)
-  87 Al     8.270896   14.004012   17.927895    ( 0.0000,  0.0000,  0.0000)
-  88 Al    12.199059   14.013649   17.944813    ( 0.0000,  0.0000,  0.0000)
-  89 Al    10.229927   15.975937   17.896912    ( 0.0000,  0.0000,  0.0000)
+   0 Al     9.962690    6.041219    8.016935    ( 0.0000,  0.0000,  0.0000)
+   1 Al     8.016935    9.962688    6.041218    ( 0.0000,  0.0000,  0.0000)
+   2 Al     7.954735    7.954734    7.954735    ( 0.0000,  0.0000,  0.0000)
+   3 Al     6.041218    9.962688    8.016935    ( 0.0000,  0.0000,  0.0000)
+   4 Al     9.962690    8.016935    6.041218    ( 0.0000,  0.0000,  0.0000)
+   5 Al    11.908446    9.962688    6.041218    ( 0.0000,  0.0000,  0.0000)
+   6 Al    11.970646    7.954734    7.954735    ( 0.0000,  0.0000,  0.0000)
+   7 Al     9.962690    9.962690    7.995815    ( 0.0000,  0.0000,  0.0000)
+   8 Al    13.884163    9.962688    8.016935    ( 0.0000,  0.0000,  0.0000)
+   9 Al     7.954735   11.970644    7.954735    ( 0.0000,  0.0000,  0.0000)
+  10 Al     9.962690   11.908442    6.041219    ( 0.0000,  0.0000,  0.0000)
+  11 Al    11.970646   11.970644    7.954735    ( 0.0000,  0.0000,  0.0000)
+  12 Al     9.962690   13.884156    8.016935    ( 0.0000,  0.0000,  0.0000)
+  13 Al     8.016935    6.041219    9.962690    ( 0.0000,  0.0000,  0.0000)
+  14 Al    11.908445    6.041219    9.962690    ( 0.0000,  0.0000,  0.0000)
+  15 Al     9.962690    6.041219   11.908445    ( 0.0000,  0.0000,  0.0000)
+  16 Al     6.041218    8.016935    9.962690    ( 0.0000,  0.0000,  0.0000)
+  17 Al     7.995815    9.962690    9.962690    ( 0.0000,  0.0000,  0.0000)
+  18 Al     7.954735    7.954734   11.970646    ( 0.0000,  0.0000,  0.0000)
+  19 Al     6.041218    9.962688   11.908446    ( 0.0000,  0.0000,  0.0000)
+  20 Al     8.016935    9.962688   13.884163    ( 0.0000,  0.0000,  0.0000)
+  21 Al     9.962690    7.995816    9.962690    ( 0.0000,  0.0000,  0.0000)
+  22 Al    11.929565    9.962690    9.962690    ( 0.0000,  0.0000,  0.0000)
+  23 Al    11.970646    7.954734   11.970646    ( 0.0000,  0.0000,  0.0000)
+  24 Al     9.962690    9.962690   11.929565    ( 0.0000,  0.0000,  0.0000)
+  25 Al    13.884162    8.016935    9.962690    ( 0.0000,  0.0000,  0.0000)
+  26 Al    13.884163    9.962688   11.908446    ( 0.0000,  0.0000,  0.0000)
+  27 Al     9.962690    8.016935   13.884162    ( 0.0000,  0.0000,  0.0000)
+  28 Al    11.908446    9.962688   13.884163    ( 0.0000,  0.0000,  0.0000)
+  29 Al     6.041219   11.908442    9.962690    ( 0.0000,  0.0000,  0.0000)
+  30 Al     8.016935   13.884156    9.962690    ( 0.0000,  0.0000,  0.0000)
+  31 Al     7.954735   11.970644   11.970646    ( 0.0000,  0.0000,  0.0000)
+  32 Al     9.962690   11.929562    9.962690    ( 0.0000,  0.0000,  0.0000)
+  33 Al    11.908445   13.884156    9.962690    ( 0.0000,  0.0000,  0.0000)
+  34 Al    11.970646   11.970644   11.970646    ( 0.0000,  0.0000,  0.0000)
+  35 Al     9.962690   13.884156   11.908445    ( 0.0000,  0.0000,  0.0000)
+  36 Al    13.884162   11.908442    9.962690    ( 0.0000,  0.0000,  0.0000)
+  37 Al     9.962690   11.908442   13.884162    ( 0.0000,  0.0000,  0.0000)
 
 Unit cell:
            periodic     x           y           z      points  spacing
-  1. axis:    yes   22.452310    0.000000    0.000000   112     0.2005
-  2. axis:    yes    0.000000   24.152640    0.000000   120     0.2013
-  3. axis:    yes    0.000000    0.000000   24.176400   120     0.2015
+  1. axis:    yes   19.925380    0.000000    0.000000   100     0.1993
+  2. axis:    yes    0.000000   19.925370    0.000000   100     0.1993
+  3. axis:    yes    0.000000    0.000000   19.925380   100     0.1993
 
-  Lengths:  22.452310  24.152640  24.176400
+  Lengths:  19.925380  19.925370  19.925380
   Angles:   90.000000  90.000000  90.000000
 
-Effective grid spacing dv^(1/3) = 0.2011
+Effective grid spacing dv^(1/3) = 0.1993
 
+iter:  11  16:50:09  -0.47  -1.97   -36.712446    1      
+Creating initial wave functions:
+  98 bands from LCAO basis set
+
+             .-----------------------------------------------------.  
+            /|                                                     |  
+           / |                                                     |  
+          /  |                                                     |  
+         /   |                                                     |  
+        /    |                                                     |  
+       /     |                                                     |  
+      /      |                                                     |  
+     /       |                                                     |  
+    /        |                                                     |  
+   /         |                                                     |  
+  /          |                                                     |  
+ *           |                        Al                           |  
+ |           |                  Al       Al                        |  
+ |           |                         Al                          |  
+ |           |                   AlAl      Al                      |  
+ |           |             Al     AlAl      AlAl                   |  
+ |           |              AlAl      AlAl     Al                  |  
+ |           |        Al     AlAl Al   AlAl                        |  
+ |           |           Al        Al        Al                    |  
+ |           |         Al        Al        Al                      |  
+ |           |             AlAl   Al AlAl     Al                   |  
+ |           |       Al     AlAl      AlAl                         |  
+ |           |        AlAl      AlAl     Al                        |  
+ |           |           Al      AlAl                              |  
+ |           |               Al                                    |  
+ |           |             Al       Al                             |  
+ |           .----------------Al-----------------------------------.  
+ |          /                                                     /   
+ |         /                                                     /    
+ |        /                                                     /     
+ |       /                                                     /      
+ |      /                                                     /       
+ |     /                                                     /        
+ |    /                                                     /         
+ |   /                                                     /          
+ |  /                                                     /           
+ | /                                                     /            
+ |/                                                     /             
+ *-----------------------------------------------------*              
+
+Positions:
+   0 Al     9.981115    8.143761    6.060253    ( 0.0000,  0.0000,  0.0000)
+   1 Al     8.035572   10.087490    6.056900    ( 0.0000,  0.0000,  0.0000)
+   2 Al    11.922685   10.087490    6.060920    ( 0.0000,  0.0000,  0.0000)
+   3 Al     9.981115   12.031220    6.060253    ( 0.0000,  0.0000,  0.0000)
+   4 Al     6.060252    8.143761    9.981121    ( 0.0000,  0.0000,  0.0000)
+   5 Al     7.970985    8.079325    7.970989    ( 0.0000,  0.0000,  0.0000)
+   6 Al     8.035509    6.167912    9.980856    ( 0.0000,  0.0000,  0.0000)
+   7 Al     9.980852    6.167912    8.035510    ( 0.0000,  0.0000,  0.0000)
+   8 Al    11.993633    8.067144    7.973346    ( 0.0000,  0.0000,  0.0000)
+   9 Al    11.932661    6.106803   10.006388    ( 0.0000,  0.0000,  0.0000)
+  10 Al     9.980732    8.121240    9.980732    ( 0.0000,  0.0000,  0.0000)
+  11 Al    13.965702    8.067144    9.945412    ( 0.0000,  0.0000,  0.0000)
+  12 Al     6.056897   10.087490    8.035579    ( 0.0000,  0.0000,  0.0000)
+  13 Al     6.060252   12.031219    9.981121    ( 0.0000,  0.0000,  0.0000)
+  14 Al     7.970985   12.095655    7.970989    ( 0.0000,  0.0000,  0.0000)
+  15 Al     8.015439   10.087490    9.981692    ( 0.0000,  0.0000,  0.0000)
+  16 Al     8.035509   14.007068    9.980856    ( 0.0000,  0.0000,  0.0000)
+  17 Al     9.981690   10.087490    8.015442    ( 0.0000,  0.0000,  0.0000)
+  18 Al    11.993633   12.107836    7.973346    ( 0.0000,  0.0000,  0.0000)
+  19 Al    12.000164   10.087490    9.938883    ( 0.0000,  0.0000,  0.0000)
+  20 Al     9.980732   12.053740    9.980732    ( 0.0000,  0.0000,  0.0000)
+  21 Al     9.980852   14.007068    8.035510    ( 0.0000,  0.0000,  0.0000)
+  22 Al    11.932661   14.068177   10.006388    ( 0.0000,  0.0000,  0.0000)
+  23 Al    13.953866   10.087490    7.985178    ( 0.0000,  0.0000,  0.0000)
+  24 Al    15.878128   10.087490   10.016358    ( 0.0000,  0.0000,  0.0000)
+  25 Al    13.965702   12.107836    9.945412    ( 0.0000,  0.0000,  0.0000)
+  26 Al     7.973348    8.067144   11.993637    ( 0.0000,  0.0000,  0.0000)
+  27 Al    10.006390    6.106803   11.932661    ( 0.0000,  0.0000,  0.0000)
+  28 Al    11.958319    8.121239   11.958317    ( 0.0000,  0.0000,  0.0000)
+  29 Al    11.958198    6.167912   13.903539    ( 0.0000,  0.0000,  0.0000)
+  30 Al     9.945417    8.067144   13.965703    ( 0.0000,  0.0000,  0.0000)
+  31 Al    11.957935    8.143761   15.878797    ( 0.0000,  0.0000,  0.0000)
+  32 Al    13.903542    6.167913   11.958194    ( 0.0000,  0.0000,  0.0000)
+  33 Al    15.878798    8.143762   11.957928    ( 0.0000,  0.0000,  0.0000)
+  34 Al    13.968066    8.079325   13.968061    ( 0.0000,  0.0000,  0.0000)
+  35 Al     6.060922   10.087490   11.922691    ( 0.0000,  0.0000,  0.0000)
+  36 Al     7.973348   12.107836   11.993637    ( 0.0000,  0.0000,  0.0000)
+  37 Al     7.985183   10.087490   13.953870    ( 0.0000,  0.0000,  0.0000)
+  38 Al     9.938886   10.087490   12.000167    ( 0.0000,  0.0000,  0.0000)
+  39 Al    11.958319   12.053741   11.958317    ( 0.0000,  0.0000,  0.0000)
+  40 Al    11.957361   10.087490   13.923608    ( 0.0000,  0.0000,  0.0000)
+  41 Al     9.945417   12.107836   13.965703    ( 0.0000,  0.0000,  0.0000)
+  42 Al    10.006390   14.068177   11.932661    ( 0.0000,  0.0000,  0.0000)
+  43 Al    11.958198   14.007068   13.903539    ( 0.0000,  0.0000,  0.0000)
+  44 Al    10.016365   10.087490   15.878129    ( 0.0000,  0.0000,  0.0000)
+  45 Al    11.957935   12.031219   15.878797    ( 0.0000,  0.0000,  0.0000)
+  46 Al    13.923612   10.087490   11.957357    ( 0.0000,  0.0000,  0.0000)
+  47 Al    15.878798   12.031218   11.957928    ( 0.0000,  0.0000,  0.0000)
+  48 Al    15.882153   10.087490   13.903471    ( 0.0000,  0.0000,  0.0000)
+  49 Al    13.968066   12.095655   13.968061    ( 0.0000,  0.0000,  0.0000)
+  50 Al    13.903542   14.007068   11.958194    ( 0.0000,  0.0000,  0.0000)
+  51 Al    13.903478   10.087490   15.882150    ( 0.0000,  0.0000,  0.0000)
+
+Unit cell:
+           periodic     x           y           z      points  spacing
+  1. axis:    yes   21.939050    0.000000    0.000000   108     0.2031
+  2. axis:    yes    0.000000   20.174980    0.000000   100     0.2017
+  3. axis:    yes    0.000000    0.000000   21.939050   108     0.2031
+
+  Lengths:  21.939050  20.174980  21.939050
+  Angles:   90.000000  90.000000  90.000000
+
+Effective grid spacing dv^(1/3) = 0.2027
+
+Creating initial wave functions:
+  132 bands from LCAO basis set
+
+              .----------------------------------------------------------.  
+             /|                                                          |  
+            / |                                                          |  
+           /  |                                                          |  
+          /   |                                                          |  
+         /    |                                                          |  
+        /     |                                                          |  
+       /      |                                                          |  
+      /       |                                                          |  
+     /        |                                                          |  
+    /         |                                                          |  
+   /          |                                                          |  
+  /           |                                                          |  
+ *            |                       Al                                 |  
+ |            |                 Al      AlAl                             |  
+ |            |                  Al Al     Al                            |  
+ |            |            Al      AlAl     Al Al                        |  
+ |            |             Al Al     Al Al     Al                       |  
+ |            |               Al        Al       Al                      |  
+ |            |        Al       AlAl      Al       Al                    |  
+ |            |         AlAl     Al Al     Al Al     Al                  |  
+ |            |            Al Al   AlAlAl   Al Al                        |  
+ |            |      Al     Al Al     Al Al     AlAl                     |  
+ |            |        Al       Al      AlAl       Al                    |  
+ |            |          Al       Al        Al                           |  
+ |            |           Al     Al Al     Al Al                         |  
+ |            |            Al Al     AlAl      Al                        |  
+ |            |                Al     Al Al                              |  
+ |            |                 AlAl      Al                             |  
+ |            .---------------------Al-----------------------------------.  
+ |           /                                                          /   
+ |          /                                                          /    
+ |         /                                                          /     
+ |        /                                                          /      
+ |       /                                                          /       
+ |      /                                                          /        
+ |     /                                                          /         
+ |    /                                                          /          
+ |   /                                                          /           
+ |  /                                                          /            
+ | /                                                          /             
+ |/                                                          /              
+ *----------------------------------------------------------*               
+
+Positions:
+   0 Al    11.962910    8.268816    6.079431    ( 0.0000,  0.0000,  0.0000)
+   1 Al    10.032550   10.223390    6.083022    ( 0.0000,  0.0000,  0.0000)
+   2 Al    13.893270   10.223390    6.083022    ( 0.0000,  0.0000,  0.0000)
+   3 Al    11.962910   12.177964    6.079431    ( 0.0000,  0.0000,  0.0000)
+   4 Al     9.950859    8.191161    7.983422    ( 0.0000,  0.0000,  0.0000)
+   5 Al    10.017926    6.222364   10.017881    ( 0.0000,  0.0000,  0.0000)
+   6 Al     7.983467    8.191161    9.950812    ( 0.0000,  0.0000,  0.0000)
+   7 Al    11.962910    6.278859    8.037558    ( 0.0000,  0.0000,  0.0000)
+   8 Al    13.974961    8.191161    7.983422    ( 0.0000,  0.0000,  0.0000)
+   9 Al    13.907894    6.222364   10.017881    ( 0.0000,  0.0000,  0.0000)
+  10 Al    11.962910    8.231831    9.974841    ( 0.0000,  0.0000,  0.0000)
+  11 Al    15.942354    8.191161    9.950812    ( 0.0000,  0.0000,  0.0000)
+  12 Al     6.083067   10.223390   10.032501    ( 0.0000,  0.0000,  0.0000)
+  13 Al     7.995945   10.223390    7.995898    ( 0.0000,  0.0000,  0.0000)
+  14 Al     9.950859   12.255619    7.983422    ( 0.0000,  0.0000,  0.0000)
+  15 Al     9.940624   10.223390    9.940578    ( 0.0000,  0.0000,  0.0000)
+  16 Al     7.983467   12.255619    9.950812    ( 0.0000,  0.0000,  0.0000)
+  17 Al    10.017926   14.224417   10.017881    ( 0.0000,  0.0000,  0.0000)
+  18 Al    11.962910   10.223390    8.037102    ( 0.0000,  0.0000,  0.0000)
+  19 Al    13.974961   12.255619    7.983422    ( 0.0000,  0.0000,  0.0000)
+  20 Al    15.929875   10.223390    7.995898    ( 0.0000,  0.0000,  0.0000)
+  21 Al    11.962910   14.167921    8.037558    ( 0.0000,  0.0000,  0.0000)
+  22 Al    13.985196   10.223390    9.940578    ( 0.0000,  0.0000,  0.0000)
+  23 Al    11.962910   12.214949    9.974841    ( 0.0000,  0.0000,  0.0000)
+  24 Al    15.942354   12.255619    9.950812    ( 0.0000,  0.0000,  0.0000)
+  25 Al    13.907894   14.224417   10.017881    ( 0.0000,  0.0000,  0.0000)
+  26 Al    17.842754   10.223390   10.032501    ( 0.0000,  0.0000,  0.0000)
+  27 Al     6.079474    8.268818   11.962863    ( 0.0000,  0.0000,  0.0000)
+  28 Al     8.037601    6.278860   11.962863    ( 0.0000,  0.0000,  0.0000)
+  29 Al     9.974886    8.231832   11.962863    ( 0.0000,  0.0000,  0.0000)
+  30 Al    10.017927    6.222364   13.907845    ( 0.0000,  0.0000,  0.0000)
+  31 Al     7.983467    8.191161   13.974914    ( 0.0000,  0.0000,  0.0000)
+  32 Al    11.962910    6.183634   11.962863    ( 0.0000,  0.0000,  0.0000)
+  33 Al    13.950934    8.231832   11.962863    ( 0.0000,  0.0000,  0.0000)
+  34 Al    13.907893    6.222364   13.907845    ( 0.0000,  0.0000,  0.0000)
+  35 Al    11.962910    8.231831   13.950885    ( 0.0000,  0.0000,  0.0000)
+  36 Al    15.888219    6.278860   11.962863    ( 0.0000,  0.0000,  0.0000)
+  37 Al    15.942353    8.191161   13.974914    ( 0.0000,  0.0000,  0.0000)
+  38 Al    17.846346    8.268818   11.962863    ( 0.0000,  0.0000,  0.0000)
+  39 Al     6.079474   12.177962   11.962863    ( 0.0000,  0.0000,  0.0000)
+  40 Al     6.083066   10.223390   13.893224    ( 0.0000,  0.0000,  0.0000)
+  41 Al     8.037147   10.223390   11.962863    ( 0.0000,  0.0000,  0.0000)
+  42 Al     9.974886   12.214949   11.962863    ( 0.0000,  0.0000,  0.0000)
+  43 Al     9.940624   10.223390   13.985147    ( 0.0000,  0.0000,  0.0000)
+  44 Al     7.983467   12.255619   13.974914    ( 0.0000,  0.0000,  0.0000)
+  45 Al     8.037601   14.167920   11.962863    ( 0.0000,  0.0000,  0.0000)
+  46 Al    10.017927   14.224416   13.907845    ( 0.0000,  0.0000,  0.0000)
+  47 Al    11.962910   10.223390   11.962863    ( 0.0000,  0.0000,  0.0000)
+  48 Al    13.950934   12.214949   11.962863    ( 0.0000,  0.0000,  0.0000)
+  49 Al    13.985196   10.223390   13.985147    ( 0.0000,  0.0000,  0.0000)
+  50 Al    11.962910   12.214949   13.950885    ( 0.0000,  0.0000,  0.0000)
+  51 Al    15.888673   10.223390   11.962863    ( 0.0000,  0.0000,  0.0000)
+  52 Al    15.942353   12.255619   13.974914    ( 0.0000,  0.0000,  0.0000)
+  53 Al    11.962910   14.263147   11.962863    ( 0.0000,  0.0000,  0.0000)
+  54 Al    13.907893   14.224416   13.907845    ( 0.0000,  0.0000,  0.0000)
+  55 Al    15.888219   14.167920   11.962863    ( 0.0000,  0.0000,  0.0000)
+  56 Al    17.846346   12.177962   11.962863    ( 0.0000,  0.0000,  0.0000)
+  57 Al    17.842754   10.223390   13.893224    ( 0.0000,  0.0000,  0.0000)
+  58 Al     9.950859    8.191161   15.942305    ( 0.0000,  0.0000,  0.0000)
+  59 Al    11.962910    6.278861   15.888169    ( 0.0000,  0.0000,  0.0000)
+  60 Al    13.974961    8.191161   15.942305    ( 0.0000,  0.0000,  0.0000)
+  61 Al    11.962910    8.268818   17.846296    ( 0.0000,  0.0000,  0.0000)
+  62 Al     7.995945   10.223390   15.929828    ( 0.0000,  0.0000,  0.0000)
+  63 Al     9.950859   12.255619   15.942305    ( 0.0000,  0.0000,  0.0000)
+  64 Al    10.032549   10.223390   17.842705    ( 0.0000,  0.0000,  0.0000)
+  65 Al    11.962910   10.223390   15.888625    ( 0.0000,  0.0000,  0.0000)
+  66 Al    13.974961   12.255619   15.942305    ( 0.0000,  0.0000,  0.0000)
+  67 Al    13.893271   10.223390   17.842705    ( 0.0000,  0.0000,  0.0000)
+  68 Al    11.962910   12.177962   17.846296    ( 0.0000,  0.0000,  0.0000)
+  69 Al    15.929876   10.223390   15.929828    ( 0.0000,  0.0000,  0.0000)
+  70 Al    11.962910   14.167920   15.888169    ( 0.0000,  0.0000,  0.0000)
+
+Unit cell:
+           periodic     x           y           z      points  spacing
+  1. axis:    yes   23.925820    0.000000    0.000000   120     0.1994
+  2. axis:    yes    0.000000   20.446780    0.000000   104     0.1966
+  3. axis:    yes    0.000000    0.000000   23.925770   120     0.1994
+
+  Lengths:  23.925820  20.446780  23.925770
+  Angles:   90.000000  90.000000  90.000000
+
+Effective grid spacing dv^(1/3) = 0.1985
+
+iter:  12  16:50:23  -1.08  -1.32   -36.421054    1      
+iter:  13  16:50:37  -0.73  -1.49   -36.341343    1      
                      log10-error:    total        iterations:
            time      wfs    density  energy       poisson
-iter:   1  16:13:41                -300.793842    1      
-iter:   2  16:15:02  +0.17  -0.85  -300.171886    1      
-iter:   3  16:16:24  +0.18  -0.86  -296.820994    1      
-iter:   4  16:17:45  -0.51  -0.95  -297.550825    1      
-iter:   5  16:19:06  +0.43  -0.96  -299.722751    1      
-iter:   6  16:20:27  -0.22  -1.16  -299.751140    1      
-iter:   7  16:21:47  -0.22  -1.15  -296.417741    1      
-iter:   8  16:23:07  +0.11  -1.32  -296.641682    1      
-iter:   9  16:24:29  -0.14  -1.48  -296.494082    1      
-iter:  10  16:25:49  -1.30  -1.54  -295.878062    1      
-iter:  11  16:27:11  -0.96  -1.71  -295.767210    1      
-iter:  12  16:28:32  -0.79  -1.96  -295.841188    1      
-iter:  13  16:29:53  -1.34  -1.96  -295.731012    1      
-iter:  14  16:31:14  -2.18  -2.20  -295.705223    1      
-iter:  15  16:32:36  -1.53  -2.42  -295.732948    1      
-iter:  16  16:33:57  -2.16  -2.28  -295.699549    1      
-iter:  17  16:35:20  -3.23  -2.68  -295.700681    1      
+iter:   1  16:50:38                -120.954807    1      
+iter:  14  16:50:51  -1.48  -1.68   -36.338360    1      
+                     log10-error:    total        iterations:
+           time      wfs    density  energy       poisson
+iter:   1  16:50:55                -168.795704    1      
+iter:  15  16:51:05  -2.03  -1.72   -36.329968    1      
+iter:   2  16:51:12  +0.20  -0.80  -120.473789    1      
+                     log10-error:    total        iterations:
+           time      wfs    density  energy       poisson
+iter:   1  16:51:17                -234.918515    1      
+iter:  16  16:51:18  -1.71  -1.76   -36.299532    1      
+iter:  17  16:51:32  -1.63  -2.45   -36.301660    1      
+iter:   2  16:51:40  +0.18  -0.83  -168.290702    1      
+iter:  18  16:51:46  -1.29  -2.43   -36.333172    1      
+iter:   3  16:51:47  +0.79  -0.80  -119.319340    1      
+iter:  19  16:52:00  -0.97  -1.83   -36.300414    1      
+iter:  20  16:52:14  -2.32  -2.40   -36.300219    1      
+iter:   2  16:52:20  +0.19  -0.84  -234.179237    1      
+iter:   4  16:52:21  +0.12  -1.01  -118.922804    1      
+iter:   3  16:52:24  +0.45  -0.84  -165.400323    1      
+iter:  21  16:52:27  -2.89  -2.48   -36.300435    1      
+iter:  22  16:52:41  -2.09  -2.49   -36.306295    1      
+iter:  23  16:52:55  -1.94  -2.18   -36.299882    1      
+iter:   5  16:52:56  +0.30  -0.89  -120.583034    1      
+iter:   4  16:53:09  -0.10  -0.96  -167.758012    1      
+iter:  24  16:53:09  -2.05  -2.89   -36.300337    1      
+iter:   3  16:53:22  +0.46  -0.85  -231.119252    1      
+iter:  25  16:53:23  -3.75  -3.10   -36.300210    1      
+iter:   6  16:53:30  +0.47  -0.87  -119.358202    1      
+iter:  26  16:53:37  -3.40  -3.44   -36.300332    1      
+iter:  27  16:53:51  -5.00  -3.10   -36.300289    1      
+iter:   5  16:53:53  +0.00  -0.88  -168.644970    1      
+iter:   7  16:54:05  -0.75  -1.14  -118.389970    1      
+iter:  28  16:54:05  -3.80  -3.14   -36.300230    1      
+iter:  29  16:54:19  -4.09  -3.46   -36.300211    1      
+iter:   4  16:54:24  +0.20  -0.96  -235.035179    1      
+iter:  30  16:54:33  -4.58  -3.88   -36.300225    1      
+iter:   6  16:54:37  +0.50  -0.98  -169.874721    1      
+iter:   8  16:54:40  +0.43  -1.22  -126.291621    1      
+iter:  31  16:54:46  -4.07  -3.56   -36.300283    1      
+iter:  32  16:55:00  -4.26  -3.15   -36.300212    1      
+iter:  33  16:55:14  -3.92  -3.66   -36.300215    1      
+iter:   9  16:55:14  +0.30  -0.82  -118.687338    1      
+iter:   7  16:55:22  -0.41  -0.99  -167.234354    1      
+iter:   5  16:55:27  +0.52  -0.88  -237.802790    1      
+iter:  34  16:55:28  -4.24  -3.87   -36.300249    1      
+iter:  35  16:55:42  -4.22  -3.32   -36.300211    1      
+iter:  10  16:55:49  +0.76  -1.05  -117.498396    1      
+iter:  36  16:55:56  -4.22  -3.81   -36.300213    1      
+iter:   8  16:56:06  -0.55  -1.07  -166.069716    1      
+iter:  37  16:56:10  -5.86  -4.28   -36.300212    1      
+iter:  11  16:56:23  +0.61  -1.36  -120.263268    1      
+iter:  38  16:56:23  -6.52  -4.47   -36.300212    1      
+iter:   6  16:56:31  +0.82  -1.04  -237.508567    1      
+iter:  39  16:56:37  -5.50  -4.55   -36.300216    1      
+iter:   9  16:56:51  -1.43  -1.15  -166.479400    1      
+iter:  40  16:56:51  -5.58  -3.84   -36.300212    1      
+iter:  12  16:56:57  -0.29  -1.10  -117.696943    1      
+iter:  41  16:57:05  -6.32  -4.35   -36.300212    1      
+iter:  42  16:57:19  -5.73  -4.37   -36.300212    1      
+iter:  13  16:57:32  +0.10  -1.29  -117.712329    1      
+iter:  43  16:57:33  -6.25  -4.75   -36.300212    1      
+iter:   7  16:57:34  -0.39  -1.00  -235.231669    1      
+iter:  10  16:57:35  -0.70  -1.13  -165.825846    1      
+iter:  44  16:57:47  -6.69  -4.68   -36.300212    1      
+iter:  45  16:58:01  -7.79  -4.58   -36.300212    1      
+
+Converged after 45 iterations.
+
+Dipole moment: (0.000015, 0.000015, 0.000015) |e|*Ang
+
+Energy contributions relative to reference atoms: (reference = -85844.502444)
+
+Kinetic:        +47.177209
+Potential:      -34.773924
+External:        +0.000000
+XC:             -48.641270
+Entropy (-ST):   -0.027034
+Local:           -0.048710
+--------------------------
+Free energy:    -36.313729
+Extrapolated:   -36.300212
+
+ Band  Eigenvalues  Occupancy
+    0    -12.90549    2.00000
+    1    -10.57254    2.00000
+    2    -10.57254    2.00000
+    3    -10.57254    2.00000
+    4     -8.19057    2.00000
+    5     -8.19057    2.00000
+    6     -8.19057    2.00000
+    7     -7.03722    2.00000
+    8     -7.03722    2.00000
+    9     -6.87905    2.00000
+   10     -5.50838    2.00000
+   11     -5.10123    2.00000
+   12     -5.10123    2.00000
+   13     -5.10123    2.00000
+   14     -4.70060    2.00000
+   15     -4.70060    2.00000
+   16     -4.70060    2.00000
+   17     -4.03742    1.66667
+   18     -4.03742    1.66667
+   19     -4.03742    1.66667
+   20     -2.78635    0.00000
+   21     -2.78635    0.00000
+   22     -2.78635    0.00000
+   23     -2.42874    0.00000
+   24     -2.42874    0.00000
+   25     -1.78797    0.00000
+   26     -1.78797    0.00000
+   27     -1.78797    0.00000
+
+Fermi level: -4.02132
+
+Gap: 1.251 eV
+Transition (v -> c):
+  (s=0, k=0, n=19, [0.00, 0.00, 0.00]) -> (s=0, k=0, n=20, [0.00, 0.00, 0.00])
+Timing:                              incl.     excl.
+-----------------------------------------------------------
+Hamiltonian:                         1.264     0.000   0.0% |
+ Atomic:                             0.000     0.000   0.0% |
+  XC Correction:                     0.000     0.000   0.0% |
+ Calculate atomic Hamiltonians:      0.001     0.001   0.0% |
+ Communicate:                        0.102     0.102   0.0% |
+ Hartree integrate/restrict:         0.018     0.018   0.0% |
+ Initialize Hamiltonian:             0.000     0.000   0.0% |
+ Poisson:                            0.793     0.007   0.0% |
+  Communicate from 1D:               0.022     0.022   0.0% |
+  Communicate from 2D:               0.023     0.023   0.0% |
+  Communicate to 1D:                 0.705     0.705   0.1% |
+  Communicate to 2D:                 0.026     0.026   0.0% |
+  FFT 1D:                            0.003     0.003   0.0% |
+  FFT 2D:                            0.007     0.007   0.0% |
+ XC 3D grid:                         0.349     0.349   0.1% |
+ vbar:                               0.001     0.001   0.0% |
+LCAO initialization:                 2.557     0.024   0.0% |
+ LCAO eigensolver:                   2.399     0.000   0.0% |
+  Calculate projections:             0.000     0.000   0.0% |
+  DenseAtomicCorrection:             0.000     0.000   0.0% |
+  Distribute overlap matrix:         0.013     0.013   0.0% |
+  Orbital Layouts:                   2.385     2.385   0.4% |
+  Potential matrix:                  0.000     0.000   0.0% |
+ LCAO to grid:                       0.001     0.001   0.0% |
+ Set positions (LCAO WFS):           0.133     0.024   0.0% |
+  Basic WFS set positions:           0.019     0.019   0.0% |
+  Basis functions set positions:     0.000     0.000   0.0% |
+  P tci:                             0.001     0.001   0.0% |
+  ST tci:                            0.003     0.003   0.0% |
+  mktci:                             0.087     0.087   0.0% |
+SCF-cycle:                         621.247     0.245   0.0% |
+ Davidson:                         498.343   187.200  29.8% |-----------|
+  Apply hamiltonian:                 6.008     6.008   1.0% |
+  Subspace diag:                    55.677     0.006   0.0% |
+   calc_h_matrix:                    2.413     0.927   0.1% |
+    Apply hamiltonian:               1.486     1.486   0.2% |
+   diagonalize:                     48.348    48.348   7.7% |--|
+   rotate_psi:                       4.910     4.910   0.8% |
+  calc. matrices:                    7.005     4.466   0.7% |
+   Apply hamiltonian:                2.539     2.539   0.4% |
+  diagonalize:                     232.321   232.321  36.9% |--------------|
+  rotate_psi:                       10.132    10.132   1.6% ||
+ Density:                           97.481     0.001   0.0% |
+  Atomic density matrices:           0.326     0.326   0.1% |
+  Mix:                              23.743    23.743   3.8% |-|
+  Multipole moments:                 0.010     0.010   0.0% |
+  Pseudo density:                   73.401     0.052   0.0% |
+   Symmetrize density:              73.350    73.350  11.7% |----|
+ Hamiltonian:                       25.073     0.005   0.0% |
+  Atomic:                            0.013     0.013   0.0% |
+   XC Correction:                    0.000     0.000   0.0% |
+  Calculate atomic Hamiltonians:     0.012     0.012   0.0% |
+  Communicate:                       4.214     4.214   0.7% |
+  Hartree integrate/restrict:        0.201     0.201   0.0% |
+  Poisson:                           4.344     0.166   0.0% |
+   Communicate from 1D:              0.861     0.861   0.1% |
+   Communicate from 2D:              0.915     0.915   0.1% |
+   Communicate to 1D:                1.017     1.017   0.2% |
+   Communicate to 2D:                0.928     0.928   0.1% |
+   FFT 1D:                           0.125     0.125   0.0% |
+   FFT 2D:                           0.332     0.332   0.1% |
+  XC 3D grid:                       16.243    16.243   2.6% ||
+  vbar:                              0.040     0.040   0.0% |
+ Orthonormalize:                     0.105     0.000   0.0% |
+  calc_s_matrix:                     0.002     0.002   0.0% |
+  inverse-cholesky:                  0.083     0.083   0.0% |
+  projections:                       0.000     0.000   0.0% |
+  rotate_psi_s:                      0.020     0.020   0.0% |
+Set symmetry:                        0.015     0.015   0.0% |
+Other:                               3.913     3.913   0.6% |
+-----------------------------------------------------------
+Total:                                       628.997 100.0%
+
+Date: Fri Mar 12 16:58:01 2021
+iter:  14  16:58:06  -0.44  -1.56  -118.218041    1      
+iter:  11  16:58:20  -0.42  -1.20  -164.901652    1      
+iter:   8  16:58:37  -0.20  -1.04  -231.741777    1      
+iter:  15  16:58:41  -1.39  -1.28  -117.643055    1      
+iter:  12  16:59:04  -1.23  -1.70  -164.880234    1      
+iter:  16  16:59:16  -2.65  -1.40  -117.750974    1      
+iter:   9  16:59:40  +0.16  -1.20  -230.575570    1      
+iter:  13  16:59:50  -1.53  -1.80  -164.833063    1      
+iter:  17  16:59:51  -1.00  -1.34  -118.253495    1      
+iter:  18  17:00:27  -1.47  -1.24  -117.820058    1      
+iter:  14  17:00:34  -1.02  -1.89  -164.880222    1      
+iter:  10  17:00:43  -1.02  -1.49  -230.722136    1      
+iter:  19  17:01:02  -0.88  -1.29  -117.522839    1      
+iter:  15  17:01:18  -2.02  -1.85  -164.823684    1      
+iter:  20  17:01:36  -0.93  -1.66  -118.210059    1      
+iter:  11  17:01:46  -0.35  -1.49  -231.263621    1      
+iter:  16  17:02:03  -1.47  -1.98  -164.815938    1      
+iter:  21  17:02:11  -1.10  -1.25  -117.550547    1      
+iter:  22  17:02:46  -1.48  -1.57  -117.637451    1      
+iter:  17  17:02:48  -1.42  -2.11  -164.958530    1      
+iter:  12  17:02:49  -0.87  -1.41  -230.478825    1      
+iter:  23  17:03:20  -1.33  -1.49  -117.504603    1      
+iter:  18  17:03:33  -1.23  -1.75  -164.791987    1      
+iter:  13  17:03:52  -0.87  -1.58  -230.293055    1      
+iter:  24  17:03:55  -0.97  -1.76  -117.527061    1      
+iter:  19  17:04:17  -0.91  -2.10  -164.807478    1      
+iter:  25  17:04:30  -2.30  -1.80  -117.518608    1      
+iter:  14  17:04:56  -1.18  -1.74  -230.277808    1      
+iter:  20  17:05:02  -2.42  -2.38  -164.798534    1      
+iter:  26  17:05:05  -2.92  -1.83  -117.506272    1      
+iter:  27  17:05:39  -2.41  -1.93  -117.509496    1      
+iter:  21  17:05:47  -2.45  -2.69  -164.798767    1      
+iter:  15  17:05:58  -1.48  -1.90  -230.272197    1      
+iter:  28  17:06:14  -2.20  -1.95  -117.519056    1      
+iter:  22  17:06:31  -3.33  -2.81  -164.798366    1      
+iter:  29  17:06:48  -1.76  -1.96  -117.566015    1      
+iter:  16  17:07:01  -1.80  -1.99  -230.241373    1      
+iter:  23  17:07:16  -3.82  -2.88  -164.798365    1      
+iter:  30  17:07:23  -1.90  -1.91  -117.508833    1      
+iter:  31  17:07:58  -1.50  -2.34  -117.513230    1      
+iter:  24  17:08:01  -3.34  -2.89  -164.798011    1      
+iter:  17  17:08:05  -2.04  -2.15  -230.235853    1      
+iter:  32  17:08:32  -3.13  -2.01  -117.507972    1      
+iter:  25  17:08:45  -4.33  -3.04  -164.797918    1      
+iter:  33  17:09:06  -2.53  -2.30  -117.510762    1      
+iter:  18  17:09:08  -2.72  -2.33  -230.234436    1      
+iter:  26  17:09:30  -4.68  -3.17  -164.797936    1      
+iter:  34  17:09:41  -3.30  -2.47  -117.509008    1      
+iter:  19  17:10:11  -2.67  -2.35  -230.229366    1      
+iter:  27  17:10:14  -4.23  -3.25  -164.798107    1      
+iter:  35  17:10:16  -3.40  -2.55  -117.510077    1      
+iter:  36  17:10:50  -3.53  -2.48  -117.507772    1      
+iter:  28  17:10:59  -4.24  -3.39  -164.797978    1      
+iter:  20  17:11:13  -2.73  -2.47  -230.229047    1      
+iter:  37  17:11:25  -3.78  -2.56  -117.508331    1      
+iter:  29  17:11:43  -3.96  -3.36  -164.798137    1      
+iter:  38  17:11:59  -3.10  -2.58  -117.506539    1      
+iter:  21  17:12:16  -3.10  -2.67  -230.229150    1      
+iter:  30  17:12:28  -4.52  -3.36  -164.797960    1      
+iter:  39  17:12:34  -3.97  -2.69  -117.506215    1      
+iter:  40  17:13:09  -3.43  -2.80  -117.506120    1      
+iter:  31  17:13:12  -4.18  -3.70  -164.797963    1      
+iter:  22  17:13:19  -3.53  -2.76  -230.228942    1      
+iter:  41  17:13:44  -4.31  -3.20  -117.506097    1      
+iter:  32  17:13:57  -5.41  -3.73  -164.797987    1      
+iter:  42  17:14:18  -4.33  -3.31  -117.506101    1      
+iter:  23  17:14:22  -3.80  -2.96  -230.228582    1      
+iter:  33  17:14:42  -4.97  -3.95  -164.797998    1      
+iter:  43  17:14:53  -4.51  -3.43  -117.506215    1      
+iter:  24  17:15:25  -4.26  -3.20  -230.228317    1      
+iter:  34  17:15:26  -5.43  -3.90  -164.797974    1      
+iter:  44  17:15:28  -5.20  -3.48  -117.506173    1      
+iter:  45  17:16:02  -4.85  -3.53  -117.506050    1      
+iter:  35  17:16:11  -6.08  -4.19  -164.797969    1      
+iter:  25  17:16:28  -4.60  -3.32  -230.228255    1      
+iter:  46  17:16:37  -4.86  -3.55  -117.506150    1      
+iter:  36  17:16:56  -5.56  -4.25  -164.797986    1      
+iter:  47  17:17:12  -5.52  -3.90  -117.506145    1      
+iter:  26  17:17:31  -4.61  -3.44  -230.228403    1      
+iter:  37  17:17:42  -6.55  -4.29  -164.797979    1      
+iter:  48  17:17:46  -6.13  -3.94  -117.506093    1      
+iter:  49  17:18:21  -5.37  -3.96  -117.506149    1      
+iter:  38  17:18:27  -6.07  -4.48  -164.797978    1      
+iter:  27  17:18:34  -5.42  -3.54  -230.228398    1      
+iter:  50  17:18:56  -6.38  -4.05  -117.506125    1      
+iter:  39  17:19:11  -6.81  -4.62  -164.797985    1      
+iter:  51  17:19:31  -6.13  -4.26  -117.506115    1      
+iter:  28  17:19:39  -4.95  -3.60  -230.228317    1      
+iter:  40  17:19:56  -7.69  -4.67  -164.797986    1      
+
+Converged after 40 iterations.
+
+Dipole moment: (0.000089, 0.000022, 0.000007) |e|*Ang
+
+Energy contributions relative to reference atoms: (reference = -343378.009774)
+
+Kinetic:       +189.689816
+Potential:     -118.335761
+External:        +0.000000
+XC:            -235.875134
+Entropy (-ST):   -0.043100
+Local:           -0.255357
+--------------------------
+Free energy:   -164.819536
+Extrapolated:  -164.797986
+
+ Band  Eigenvalues  Occupancy
+    0    -13.61328    2.00000
+    1    -12.87411    2.00000
+    2    -12.51537    2.00000
+    3    -12.46514    2.00000
+    4    -11.73218    2.00000
+    5    -11.67866    2.00000
+    6    -11.54974    2.00000
+    7    -11.15625    2.00000
+    8    -10.94995    2.00000
+    9    -10.55068    2.00000
+   10    -10.42613    2.00000
+   11    -10.40286    2.00000
+   12    -10.17067    2.00000
+   13    -10.12426    2.00000
+   14    -10.05200    2.00000
+   15     -9.50172    2.00000
+   16     -9.46440    2.00000
+   17     -9.18921    2.00000
+   18     -8.96520    2.00000
+   19     -8.88732    2.00000
+   20     -8.68366    2.00000
+   21     -8.62986    2.00000
+   22     -8.59690    2.00000
+   23     -8.40125    2.00000
+   24     -8.37899    2.00000
+   25     -8.34879    2.00000
+   26     -8.08333    2.00000
+   27     -7.70373    2.00000
+   28     -7.54222    2.00000
+   29     -7.36516    2.00000
+   30     -7.32317    2.00000
+   31     -7.26228    2.00000
+   32     -7.24156    2.00000
+   33     -7.18811    2.00000
+   34     -7.07816    2.00000
+   35     -7.07574    2.00000
+   36     -6.68157    2.00000
+   37     -6.66819    2.00000
+   38     -6.60498    2.00000
+   39     -6.33443    2.00000
+   40     -6.23450    2.00000
+   41     -6.18295    2.00000
+   42     -6.02868    2.00000
+   43     -5.97382    2.00000
+   44     -5.83198    2.00000
+   45     -5.67193    2.00000
+   46     -5.60890    2.00000
+   47     -5.48256    2.00000
+   48     -5.43229    2.00000
+   49     -5.31223    2.00000
+   50     -5.29931    2.00000
+   51     -5.26122    2.00000
+   52     -5.15851    2.00000
+   53     -5.15023    2.00000
+   54     -5.07541    2.00000
+   55     -5.04417    2.00000
+   56     -4.94600    2.00000
+   57     -4.80754    2.00000
+   58     -4.79850    2.00000
+   59     -4.61037    2.00000
+   60     -4.44868    2.00000
+   61     -4.41786    2.00000
+   62     -4.37185    2.00000
+   63     -4.34198    2.00000
+   64     -4.27141    2.00000
+   65     -4.13850    2.00000
+   66     -3.83927    2.00000
+   67     -3.78060    2.00000
+   68     -3.77122    2.00000
+   69     -3.75994    2.00000
+   70     -3.57258    2.00000
+   71     -3.48313    2.00000
+   72     -3.41367    2.00000
+   73     -3.37568    2.00000
+   74     -3.24871    1.99996
+   75     -3.24752    1.99996
+   76     -3.15516    1.62508
+   77     -3.14391    1.16899
+   78     -3.14122    1.03603
+   79     -3.11647    0.16597
+   80     -3.07821    0.00394
+   81     -3.03937    0.00008
+   82     -2.90757    0.00000
+   83     -2.71721    0.00000
+   84     -2.67795    0.00000
+   85     -2.63441    0.00000
+   86     -2.57417    0.00000
+   87     -2.35345    0.00000
+   88     -2.30626    0.00000
+   89     -2.24042    0.00000
+   90     -2.17517    0.00000
+   91     -2.04176    0.00000
+   92     -1.94756    0.00000
+   93     -1.92019    0.00000
+   94     -1.90038    0.00000
+   95     -1.89504    0.00000
+   96     -1.85903    0.00000
+   97     -1.85711    0.00000
+
+Fermi level: -3.14050
+
+Gap: 0.025 eV
+Transition (v -> c):
+  (s=0, k=0, n=78, [0.00, 0.00, 0.00]) -> (s=0, k=0, n=79, [0.00, 0.00, 0.00])
+Timing:                              incl.     excl.
+-----------------------------------------------------------
+Hamiltonian:                         1.490     0.000   0.0% |
+ Atomic:                             0.098     0.001   0.0% |
+  XC Correction:                     0.097     0.097   0.0% |
+ Calculate atomic Hamiltonians:      0.003     0.003   0.0% |
+ Communicate:                        0.089     0.089   0.0% |
+ Hartree integrate/restrict:         0.016     0.016   0.0% |
+ Initialize Hamiltonian:             0.000     0.000   0.0% |
+ Poisson:                            0.809     0.008   0.0% |
+  Communicate from 1D:               0.040     0.040   0.0% |
+  Communicate from 2D:               0.040     0.040   0.0% |
+  Communicate to 1D:                 0.645     0.645   0.0% |
+  Communicate to 2D:                 0.049     0.049   0.0% |
+  FFT 1D:                            0.008     0.008   0.0% |
+  FFT 2D:                            0.018     0.018   0.0% |
+ XC 3D grid:                         0.473     0.473   0.0% |
+ vbar:                               0.002     0.002   0.0% |
+LCAO initialization:                14.139     0.023   0.0% |
+ LCAO eigensolver:                  13.576     0.001   0.0% |
+  Calculate projections:             0.000     0.000   0.0% |
+  DenseAtomicCorrection:             0.000     0.000   0.0% |
+  Distribute overlap matrix:         0.330     0.330   0.0% |
+  Orbital Layouts:                  13.245    13.245   0.7% |
+  Potential matrix:                  0.000     0.000   0.0% |
+ LCAO to grid:                       0.009     0.009   0.0% |
+ Set positions (LCAO WFS):           0.531     0.371   0.0% |
+  Basic WFS set positions:           0.007     0.007   0.0% |
+  Basis functions set positions:     0.000     0.000   0.0% |
+  P tci:                             0.001     0.001   0.0% |
+  ST tci:                            0.009     0.009   0.0% |
+  mktci:                             0.142     0.142   0.0% |
+SCF-cycle:                        1785.264     0.185   0.0% |
+ Davidson:                        1713.704   540.897  30.0% |-----------|
+  Apply hamiltonian:                 9.521     9.521   0.5% |
+  Subspace diag:                   116.227     0.009   0.0% |
+   calc_h_matrix:                    8.493     3.361   0.2% |
+    Apply hamiltonian:               5.132     5.132   0.3% |
+   diagonalize:                     99.146    99.146   5.5% |-|
+   rotate_psi:                       8.579     8.579   0.5% |
+  calc. matrices:                   52.720    36.942   2.0% ||
+   Apply hamiltonian:               15.779    15.779   0.9% |
+  diagonalize:                     969.026   969.026  53.7% |--------------------|
+  rotate_psi:                       25.313    25.313   1.4% ||
+ Density:                           35.452     0.001   0.0% |
+  Atomic density matrices:           0.210     0.210   0.0% |
+  Mix:                              22.255    22.255   1.2% |
+  Multipole moments:                 0.015     0.015   0.0% |
+  Pseudo density:                   12.970     0.242   0.0% |
+   Symmetrize density:              12.728    12.728   0.7% |
+ Hamiltonian:                       34.812     0.006   0.0% |
+  Atomic:                            3.591     0.136   0.0% |
+   XC Correction:                    3.454     3.454   0.2% |
+  Calculate atomic Hamiltonians:     0.231     0.231   0.0% |
+  Communicate:                       4.000     4.000   0.2% |
+  Hartree integrate/restrict:        0.364     0.364   0.0% |
+  Poisson:                           7.309     0.276   0.0% |
+   Communicate from 1D:              1.475     1.475   0.1% |
+   Communicate from 2D:              1.632     1.632   0.1% |
+   Communicate to 1D:                1.250     1.250   0.1% |
+   Communicate to 2D:                1.525     1.525   0.1% |
+   FFT 1D:                           0.322     0.322   0.0% |
+   FFT 2D:                           0.829     0.829   0.0% |
+  XC 3D grid:                       19.231    19.231   1.1% |
+  vbar:                              0.080     0.080   0.0% |
+ Orthonormalize:                     1.112     0.000   0.0% |
+  calc_s_matrix:                     0.028     0.028   0.0% |
+  inverse-cholesky:                  0.961     0.961   0.1% |
+  projections:                       0.000     0.000   0.0% |
+  rotate_psi_s:                      0.122     0.122   0.0% |
+Set symmetry:                        0.002     0.002   0.0% |
+Other:                               3.232     3.232   0.2% |
+-----------------------------------------------------------
+Total:                                      1804.128 100.0%
+
+Date: Fri Mar 12 17:19:57 2021
+iter:  52  17:20:06  -7.45  -4.43  -117.506119    1      
+
+Converged after 52 iterations.
+
+Dipole moment: (0.000023, 0.000024, 0.000023) |e|*Ang
+
+Energy contributions relative to reference atoms: (reference = -250930.084066)
+
+Kinetic:       +150.554754
+Potential:      -98.254972
+External:        +0.000000
+XC:            -169.594198
+Entropy (-ST):   -0.052888
+Local:           -0.185258
+--------------------------
+Free energy:   -117.532563
+Extrapolated:  -117.506119
+
+ Band  Eigenvalues  Occupancy
+    0    -13.63474    2.00000
+    1    -12.38243    2.00000
+    2    -12.38243    2.00000
+    3    -12.38243    2.00000
+    4    -10.96226    2.00000
+    5    -10.96225    2.00000
+    6    -10.80432    2.00000
+    7    -10.80432    2.00000
+    8    -10.80431    2.00000
+    9    -10.28444    2.00000
+   10     -9.22390    2.00000
+   11     -9.22390    2.00000
+   12     -9.22390    2.00000
+   13     -9.12035    2.00000
+   14     -9.12035    2.00000
+   15     -9.12035    2.00000
+   16     -8.67718    2.00000
+   17     -8.03406    2.00000
+   18     -8.03406    2.00000
+   19     -8.03405    2.00000
+   20     -7.43826    2.00000
+   21     -7.43826    2.00000
+   22     -7.43825    2.00000
+   23     -7.13127    2.00000
+   24     -7.13127    2.00000
+   25     -6.94288    2.00000
+   26     -6.94287    2.00000
+   27     -6.94287    2.00000
+   28     -6.59282    2.00000
+   29     -5.83717    2.00000
+   30     -5.83717    2.00000
+   31     -5.83717    2.00000
+   32     -5.81303    2.00000
+   33     -5.81302    2.00000
+   34     -5.71540    2.00000
+   35     -5.27248    2.00000
+   36     -5.27248    2.00000
+   37     -5.27248    2.00000
+   38     -5.14182    2.00000
+   39     -5.14181    2.00000
+   40     -4.93060    2.00000
+   41     -4.93060    2.00000
+   42     -4.93060    2.00000
+   43     -4.53945    2.00000
+   44     -4.53944    2.00000
+   45     -4.53944    2.00000
+   46     -4.13992    2.00000
+   47     -4.13992    2.00000
+   48     -4.13990    2.00000
+   49     -4.04898    2.00000
+   50     -4.04897    2.00000
+   51     -4.04897    2.00000
+   52     -3.28651    2.00000
+   53     -3.28651    2.00000
+   54     -3.28651    2.00000
+   55     -2.93957    1.92423
+   56     -2.90255    0.77059
+   57     -2.89292    0.38616
+   58     -2.89292    0.38616
+   59     -2.89292    0.38616
+   60     -2.87036    0.04892
+   61     -2.87036    0.04892
+   62     -2.87035    0.04888
+   63     -2.66494    0.00000
+   64     -2.66494    0.00000
+   65     -2.66494    0.00000
+   66     -2.52958    0.00000
+   67     -2.52957    0.00000
+   68     -2.13550    0.00000
+   69     -1.65209    0.00000
+   70     -1.65208    0.00000
+   71     -1.65208    0.00000
+   72     -1.26621    0.00000
+
+Fermi level: -2.90722
+
+Gap: 0.037 eV
+Transition (v -> c):
+  (s=0, k=0, n=55, [0.00, 0.00, 0.00]) -> (s=0, k=0, n=56, [0.00, 0.00, 0.00])
+Timing:                              incl.     excl.
+-----------------------------------------------------------
+Hamiltonian:                         1.402     0.000   0.0% |
+ Atomic:                             0.000     0.000   0.0% |
+  XC Correction:                     0.000     0.000   0.0% |
+ Calculate atomic Hamiltonians:      0.000     0.000   0.0% |
+ Communicate:                        0.114     0.114   0.0% |
+ Hartree integrate/restrict:         0.024     0.024   0.0% |
+ Initialize Hamiltonian:             0.000     0.000   0.0% |
+ Poisson:                            0.807     0.007   0.0% |
+  Communicate from 1D:               0.037     0.037   0.0% |
+  Communicate from 2D:               0.035     0.035   0.0% |
+  Communicate to 1D:                 0.671     0.671   0.0% |
+  Communicate to 2D:                 0.034     0.034   0.0% |
+  FFT 1D:                            0.007     0.007   0.0% |
+  FFT 2D:                            0.016     0.016   0.0% |
+ XC 3D grid:                         0.454     0.454   0.0% |
+ vbar:                               0.002     0.002   0.0% |
+LCAO initialization:                10.183     0.024   0.0% |
+ LCAO eigensolver:                   9.664     0.001   0.0% |
+  Calculate projections:             0.000     0.000   0.0% |
+  DenseAtomicCorrection:             0.000     0.000   0.0% |
+  Distribute overlap matrix:         0.288     0.288   0.0% |
+  Orbital Layouts:                   9.375     9.375   0.5% |
+  Potential matrix:                  0.000     0.000   0.0% |
+ LCAO to grid:                       0.006     0.006   0.0% |
+ Set positions (LCAO WFS):           0.490     0.326   0.0% |
+  Basic WFS set positions:           0.010     0.010   0.0% |
+  Basis functions set positions:     0.000     0.000   0.0% |
+  P tci:                             0.001     0.001   0.0% |
+  ST tci:                            0.007     0.007   0.0% |
+  mktci:                             0.146     0.146   0.0% |
+SCF-cycle:                        1800.885     0.273   0.0% |
+ Davidson:                        1702.595   534.180  29.4% |-----------|
+  Apply hamiltonian:                10.792    10.792   0.6% |
+  Subspace diag:                   121.744     0.008   0.0% |
+   calc_h_matrix:                    7.946     2.453   0.1% |
+    Apply hamiltonian:               5.493     5.493   0.3% |
+   diagonalize:                    103.486   103.486   5.7% |-|
+   rotate_psi:                      10.304    10.304   0.6% |
+  calc. matrices:                   47.997    33.086   1.8% ||
+   Apply hamiltonian:               14.911    14.911   0.8% |
+  diagonalize:                     959.880   959.880  52.9% |--------------------|
+  rotate_psi:                       28.002    28.002   1.5% ||
+ Density:                           59.279     0.001   0.0% |
+  Atomic density matrices:           0.271     0.271   0.0% |
+  Mix:                              29.569    29.569   1.6% ||
+  Multipole moments:                 0.021     0.021   0.0% |
+  Pseudo density:                   29.417     0.207   0.0% |
+   Symmetrize density:              29.209    29.209   1.6% ||
+ Hamiltonian:                       38.063     0.008   0.0% |
+  Atomic:                            0.018     0.018   0.0% |
+   XC Correction:                    0.000     0.000   0.0% |
+  Calculate atomic Hamiltonians:     0.017     0.017   0.0% |
+  Communicate:                       5.540     5.540   0.3% |
+  Hartree integrate/restrict:        0.421     0.421   0.0% |
+  Poisson:                           8.311     0.305   0.0% |
+   Communicate from 1D:              1.644     1.644   0.1% |
+   Communicate from 2D:              1.664     1.664   0.1% |
+   Communicate to 1D:                1.693     1.693   0.1% |
+   Communicate to 2D:                1.731     1.731   0.1% |
+   FFT 1D:                           0.326     0.326   0.0% |
+   FFT 2D:                           0.948     0.948   0.1% |
+  XC 3D grid:                       23.670    23.670   1.3% ||
+  vbar:                              0.079     0.079   0.0% |
+ Orthonormalize:                     0.675     0.000   0.0% |
+  calc_s_matrix:                     0.019     0.019   0.0% |
+  inverse-cholesky:                  0.592     0.592   0.0% |
+  projections:                       0.000     0.000   0.0% |
+  rotate_psi_s:                      0.064     0.064   0.0% |
+Set symmetry:                        0.006     0.006   0.0% |
+Other:                               3.100     3.100   0.2% |
+-----------------------------------------------------------
+Total:                                      1815.576 100.0%
+
+Date: Fri Mar 12 17:20:06 2021
+iter:  29  17:20:42  -5.89  -3.83  -230.228324    1      
+iter:  30  17:21:46  -4.72  -3.92  -230.228340    1      
+iter:  31  17:22:49  -5.60  -3.86  -230.228295    1      
+iter:  32  17:23:52  -5.61  -4.08  -230.228295    1      
+iter:  33  17:24:55  -5.67  -4.34  -230.228312    1      
