@@ -5,6 +5,7 @@ from ase.calculators.eam import EAM
 from ase.optimize import BFGS
 from ase.vibrations import Vibrations
 from gpaw import GPAW, FermiDirac, PW
+from ase.dft.dos import DOS
 
 import argparse
 
@@ -22,25 +23,29 @@ parser.add_argument('-f', '--redo_file', type=bool, default=default,
 
 args = parser.parse_args()
 
-if (args.redo_file):
+#if (args.redo_file):
 #connect to database and retrieve atoms object
-    db = connect("sub_100_Al-relaxed.db")
+db = connect("sub_100_Al-relaxed.db")
 #sub_100_ids=[2, 3, 6, 7, 8, 10]
 
-    sub_100_ids = [args.ID]
-    k = args.kpt
-    calc = GPAW(mode=PW(300),
+sub_100_ids = [args.ID]
+k = args.kpt
+#else: 
+#    calc = GPAW('GPAW_ID_'+str(args.ID)+'_k:'+str(args.kpt)+'.gpw')
+
+for cluster in db.select():
+	atoms = cluster.toatoms()
+	#calc=atoms.calc
+	calc = GPAW(mode=PW(300),
             xc='PBE',
             kpts=(k, k, k),
             random=True,  # random guess (needed if many empty bands required)
             occupations=FermiDirac(0.01))
-else: 
-    calc = GPAW('GPAW_ID_'+str(args.ID)+'_k:'+str(args.kpt)+'.gpw')
-
-for cluster in db.select():
-    atoms = cluster.toatoms()
-    print(atoms)
-
+	atoms.calc = calc
+	atoms.get_potential_energy()
+	dos = DOS(calc, width = 0.2)
+	d = dos.get_dos()
+	print('----------hejhej------------')
 """
 for cluster in db.select():
     if (args.redo_file):

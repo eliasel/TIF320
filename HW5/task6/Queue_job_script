@@ -2,8 +2,8 @@
 #SBATCH -p hebbe 
 #SBATCH -A C3SE2021-1-15 # Project
 #SBATCH -J test # Name of the job
-#SBATCH -N 2 # Use 1 node
-#SBATCH -n 30 # Use only 1 core on that node
+#SBATCH -N 4 # Use 1 node
+#SBATCH -n 20 # Use only 1 core on that node
 #SBATCH -t 10:00:01 # Maximum time
 #SBATCH -o stdout # stdout goes to this file
 #SBATCH -e stderr # stderr goes to this file
@@ -15,7 +15,7 @@ module purge
 module load  GCC/8.3.0 OpenMPI/3.1.4 GPAW/20.10.0-ASE-3.20.1-Python-3.7.4
 
 
-mpirun python T5_2.py -k 8 
+mpirun python T6.py -k 8 
 
 
 echo "runing completed at" $(date +"%I:%M:%S") >> Done.txt

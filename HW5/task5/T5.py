@@ -7,7 +7,7 @@ from ase.vibrations import Vibrations
 from gpaw import GPAW, FermiDirac, PW
 
 import argparse
-
+"""
 parser = argparse.ArgumentParser()
 defval = 2
 parser.add_argument('-n', '--ID', type=int, default=defval,
@@ -21,29 +21,40 @@ parser.add_argument('-f', '--redo_file', type=bool, default=default,
                     help='redo calculations for get potential? (default: {:.2f})'.format(default))
 
 args = parser.parse_args()
-
-if (args.redo_file):
+"""
+#if (args.redo_file):
 #connect to database and retrieve atoms object
-    db = connect("sub_100_Al-relaxed.db")
+db = connect("sub_100_Al-relaxed.db")
 #sub_100_ids=[2, 3, 6, 7, 8, 10]
 
-    sub_100_ids = [args.ID]
-    k = args.kpt
-    calc = GPAW(mode=PW(300),
+sub_100_ids = [args.ID]
+k = args.kpt
+#else: 
+#    calc = GPAW('GPAW_ID_'+str(args.ID)+'_k:'+str(args.kpt)+'.gpw')
+
+
+for cluster in db.select():
+	atoms = cluster.toatoms()
+        N_atoms = len(atoms)
+        calc = GPAW(mode=PW(300),
             xc='PBE',
             kpts=(k, k, k),
             random=True,  # random guess (needed if many empty bands required)
             occupations=FermiDirac(0.01))
-else: 
-    calc = GPAW('GPAW_ID_'+str(args.ID)+'_k:'+str(args.kpt)+'.gpw')
-
-
-for cluster in db.select():
-    if (args.redo_file):
-        atoms = cluster.toatoms()
-        N_atoms = len(atoms)
-        atoms.calc = calc
-        print('potential:')
+	atoms.calc = calc
+	atoms.get_potential_energy()
+	dos = DOS(calc, width = 0.2)
+	d = dos.get_dos()
+	e = dos.get_energies()
+	fig = plt.figure()
+	ax = fig.add_subplot()
+	ax.plot(e,d)
+	ax.set_xlabel('Energies [eV]')
+	ax.set_ylabel('DOS')
+	fig.savefig('DOS_'+str(N_atoms)+'.png')
+        
+"""
+	print('potential:')
         atoms.get_potential_energy()
         print('fermi level')
         Ef = calc.get_fermi_level()
@@ -56,3 +67,4 @@ for cluster in db.select():
     print('band structure:')
     Bs = calc.band_structure()
     bs.plot(filename='band_ID:'+str(args.ID)+'_k:'+str(k)+'.png', show=True, emax=10.0)
+"""
