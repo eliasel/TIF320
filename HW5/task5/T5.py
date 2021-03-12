@@ -29,14 +29,14 @@ db = connect("sub_100_Al-relaxed.db")
 
 sub_100_ids = [args.ID]
 k = args.kpt
-#else: 
+#else:
 #    calc = GPAW('GPAW_ID_'+str(args.ID)+'_k:'+str(args.kpt)+'.gpw')
 
 
 for cluster in db.select():
 	atoms = cluster.toatoms()
-        N_atoms = len(atoms)
-        calc = GPAW(mode=PW(300),
+    N_atoms = len(atoms)
+    calc = GPAW(mode=PW(300),
             xc='PBE',
             kpts=(k, k, k),
             random=True,  # random guess (needed if many empty bands required)
@@ -52,7 +52,7 @@ for cluster in db.select():
 	ax.set_xlabel('Energies [eV]')
 	ax.set_ylabel('DOS')
 	fig.savefig('DOS_'+str(N_atoms)+'.png')
-        
+
 """
 	print('potential:')
         atoms.get_potential_energy()

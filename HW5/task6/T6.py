@@ -5,7 +5,7 @@ from ase.calculators.eam import EAM
 from ase.optimize import BFGS
 from ase.vibrations import Vibrations
 from gpaw import GPAW, FermiDirac, PW
-from ase.build import bulk 
+from ase.build import bulk
 from ase.dft import *
 import matplotlib.pyplot as plt
 
@@ -45,7 +45,7 @@ calc = calc.fixed_density(
 print('band structure:')
 bs = calc.band_structure()
 
-bs.plot(filename='k:'+str(k)+'bulk.png', show=False, emax=10.0)
+bs.plot(filename='k_'+str(k)+'bulk.png', show=False, emax=10.0)
 
 fig = plt.figure()
 ax = fig.add_subplot()
@@ -53,6 +53,3 @@ ax.plot(e,d)
 ax.set_xlabel('Energy [ev]')
 ax.set_ylabel('DOS')
 fig.savefig('DOS_bulk.png')
-
-
-
