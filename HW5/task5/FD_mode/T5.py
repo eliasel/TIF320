@@ -39,7 +39,7 @@ k = 8
 for cluster in db.select():
 	atoms = cluster.toatoms()
 	N_atoms = len(atoms)
-	calc = GPAW(mode=fd,
+	calc = GPAW(mode='fd',
             xc='PBE',
 #            kpts=(k, k, k),
             random=True,  # random guess (needed if many empty bands required)
