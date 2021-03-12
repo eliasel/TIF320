@@ -31,14 +31,14 @@ db = connect("sub_100_Al-relaxed.db")
 #k = args.kpt
 #else:
 #    calc = GPAW('GPAW_ID_'+str(args.ID)+'_k:'+str(args.kpt)+'.gpw')
-k = 4
+k = 8
 
 for cluster in db.select():
 	atoms = cluster.toatoms()
 	N_atoms = len(atoms)
-	calc = GPAW(mode=PW(300),
+	calc = GPAW(mode=fd,
             xc='PBE',
-            kpts=(k, k, k),
+#            kpts=(k, k, k),
             random=True,  # random guess (needed if many empty bands required)
             occupations=FermiDirac(0.01))
 	atoms.calc = calc
