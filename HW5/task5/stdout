@@ -6,9 +6,9 @@
  |___|_|             
 
 User:   esve@hebbe26-2
-Date:   Fri Mar 12 10:03:15 2021
+Date:   Fri Mar 12 10:58:25 2021
 Arch:   x86_64
-Pid:    15022
+Pid:    19347
 Python: 3.7.4
 gpaw:   /apps/Hebbe7/software/MPI/GCC/8.3.0/OpenMPI/3.1.4/GPAW/20.10.0-ASE-3.20.1-Python-3.7.4/lib/python3.7/site-packages/gpaw
 _gpaw:  /apps/Hebbe7/software/MPI/GCC/8.3.0/OpenMPI/3.1.4/GPAW/20.10.0-ASE-3.20.1-Python-3.7.4/lib/python3.7/site-packages/
@@ -22,7 +22,7 @@ cores: 30
 OMP_NUM_THREADS: 1
 
 Input parameters:
-  kpts: [8 8 8]
+  kpts: [500 500 500]
   mode: {ecut: 300.0,
          gammacentered: False,
          name: pw}
@@ -66,169 +66,3 @@ Convergence criteria:
   Maximum integral of absolute eigenstate change: 4e-08 eV^2
   Maximum number of iterations: 333
 
-Symmetries present (total): 1
-
-  ( 1  0  0)
-  ( 0  1  0)
-  ( 0  0  1)
-
-512 k-points: 8 x 8 x 8 Monkhorst-Pack grid
-256 k-points in the irreducible part of the Brillouin zone
-       k-points in crystal coordinates                weights
-   0:     0.06250000   -0.43750000   -0.43750000          2/512
-   1:     0.06250000   -0.43750000   -0.31250000          2/512
-   2:     0.06250000   -0.43750000   -0.18750000          2/512
-   3:     0.06250000   -0.43750000   -0.06250000          2/512
-   4:     0.06250000   -0.43750000    0.06250000          2/512
-   5:     0.06250000   -0.43750000    0.18750000          2/512
-   6:     0.06250000   -0.43750000    0.31250000          2/512
-   7:     0.06250000   -0.43750000    0.43750000          2/512
-   8:     0.06250000   -0.31250000   -0.43750000          2/512
-   9:     0.06250000   -0.31250000   -0.31250000          2/512
-          ...
- 255:     0.43750000    0.43750000    0.43750000          2/512
-
-Wave functions: Plane wave expansion
-  Cutoff energy: 300.000 eV
-  Number of coefficients (min, max): 76005, 76114
-  Pulay-stress correction: 0.000000 eV/Ang^3 (de/decut=0.000000)
-  Using FFTW library
-  ScaLapack parameters: grid=1x1, blocksize=None
-  Wavefunction extrapolation:
-    Improved wavefunction reuse through dual PAW basis 
-
-  Fermi-Dirac: width=0.0100 eV
-
-Eigensolver
-   Davidson(niter=2, smin=None, normalize=True) 
-
-Densities:
-  Coarse grid: 80*80*72 grid
-  Fine grid: 160*160*144 grid
-  Total Charge: 0.000000 
-
-Density mixing:
-  Method: separate
-  Backend: pulay
-  Linear mixing parameter: 0.05
-  Mixing with 5 old densities
-  Damping of long wave oscillations: 50 
-
-Hamiltonian:
-  XC and Coulomb potentials evaluated on a 160*160*144 grid
-  Using the PBE Exchange-Correlation functional
- 
-
-XC parameters: PBE with 2 nearest neighbor stencil
-
-Memory estimate:
-  Process memory now: 428.66 MiB
-  Calculator: 848.90 MiB
-    Density: 206.98 MiB
-      Arrays: 91.41 MiB
-      Localized functions: 80.42 MiB
-      Mixer: 35.16 MiB
-    Hamiltonian: 61.41 MiB
-      Arrays: 59.77 MiB
-      XC: 0.00 MiB
-      Poisson: 0.00 MiB
-      vbar: 1.64 MiB
-    Wavefunctions: 580.51 MiB
-      Arrays psit_nG: 427.40 MiB
-      Eigensolver: 59.56 MiB
-      Projections: 1.68 MiB
-      Projectors: 65.01 MiB
-      PW-descriptor: 26.87 MiB
-
-Total number of cores used: 30
-Parallelization over k-points: 30
-
-Number of atoms: 23
-Number of atomic orbitals: 92
-Number of bands in calculation: 46
-Number of valence electrons: 69
-Bands to converge: occupied
-
-... initialized
-
-Initializing position-dependent things.
-
-Density initialized from atomic densities
-Creating initial wave functions:
-  46 bands from LCAO basis set
-
-             .----------------------------------------------.  
-            /|                                              |  
-           / |                                              |  
-          /  |                                              |  
-         /   |                                              |  
-        /    |                                              |  
-       /     |                                              |  
-      /      |                                              |  
-     /       |                                              |  
-    /        |                                              |  
-   /         |                                              |  
-  /          |                                              |  
- *           |                                              |  
- |           |              Al  Al                          |  
- |           |           Al     Al Al                       |  
- |           |        Al                                    |  
- |           |            Al Al      Al                     |  
- |           |               AAl   Al  Al                   |  
- |           |         Al       Al                          |  
- |           |        Al      Al                            |  
- |           |             All    All Al                    |  
- |           |                                              |  
- |           .------------------Al--------------------------.  
- |          /                                              /   
- |         /                                              /    
- |        /                                              /     
- |       /                                              /      
- |      /                                              /       
- |     /                                              /        
- |    /                                              /         
- |   /                                              /          
- |  /                                              /           
- | /                                              /            
- |/                                              /             
- *----------------------------------------------*              
-
-Positions:
-   0 Al    10.706794    7.248828    6.051515    ( 0.0000,  0.0000,  0.0000)
-   1 Al     8.527001    8.811926    6.516927    ( 0.0000,  0.0000,  0.0000)
-   2 Al    12.990932    8.147068    7.261432    ( 0.0000,  0.0000,  0.0000)
-   3 Al     6.329807   10.774377    7.412661    ( 0.0000,  0.0000,  0.0000)
-   4 Al    11.080775    9.983014    6.296127    ( 0.0000,  0.0000,  0.0000)
-   5 Al     8.715860   11.396609    5.982887    ( 0.0000,  0.0000,  0.0000)
-   6 Al     6.546198    8.031790    8.027607    ( 0.0000,  0.0000,  0.0000)
-   7 Al     8.899909    6.440052    8.007663    ( 0.0000,  0.0000,  0.0000)
-   8 Al    10.465055    8.612729    8.568917    ( 0.0000,  0.0000,  0.0000)
-   9 Al    10.308600    6.347754   10.434216    ( 0.0000,  0.0000,  0.0000)
-  10 Al     8.239482    8.099042   10.153526    ( 0.0000,  0.0000,  0.0000)
-  11 Al    11.714663    6.039248    8.252597    ( 0.0000,  0.0000,  0.0000)
-  12 Al    12.518853    8.132944   10.104147    ( 0.0000,  0.0000,  0.0000)
-  13 Al    10.329692    8.620095   11.812075    ( 0.0000,  0.0000,  0.0000)
-  14 Al     6.582905   12.238018    9.913104    ( 0.0000,  0.0000,  0.0000)
-  15 Al     6.027623    9.687140   10.040906    ( 0.0000,  0.0000,  0.0000)
-  16 Al     8.547361   10.481811    8.755075    ( 0.0000,  0.0000,  0.0000)
-  17 Al    10.562448   12.119286    7.930172    ( 0.0000,  0.0000,  0.0000)
-  18 Al    10.867617   10.719580   10.357034    ( 0.0000,  0.0000,  0.0000)
-  19 Al     9.197220   12.865063   10.222647    ( 0.0000,  0.0000,  0.0000)
-  20 Al    12.721628   10.470476    8.485659    ( 0.0000,  0.0000,  0.0000)
-  21 Al     7.934567   13.134669    7.809963    ( 0.0000,  0.0000,  0.0000)
-  22 Al     8.277799   10.556897   11.476640    ( 0.0000,  0.0000,  0.0000)
-
-Unit cell:
-           periodic     x           y           z      points  spacing
-  1. axis:    yes   19.005700    0.000000    0.000000    80     0.2376
-  2. axis:    yes    0.000000   19.152210    0.000000    80     0.2394
-  3. axis:    yes    0.000000    0.000000   17.708910    72     0.2460
-
-  Lengths:  19.005700  19.152210  17.708910
-  Angles:   90.000000  90.000000  90.000000
-
-Effective grid spacing dv^(1/3) = 0.2410
-
-                     log10-error:    total        iterations:
-           time      wfs    density  energy       poisson
-iter:   1  10:10:38                 -70.374569           
